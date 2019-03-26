@@ -1,0 +1,59 @@
+.user-activity {
+  width: 330px;
+  min-width: 330px;
+}
+
+.varified-badge {
+  svg * {
+    fill: $primary;
+    //stroke: $primary;
+  }
+}
+
+.su__pp {
+  width: 50px;
+}
+
+.su__title {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: $text-primary;
+}
+
+.su__workplace,
+.su__workplace__title {
+  font-size: 12px;
+  color: rgba(#454545, .4);
+  text-decoration: none;
+}
+
+.varified-badge svg {
+  width: 22px;
+}
+
+/* ---- add friend req btn styles ---*/
+.su__send-fr {}
+
+.send-fr-plus-btn.btn {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+
+.req-sent .send-fr-plus-btn.btn  {
+  background-color: $yellow-light;
+  color: white;
+  //cursor: default;
+}
+
+.su__view-all {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* --- pending requests card styles ---*/

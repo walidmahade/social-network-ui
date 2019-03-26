@@ -1,0 +1,16 @@
+/* --- customize dropdown appearance ---*/
+.dropdown-menu.fade {
+  display: block;
+  border: 0;
+  //border-top: 3px solid $primary;
+  //border-radius: 0;
+  @include box-sad(0, 6px, $icon-color, 1);
+  top: 80px !important;
+  opacity: 0;
+  transition: top .3s ease-in-out, opacity .3s ease-in-out;
+}
+
+.dropdown-menu.fade.show {
+  top: 0 !important;
+  opacity: 1;
+}

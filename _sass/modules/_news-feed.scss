@@ -1,0 +1,101 @@
+#add-new-post {
+  position: relative;
+
+  .user_info {
+    position: absolute;
+    padding: 25px;
+  }
+
+  .custom-textarea {
+    margin-bottom: 30px;
+  }
+
+  #custom-img-upload-input,
+  #custom-video-upload-input {
+    visibility: hidden;
+    width: 35px;
+  }
+}
+// general add post extention icons styles
+.status-update-ext {
+  .input-group {
+    margin-right: 30px;
+  }
+
+  svg {
+    cursor: pointer;
+    width: 26px;
+
+    * {
+      fill: $icon-color;
+      stroke: #fff;
+      transition: all .3s ease-in-out;
+    }
+    &:hover * {
+      fill: $primary;
+      stroke: #fff;
+    }
+  }
+}
+
+.custom-video-upload {
+  svg  {
+    * {
+      stroke: $icon-color;
+      fill: $icon-color;
+      stroke-width: 0;
+    }
+  }
+}
+
+.tag-user-btn {
+  svg {
+    width: 22px;
+    * {
+      stroke-width: 0;
+    }
+  }
+}
+
+.share-location-btn {
+  svg  {
+    width: 20px;
+    * {
+      stroke: $icon-color;
+      fill: transparent;
+      stroke-width: 2;
+    }
+    &:hover * {
+      stroke: $primary;
+      fill: transparent;
+    }
+  }
+}
+
+// add post input field
+.add-post-textarea {
+  resize: none;
+  box-shadow: 0 3px 20px 0 rgba(#D3D8E0, .4);
+  padding: 30px 60px 30px 100px;
+}
+
+#insert-emoji {
+  position: absolute;
+  right: 0;
+  padding: 30px 30px 0 0;
+  svg {
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    * {
+      fill: $icon-color;
+      stroke: $icon-color;
+    }
+    &:hover {
+      * {
+        fill: $primary;
+        stroke: $primary;
+      }
+    }
+  }
+}

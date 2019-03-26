@@ -1,0 +1,41 @@
+// Customization
+// Set your own initial variables
+$black: #000;
+$yellow: #EFB200;
+$yellow-light: #FBC72F;
+$text-primary: #3D3D3D;
+$gray: #D3D3D3;
+$white-shade: #F8F8F8;
+$icon-color: #D3D8E0;
+$primary: $yellow;
+
+$border-color: #ebebeb;
+$input-border-color: $border-color;
+
+// set colors to class names
+$theme-colors: (
+        "primary": $yellow,
+        "secondary": $text-primary,
+        "dark" : $black,
+        "light" : $white-shade
+);
+
+// font family
+$font-family-sans-serif: "Montserrat", "Helvetica", "Arial", sans-serif;
+
+// typography
+$font-size-base: 1rem;
+$font-weight-bold: 600;
+$h5-font-size: $font-size-base * 1.125;
+
+// borders
+//$border-radius: .25rem;
+$border-radius-lg: 0.625rem;
+//$border-radius-sm: .2rem;
+
+// links
+$link-decoration: none;
+$link-hover-decoration: none;
+$link-color: $yellow-light;
+//$link-hover-color: $yellow-light;
+

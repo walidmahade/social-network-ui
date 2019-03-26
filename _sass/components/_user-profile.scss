@@ -1,0 +1,39 @@
+.user-profile {
+  width: 270px;
+  min-width: 270px;
+  border-radius: 10px;
+}
+
+.user-profile__pp {
+  margin-top: -30px;
+  img {
+    max-width: 60px;
+  }
+}
+
+// user profile stats
+.ups__title {
+  font-size: 12px;
+}
+
+.user-profile__profession,
+.ups__count {
+  font-size: 14px;
+}
+
+.card-footer {
+  position: relative;
+}
+
+.card-footer::before {
+  content: '';
+  width: 80%;
+  height: 2px;
+  background: rgba($text-primary, .06);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

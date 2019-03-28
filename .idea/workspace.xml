@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8adbf968-a06a-435d-bb77-8e3bf6515346" name="Default Changelist" comment="" />
+    <list default="true" id="8adbf968-a06a-435d-bb77-8e3bf6515346" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/modules/_news-feed.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/modules/_news-feed.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/theme/_theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/theme/_theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/vendor/bootstrap/_customize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/vendor/bootstrap/_customize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/cmnt.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icons/cmnt.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/like.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icons/like.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/icons/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icons/share.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepros-6.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros-6.config" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
+            <state relative-caret-position="320">
+              <caret line="208" column="99" selection-start-line="208" selection-start-column="99" selection-end-line="208" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -22,10 +34,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/modules/_news-feed.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="45" />
+            <state relative-caret-position="663">
+              <caret line="153" column="25" lean-forward="true" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/icons/cmnt.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -37,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/theme/_theme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="600">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -58,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/vendor/bootstrap/_customize.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="11" />
+            <state relative-caret-position="345">
+              <caret line="24" column="69" lean-forward="true" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -128,15 +145,19 @@
         <option value="$PROJECT_DIR$/img/icons/tag-fnd.svg" />
         <option value="$PROJECT_DIR$/_javascript/main.js" />
         <option value="$PROJECT_DIR$/img/icons/location.svg" />
-        <option value="$PROJECT_DIR$/_sass/modules/_news-feed.scss" />
         <option value="$PROJECT_DIR$/_sass/components/_user-activity-card.scss" />
         <option value="$PROJECT_DIR$/img/icons/search-iocn.svg" />
-        <option value="$PROJECT_DIR$/_sass/vendor/bootstrap/_customize.scss" />
         <option value="$PROJECT_DIR$/_sass/modules/_header.scss" />
         <option value="$PROJECT_DIR$/_sass/main.scss" />
         <option value="$PROJECT_DIR$/_sass/base/_helpers.scss" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_sass/theme/_theme.scss" />
+        <option value="$PROJECT_DIR$/_sass/vendor/bootstrap/_customize.scss" />
+        <option value="$PROJECT_DIR$/img/icons/like.svg" />
+        <option value="$PROJECT_DIR$/img/icons/share.svg" />
+        <option value="$PROJECT_DIR$/img/icons/cmnt.svg" />
+        <option value="$PROJECT_DIR$/_sass/modules/_news-feed.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -144,8 +165,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="402" />
-    <option name="width" value="1518" />
+    <option name="x" value="426" />
+    <option name="width" value="1494" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -154,6 +175,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,7 +198,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,17 +248,19 @@
       <updated>1553451756412</updated>
       <workItem from="1553451759588" duration="9405000" />
       <workItem from="1553486728844" duration="12990000" />
-      <workItem from="1553573262766" duration="9052000" />
+      <workItem from="1553573262766" duration="9518000" />
+      <workItem from="1553747602788" duration="5051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31447000" />
+    <option name="totallyTimeSpent" value="36964000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="402" y="0" width="1518" height="1080" extended-state="0" />
+    <frame x="426" y="0" width="1494" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20487483" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20487483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -252,7 +275,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32986766" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32986766" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -293,7 +316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/lib/main.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/bulma/bulma.sass" />
     <entry file="file://$PROJECT_DIR$/node_modules/bulma/sass/utilities/initial-variables.sass" />
@@ -360,19 +382,10 @@
     <entry file="file://$PROJECT_DIR$/img/icons/reply.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/like.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/share.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/icons/notification.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/icons/news.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/comment.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/img/icons/question-mark-with-border.svg">
@@ -439,6 +452,22 @@
     <entry file="file://$PROJECT_DIR$/img/icons/location.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/search-iocn.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/vendor/bootstrap/_custom-forms.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="40">
+            <caret line="1" column="40" lean-forward="true" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/components/_user-activity-card.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -446,37 +475,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/search-iocn.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/vendor/bootstrap/_custom-forms.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/vendor/bootstrap/_customize.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/modules/_news-feed.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="77" column="2" selection-start-line="77" selection-start-column="2" selection-end-line="77" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/modules/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
     </entry>
@@ -487,17 +489,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/_sass/theme/_theme.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="53" column="74" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="74" />
+        <state relative-caret-position="600">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/theme/_theme.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/modules/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="563">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/vendor/bootstrap/_customize.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="69" lean-forward="true" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/like.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/comment.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/share.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/cmnt.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/modules/_news-feed.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="153" column="25" lean-forward="true" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="208" column="99" selection-start-line="208" selection-start-column="99" selection-end-line="208" selection-end-column="99" />
         </state>
       </provider>
     </entry>

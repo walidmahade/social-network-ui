@@ -1,3 +1,4 @@
+// add new post styles
 #add-new-post {
   position: relative;
 
@@ -98,4 +99,73 @@
       }
     }
   }
+}
+
+// showing existing posts
+
+.uf__post {
+  &__elem {
+    margin-top: 30px;
+    @extend .fs-16;
+  }
+  &__date {
+    color: $text-secondary;
+  }
+
+  [data-isVarified="false"] {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__actions__meta {
+    color: $text-secondary;
+
+    .upam__item {
+      padding: 0 15px;
+      border-right: 1px solid rgba($text-secondary, .2);
+
+      &:last-child {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+  }
+
+  // svg icons style
+  svg {
+    cursor: pointer;
+    width: 20px;
+
+    * {
+      fill: $icon-color;
+      stroke: $icon-color;
+      transition: all .3s ease-in-out;
+    }
+    &:hover * {
+      fill: $primary;
+      stroke: $primary;
+    }
+  }
+
+  [data-liked="true"] {
+    svg {
+      * {
+        fill: $primary;
+        stroke: $primary;
+      }
+      &:hover * {
+        fill: $icon-color;
+        stroke: $icon-color;
+      }
+    }
+  }
+
+  &__actions__comment {
+    svg {
+      width: 17px;
+    }
+  }
+
+
+
 }

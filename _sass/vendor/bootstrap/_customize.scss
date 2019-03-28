@@ -8,6 +8,7 @@ $gray: #D3D3D3;
 $white-shade: #F8F8F8;
 $icon-color: #D3D8E0;
 $primary: $yellow;
+$text-secondary: rgba(#454545, .4);
 
 $border-color: #ebebeb;
 $input-border-color: $border-color;
@@ -17,7 +18,7 @@ $theme-colors: (
         "primary": $yellow,
         "secondary": $text-primary,
         "dark" : $black,
-        "light" : $white-shade
+        "light" : $border-color
 );
 
 // font family
@@ -31,7 +32,7 @@ $h5-font-size: $font-size-base * 1.125;
 // borders
 //$border-radius: .25rem;
 $border-radius-lg: 0.625rem;
-//$border-radius-sm: .2rem;
+$border-radius-sm: 0.3125rem;
 
 // links
 $link-decoration: none;

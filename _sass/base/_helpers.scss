@@ -18,6 +18,12 @@
   font-size: 22px;
 }
 
+// bos shadow
 @mixin box-sad($x: 0px, $y: 3px, $color: $icon-color,$a: .4) {
   box-shadow: $x $y 20px 0 rgba($color, $a);
+}
+
+// light text
+.text-light {
+  color: $text-secondary!important;
 }

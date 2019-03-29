@@ -4,7 +4,9 @@
 
   .user_info {
     position: absolute;
-    padding: 25px;
+    left: 25px;
+    top: 25px;
+    width: 50px;
   }
 
   .custom-textarea {
@@ -104,12 +106,18 @@
 // showing existing posts
 
 .uf__post {
+  .h5 {
+    @extend .fs-20;
+  }
   &__elem {
     margin-top: 30px;
     @extend .fs-16;
   }
   &__date {
     color: $text-secondary;
+  }
+  &__author-img {
+    width: 60px;
   }
 
   [data-isVarified="false"] {
@@ -160,12 +168,81 @@
     }
   }
 
+  .varified-badge svg {
+    cursor: default;
+    * {
+      fill: $primary;
+      stroke: $primary;
+    }
+  }
+
   &__actions__comment {
     svg {
       width: 17px;
     }
   }
 
+  .user-profile__pp {
+    min-width: 50px;
+    width: 50px;
+  }
 
+  // feed posts image/images gallery
+  &__image {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    // when theres even number of images
+    &[data-image-count="even"] {
+      & > div {
+        @extend .mb-4;
+        width: 47.5%;
+        // remove bottom spacing from last items
+        &:last-child,
+        &:nth-last-child(2) {
+          @extend .m-0;
+        }
+      }
+    }
+
+    // when theres odd number of images
+    &[data-image-count="odd"] {
+      & > div {
+        width: 47.5%;
+        &:first-child {
+          @extend .w-100;
+          @extend .mb-4;
+        }
+      }
+    }
+  }
+
+  // show comments
+  &__all-comments {
+    .ufp-comment__body {
+      border-top-left-radius: 0 !important;
+    }
+  }
+
+  .ufp__comment__actions {
+    line-height: 1;
+    &__reply {
+      cursor: pointer;
+      transition: color .3s ease-in-out;
+      &:hover {
+        color: $primary;
+        svg * {
+          stroke: $primary;
+        }
+      }
+    }
+  }
+
+  .ufp__comment {
+    &--reply {
+      margin-left: calc(50px + 1.5rem);
+    }
+  }
 
 }

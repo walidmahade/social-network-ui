@@ -20,3 +20,7 @@
 ::placeholder {
   color: $text-secondary!important;
 }
+
+::selection {
+  background-color: rgba($primary, .2);
+}

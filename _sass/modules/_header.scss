@@ -1,4 +1,9 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+
   svg {
     fill: white;
   }
@@ -37,13 +42,19 @@
 
 // navigation styles
 .header__nav {
+  padding-top: 1rem;
+
   .nav-item {
-    margin-left: 30px;
-    padding: 5px 15px;
+    margin-left: 5px;
+    padding: 0 10px;
     @extend .rounded;
     @extend .d-flex;
     @extend .align-items-center;
     transition: background-color .3s ease-in-out;
+
+    &:first-child {
+      margin-left: 0;
+    }
 
     &:hover {
       background: $primary;
@@ -59,10 +70,19 @@
       &__profile:hover span {
         @extend .text-primary;
       }
+
+      &__links {
+        padding: 10px;
+      }
+
       &__links:hover span {
         @extend .text-primary;
         @extend .border-primary;
       }
+    }
+
+    .user__name {
+      display: none;
     }
 
     &--has-update {
@@ -110,6 +130,59 @@
     .more-info-dropdown-trigger {
       color: $primary;
       border-color: $primary;
+    }
+  }
+}
+
+/*
+Sticky header styles
+ */
+.header.sticky--active {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+
+  .brand,
+  .header__search {
+    display: none;
+  }
+  .header__nav {
+    padding-top: 0;
+  }
+}
+// add spacing at thhe top of the body
+body {
+  transition: .5s;
+  margin-top: 180px;
+
+  &.fixed-header--active {
+    margin-top: 180px;
+  }
+}
+
+
+//responsive header styles
+@include media-breakpoint-up(lg) {
+  body {
+    margin-top: 130px;
+    &.fixed-header--active {
+      margin-top: 130px;
+    }
+  }
+
+  .header__nav {
+    padding: 0;
+    .nav-item {
+      padding: 5px 15px;
+      margin-left: 20px;
+    }
+  }
+
+  .header.sticky--active {
+    .brand,
+    .header__search {
+      display: unset;
     }
   }
 }

@@ -2,9 +2,9 @@
 $cwhHeight: 60px;
 
 #chat-window {
-  width: 340px;
+  width: 100%;
   position: fixed;
-  right: 20px;
+  right: 0;
   z-index: 99;
   transition: all .3s;
   max-height: 90vh;
@@ -109,4 +109,12 @@ $cwhHeight: 60px;
 
 #chat-window-toggle {
   cursor: pointer;
+}
+
+// responsive styles
+@include media-breakpoint-up(md) {
+  #chat-window {
+    width: 340px;
+    right: 20px;
+  }
 }

@@ -33,7 +33,9 @@
 }
 
 /* ---- add friend req btn styles ---*/
-.su__send-fr {}
+.su__send-fr {
+  margin-left: auto;
+}
 
 .send-fr-plus-btn.btn {
   width: 30px;
@@ -56,4 +58,33 @@
   font-size: 14px;
 }
 
-/* --- pending requests card styles ---*/
+//  responsive styles
+@include media-breakpoint-up(md) {
+  .user-activity {
+    .card {
+      width: 48%;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .user-activity {
+    justify-content: center !important;
+    .card {
+      width: 35%;
+      margin: 0 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .user-activity {
+    justify-content: center !important;
+    flex-wrap: wrap;
+    max-width: 330px;
+
+    .card {
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
+  }
+}

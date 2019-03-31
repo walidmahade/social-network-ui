@@ -1,3 +1,8 @@
+//  @include media-breakpoint-up(sm) {}
+//  @include media-breakpoint-up(md) {}
+//  @include media-breakpoint-up(lg) {}
+//  @include media-breakpoint-up(xl) {}
+
 /* --- popular fonts sizes --- */
 .fs-12 {
   font-size: 12px;
@@ -29,4 +34,15 @@
 // light text
 .text-light {
   color: $text-secondary!important;
+}
+
+button {
+  background: transparent;
+}
+
+// font size on mobile
+@media screen and (max-width: 556px) {
+  .fs-12, .fs-13, .fs-14, .fs-15, .fs-16, .fs-17, .fs-18, .fs-20, .fs-22, .fs-26, input, .h5, textarea {
+    font-size: 90%;
+  }
 }

@@ -1,3 +1,7 @@
+// user feed column
+.user-feed {
+  margin-top: 2rem;
+}
 // add new post styles
 #add-new-post {
   position: relative;
@@ -21,6 +25,8 @@
 }
 // general add post extention icons styles
 .status-update-ext {
+  padding: 0 5px;
+
   .input-group {
     margin-right: 30px;
   }
@@ -183,8 +189,12 @@
   }
 
   .user-profile__pp {
-    min-width: 50px;
-    width: 50px;
+    width: 25px;
+    min-width: 25px;
+
+    img {
+      width: 100%;
+    }
   }
 
   // feed posts image/images gallery
@@ -195,7 +205,7 @@
 
     // when theres even number of images
     &[data-image-count="even"] {
-      & > div {
+      & > a {
         @extend .mb-4;
         width: 47.5%;
         // remove bottom spacing from last items
@@ -208,7 +218,7 @@
 
     // when theres odd number of images
     &[data-image-count="odd"] {
-      & > div {
+      & > a {
         width: 47.5%;
         &:first-child {
           @extend .w-100;
@@ -241,8 +251,43 @@
 
   .ufp__comment {
     &--reply {
-      margin-left: calc(50px + 1.5rem);
+      //margin-left: calc(50px + 1.5rem); des
+      margin-left: 0;
     }
   }
 
+}
+
+// responsive styles
+@include media-breakpoint-up(sm) {
+  .uf__post {
+    .ufp__comment {
+      &--reply {
+        margin-left: calc(50px + 1.5rem);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .uf__post {
+    .user-profile__pp {
+      width: 50px;
+      min-width: 50px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .user-feed {
+    margin-top: 0;
+    padding-left: 0;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .user-feed {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

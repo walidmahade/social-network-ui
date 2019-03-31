@@ -24,3 +24,10 @@
 ::selection {
   background-color: rgba($primary, .2);
 }
+
+/*------- more info question mark btn style ---------*/
+.more-info-btn {
+  border: 3px solid #636363;
+  padding: 0 6px;
+  border-radius: .2rem;
+}

@@ -1,0 +1,9 @@
+.footer-link-a {
+  color: $text-secondary;
+  @extend .fs-14;
+  @extend .px-3;
+
+  &:hover {
+    color: $dark;
+  }
+}

@@ -1,0 +1,42 @@
+.user-feed__connect-carousel {
+  border: 1px solid $border-color;
+  padding: 1.25rem .5rem;
+  border-radius: 10px;
+
+  .card-footer:before {
+    content: none;
+  }
+
+  .user-profile {
+    margin: 0 auto;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+  .owl-dots {
+    display: none;
+  }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    //transform: translateY(-50%);
+    background: white;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    padding: 4px 10px !important;
+    font-size: 30px;
+    color: $text-secondary;
+    &:hover {
+      background: $light;
+      color: $dark;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .owl-next {
+    right: 0;
+  }
+}

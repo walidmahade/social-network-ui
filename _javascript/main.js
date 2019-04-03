@@ -120,4 +120,21 @@ jQuery(document).ready(function($) {
         e.stopPropagation();
     });
 
+    /*
+    *  Feed carousel
+    */
+    $('.user-feed__connect-carousel-wrap').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            }
+        }
+    })
+
 });

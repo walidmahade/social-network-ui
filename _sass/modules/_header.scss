@@ -8,7 +8,7 @@
     fill: white;
   }
 }
-
+// header search suggestions
 .header__search {
   position: relative;
   input {
@@ -36,6 +36,38 @@
           fill: $primary;
         }
       }
+    }
+  }
+
+}
+// suggestion dropdown
+#header__search-suggestion {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0 15px;
+  display: none;
+
+  &.show {
+    display: block;
+    z-index: 99;
+  }
+
+  .card {
+    @include box-sad();
+    border-radius: 0 0 10px 10px;
+  }
+  .suggested-item {
+    background-color: transparent;
+    a {
+      color: $dark;
+      //font-weight: 600;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    &:hover {
+      background: rgba($primary, .1);
     }
   }
 }
@@ -154,10 +186,10 @@ Sticky header styles
 // add spacing at thhe top of the body
 body {
   transition: .5s;
-  margin-top: 180px;
+  margin-top: 130px;
 
   &.fixed-header--active {
-    margin-top: 180px;
+    margin-top: 130px;
   }
 }
 
@@ -165,9 +197,9 @@ body {
 //responsive header styles
 @include media-breakpoint-up(lg) {
   body {
-    margin-top: 130px;
+    margin-top: 100px;
     &.fixed-header--active {
-      margin-top: 130px;
+      margin-top: 100px;
     }
   }
 

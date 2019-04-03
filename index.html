@@ -8,10 +8,11 @@
     <title>Tarik Eamin | Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="">
-    <header class="header bg-dark pt-3 pb-3">
+    <header class="header bg-dark py-2">
         <div class="container pt-1 pb-1">
             <div class="row d-flex align-items-center justify-content-between">
                 <div class="brand col-4 col-lg-2">
@@ -22,11 +23,22 @@
 
                 <div class="header__search col-8 col-lg-4">
                     <form action="/search?q=">
-                        <input type="search" placeholder="Search" class="form-control f-14 pt-4 pb-4 pl-3">
+                        <input type="search" placeholder="Search" class="form-control f-14 py-3 pl-3" id="ajax-search-input">
                         <button type="submit" class="header__search__icon p-0 border-0">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>search-iocn</title><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9636" stroke="#000" fill="#000" d="M22.715 21.040c1.794-2.156 2.882-4.953 2.882-8.005 0-6.934-5.622-12.556-12.556-12.556s-12.556 5.622-12.556 12.556c0 6.934 5.622 12.556 12.556 12.556 3.052 0 5.849-1.089 8.025-2.899l-0.020 0.017 8.594 8.609 1.679-1.679zM13.034 23.223c-5.627 0-10.189-4.562-10.189-10.189s4.562-10.189 10.189-10.189c5.627 0 10.188 4.561 10.189 10.187v0c-0.002 5.627-4.563 10.188-10.189 10.191h-0z"></path></svg>
                         </button>
                     </form>
+                    <div id="header__search-suggestion">
+                        <ul class="card list-unstyled  bg-white">
+                            <li class="suggested-item"><a href="#">Search match one</a></li>
+                            <li class="suggested-item"><a href="#">River banks</a></li>
+                            <li class="suggested-item"><a href="#">Green Forests</a></li>
+                            <li class="suggested-item"><a href="#">Blue Sky</a></li>
+                            <li class="suggested-item"><a href="#">Genius bar</a></li>
+                            <li class="suggested-item"><a href="#">Cool computer</a></li>
+                            <li class="suggested-item"><a href="#">Super Computers</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <nav class="col-12 col-lg-6 header__nav d-flex justify-content-between justify-content-lg-end">
@@ -1067,8 +1079,8 @@
     <!--=========== end image lightbox ============-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
-    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--<script src="js/simple-lightbox.min.js"></script>-->
     <script src="js/main.min.js"></script>
 </body>

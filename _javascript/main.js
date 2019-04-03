@@ -62,5 +62,25 @@ jQuery(document).ready(function($) {
         lightbox.removeClass('show-me');
         lightboxOverlay.removeClass('show-me');
     });
-
+    /*
+    *   Header search suggestions trigger
+    */
+    const searchSuggBox = $("#header__search-suggestion");
+    const searchInput = $("#ajax-search-input");
+    function showHideSuggBox() {
+        if (searchInput.val() === null || searchInput.val() === "") {
+            searchSuggBox.removeClass('show');
+        } else {
+            searchSuggBox.addClass('show');
+        }
+    }
+    searchInput.keyup(function(e) {
+        showHideSuggBox();
+    });
+    searchInput.focusout(function () {
+        searchSuggBox.removeClass('show');
+    });
+    searchInput.focusin(function () {
+        showHideSuggBox();
+    });
 });

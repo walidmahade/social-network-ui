@@ -651,7 +651,7 @@
                             <div class="d-flex justify-content-between flex-wrap">
                                 <div class="form-group custom-textarea w-100">
                                     <label for="add-post" hidden>Add new Post</label>
-                                    <textarea name="newPost" id="add-post" rows="5"
+                                    <textarea name="newPost" id="add-post" rows="2"
                                               class="form-control add-post-textarea rounded-lg"
                                               placeholder="Whats on your mind"
                                     ></textarea>
@@ -691,6 +691,9 @@
                     <!--end add post-->
                     <!--=========== user-feed ========-->
                     <div class="user-feed mb-5">
+                        <div class="uf__post card bg-white border-light p-4 mt-4 mb-5">
+                            No posts found.
+                        </div>
                         <!--feed post start: 1-->
                         <div class="uf__post card bg-white border-light p-4 mt-4 mb-5">
                             <!--postmeta-->
@@ -786,7 +789,7 @@
                         <!--feed post end 1-->
 
                         <!--carousel connect to people-->
-                        <div class="user-feed__connect-carousel">
+                        <div class="user-feed__connect-carousel mb-5">
                             <div class="user-feed__connect-carousel-wrap owl-carousel">
                                 <!--carousel item-->
                                 <div class="user-feed__connect-carousel__item">
@@ -1286,7 +1289,7 @@
                         <!--feed post end 3-->
 
                         <!--carousel connect to people-->
-                        <div class="user-feed__connect-carousel">
+                        <div class="user-feed__connect-carousel mb-5">
                             <div class="user-feed__connect-carousel-wrap owl-carousel">
                                 <!--carousel item-->
                                 <div class="user-feed__connect-carousel__item">
@@ -1477,7 +1480,6 @@
                     </div>
                 </section>
                 <!-- ============ end user feed ============ -->
-
                 <!--============ more user activity =============-->
                 <section class="col user-activity d-flex justify-content-between d-xl-block">
                     <!--card 1 -friend suggestions-->

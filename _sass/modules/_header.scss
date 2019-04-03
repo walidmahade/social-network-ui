@@ -13,6 +13,10 @@
   position: relative;
   input {
     padding-right: 40px;
+    &::placeholder {
+      @extend .fs-14;
+      font-weight: 600;
+    }
   }
 
   .header__search__icon {
@@ -78,11 +82,17 @@
 
   .nav-item {
     margin-left: 5px;
-    padding: 0 10px;
     @extend .rounded;
     @extend .d-flex;
     @extend .align-items-center;
+    height: 40px;
+    //width: 50px;
     transition: background-color .3s ease-in-out;
+
+    &--link {
+      padding: 5px 15px;
+      display: inline-block;
+    }
 
     &:first-child {
       margin-left: 0;
@@ -92,7 +102,7 @@
       background: $primary;
     }
 
-    &__active {
+    &--active {
       background: $primary;
     }
 
@@ -119,11 +129,12 @@
 
     &--has-update {
       position: relative;
+
       &:after {
         content: '';
         position: absolute;
         right: 13px;
-        bottom: 13px;
+        bottom: 10px;
         height: 8px;
         width: 8px;
         background-color: $primary;
@@ -206,8 +217,17 @@ body {
   .header__nav {
     padding: 0;
     .nav-item {
-      padding: 5px 15px;
       margin-left: 20px;
+
+      &--link {
+        padding: 5px 15px;
+        display: inline-block;
+      }
+
+      .user__name {
+        display: block;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -215,6 +235,22 @@ body {
     .brand,
     .header__search {
       display: unset;
+    }
+  }
+}
+
+#more-options {
+  &:hover {
+    background-color: transparent;
+  }
+  &>a {
+    border: 2px solid white;
+    padding: 1px 6px;
+    border-radius: 4px;
+    color: white;
+    &:hover {
+      color: $primary;
+      border: 2px solid $primary;
     }
   }
 }

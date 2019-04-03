@@ -67,6 +67,7 @@ jQuery(document).ready(function($) {
     */
     const searchSuggBox = $("#header__search-suggestion");
     const searchInput = $("#ajax-search-input");
+
     function showHideSuggBox() {
         if (searchInput.val() === null || searchInput.val() === "") {
             searchSuggBox.removeClass('show');
@@ -74,7 +75,7 @@ jQuery(document).ready(function($) {
             searchSuggBox.addClass('show');
         }
     }
-    searchInput.keyup(function(e) {
+    searchInput.keyup(function() {
         showHideSuggBox();
     });
     searchInput.focusout(function () {
@@ -83,4 +84,40 @@ jQuery(document).ready(function($) {
     searchInput.focusin(function () {
         showHideSuggBox();
     });
+
+    /*
+    *   Dropdown menu toggle
+    */
+    // const dropdownMenuTrigger = $(".nav-item--has-dropdown > .nav-item--link");
+    // const megaMenu = $('.mw-megamenu');
+    //
+    // dropdownMenuTrigger.click(function (e) {
+    //     e.preventDefault();
+    //     let currentMegaMenu = $(this).siblings(megaMenu);
+    //     // hide all other dropdowns
+    //     megaMenu.removeClass('show');
+    //     // show-toggle clicked menus dropdown
+    //     currentMegaMenu.toggleClass('show');
+    //     e.stopPropagation();
+    // });
+    //
+    // megaMenu.click(function (e) {
+    //     e.stopPropagation();
+    // });
+    //
+    // $(document).click(function(){
+    //     $('.mw-megamenu.show').removeClass('show');
+    // });
+
+    /*
+    *   Notification dorpdowns
+    */
+    $("#notification-all-seen, #message-all-seen").click(function (e) {
+        // e.preventDefault();
+        $('.mw-megamenu__line__item').addClass('seen');
+    });
+    $(document).on('click', '.nav-item--has-dropdown .dropdown-menu', function (e) {
+        e.stopPropagation();
+    });
+
 });

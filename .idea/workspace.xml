@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8adbf968-a06a-435d-bb77-8e3bf6515346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_sass/vendor/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/modules/_megamenu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/_javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_sass/modules/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/modules/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_sass/theme/_theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/theme/_theme.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
@@ -25,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
+            <state relative-caret-position="692">
+              <caret line="580" column="68" lean-forward="true" selection-start-line="580" selection-start-column="68" selection-end-line="580" selection-end-column="68" />
               <folding>
                 <element signature="n#section#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#section#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -36,11 +37,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/modules/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="191" column="18" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+            <state relative-caret-position="184">
+              <caret line="88" column="18" lean-forward="true" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_sass/modules/_megamenu.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -48,17 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_javascript/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/base/_helpers.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="256">
+              <caret line="105" column="10" lean-forward="true" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -66,17 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/theme/_theme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/vendor/animate.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="3541" column="10" selection-start-line="3541" selection-start-column="10" selection-end-line="3541" selection-end-column="10" />
+            <state relative-caret-position="225">
+              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -93,22 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>textare</find>
-      <find>image</find>
-      <find>data-image-count</find>
-      <find>uf__post__image</find>
-      <find>uf__post__author</find>
-      <find>uf__post__author-title</find>
-      <find>uf__post__date</find>
-      <find>__pp</find>
-      <find>&lt;div class=&quot;comment__author h5 fs-20&quot;&gt;Alan Walker&lt;/div&gt;</find>
-      <find>toggle</find>
-      <find>padding</find>
-      <find>user__name</find>
-      <find>__links</find>
-      <find>news feed</find>
-      <find>feed</find>
-      <find>form-group pr-4</find>
       <find>status-update-ext</find>
       <find>comment</find>
       <find>user-profile__pp</find>
@@ -123,6 +108,22 @@
       <find>__image</find>
       <find>post__image</find>
       <find>header__search</find>
+      <find>header__nav</find>
+      <find>update</find>
+      <find>sear</find>
+      <find>show</find>
+      <find>nav item</find>
+      <find>over</find>
+      <find>item</find>
+      <find>overfl</find>
+      <find>logout</find>
+      <find>body</find>
+      <find>settings</find>
+      <find>link</find>
+      <find>last-chil</find>
+      <find>--link</find>
+      <find>more-</find>
+      <find>nav-item</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;div class=&quot;comment__author h5 fs-20&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;text-dark&quot;&gt;Alan Walker&lt;/a&gt;&lt;/div&gt;</replace>
@@ -167,14 +168,15 @@
         <option value="$PROJECT_DIR$/_sass/modules/_news-feed.scss" />
         <option value="$PROJECT_DIR$/_sass/components/_lightbox.scss" />
         <option value="$PROJECT_DIR$/_sass/pages/_404.scss" />
-        <option value="$PROJECT_DIR$/_sass/main.scss" />
         <option value="$PROJECT_DIR$/_sass/modules/_footer.scss" />
         <option value="$PROJECT_DIR$/404.html" />
         <option value="$PROJECT_DIR$/_sass/vendor/animate.min.css" />
+        <option value="$PROJECT_DIR$/_sass/main.scss" />
         <option value="$PROJECT_DIR$/_sass/theme/_theme.scss" />
         <option value="$PROJECT_DIR$/_javascript/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_sass/modules/_header.scss" />
+        <option value="$PROJECT_DIR$/_sass/modules/_megamenu.scss" />
       </list>
     </option>
   </component>
@@ -182,8 +184,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="245" />
-    <option name="width" value="1675" />
+    <option name="x" value="285" />
+    <option name="width" value="1635" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -301,18 +303,18 @@
       <workItem from="1554174316148" duration="2712000" />
       <workItem from="1554197818539" duration="44000" />
       <workItem from="1554198395308" duration="208000" />
-      <workItem from="1554260272465" duration="3893000" />
+      <workItem from="1554260272465" duration="23684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77355000" />
+    <option name="totallyTimeSpent" value="97146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="245" y="0" width="1675" height="1080" extended-state="0" />
+    <frame x="285" y="0" width="1635" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15044776" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15044776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -360,28 +362,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/icons/notification.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/news.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/question-mark-with-border.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/vendor/bootstrap/_type.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/vendor/bootstrap/mixins/_background-variant.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/Smile.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/vendor/bootstrap/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -479,12 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/settings.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/icons/chat-settings.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/vendor/_simplelightbox.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -544,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/pages/_404.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,17 +570,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_javascript/main.js">
+    <entry file="file://$PROJECT_DIR$/_sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="71" column="46" lean-forward="true" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
+        <state relative-caret-position="560">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/theme/_theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_javascript/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="105" column="10" lean-forward="true" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/_ionicons_svg_md-lock.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/_ionicons_svg_md-log-out.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/_ionicons_svg_md-settings.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/_ionicons_svg_md-report.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/chat-settings.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/icons/settings.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
+        <state relative-caret-position="692">
+          <caret line="580" column="68" lean-forward="true" selection-start-line="580" selection-start-column="68" selection-end-line="580" selection-end-column="68" />
           <folding>
             <element signature="n#section#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#2;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -622,17 +621,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/theme/_theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/_css/modules/_megamenu.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/modules/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="191" column="18" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+        <state relative-caret-position="184">
+          <caret line="88" column="18" lean-forward="true" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/modules/_megamenu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
         </state>
       </provider>
     </entry>

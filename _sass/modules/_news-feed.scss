@@ -86,6 +86,13 @@
   resize: none;
   box-shadow: 0 3px 20px 0 rgba(#D3D8E0, .4);
   padding: 30px 60px 30px 100px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    box-shadow: 0 3px 20px 0 rgba(#D3D8E0, .4);
+    border: 1px solid $border-color;
+  }
 }
 
 #insert-emoji {

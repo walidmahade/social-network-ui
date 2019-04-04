@@ -1,0 +1,66 @@
+#popup-chat {
+
+  display: none;
+
+  position: fixed;
+  bottom: 0;
+  right: 380px;
+  width: auto;
+  z-index: 99;
+
+  .popup-chat__window {
+    max-width: 300px;
+    height: 380px;
+    overflow: hidden;
+    bottom: 0;
+    transition: bottom .3s ease-out;
+
+    &.show-me {
+      bottom: 0 !important;
+    }
+  }
+
+  .popup-chat__window__messages {
+    overflow-y: auto;
+  }
+
+  .card {
+    border-radius: 10px 10px 0 0 ;
+  }
+  .card-head {
+    cursor: pointer;
+    height: 60px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .card-footer{
+    &:before {
+      content: none;
+    }
+  }
+  .su__pp {
+    width: 25px;
+  }
+  .close-chat-window {
+    width: 22px;
+    fill: $text-secondary;
+    svg:hover {
+      fill: $primary;
+    }
+  }
+
+  .popup-chat__window__messages {
+    p {
+      width: 85%;
+    }
+    .user-message {
+      background: rgba($primary, .15) !important;
+    }
+  }
+}
+
+#send-message-input {
+  border: 0;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}

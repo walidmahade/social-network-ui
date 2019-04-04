@@ -1,28 +1,65 @@
 jQuery(document).ready(function($) {
+    /**
+     * Popup Chat window toggle
+     */
+    const popupChatWindow = $(".popup-chat__window");
+    const popupChatWindowMessages = $('.popup-chat__window__messages');
+    const popupChatWindowHeight = popupChatWindow.height();
+    if (popupChatWindow.length) {
+        popupChatWindow.css('bottom', -popupChatWindowHeight + 60);
+        popupChatWindowMessages.scrollTop(popupChatWindowMessages[0].scrollHeight);
+        popupChatWindow.click(function () {
+            popupChatWindow.toggleClass('show-me');
+        });
+    }
     /*
         chat menu show hide toggle
    */
-   const chatWindow = $("#chat-window");
-   const chatWindowToggle = $("#chat-window-toggle");
-   // const chatList = $("#chat-list");
-   // console.log(chatWindow.height());
-   // intially keep chat window shinkred
-   setTimeout(function () {
-       chatWindow.css('bottom' , -chatWindow.height() + 60);
-   }, 1000);
+    let isChatPage = $('body').hasClass('page-chat');
 
-   function toggleChatWindow() {
-       if (chatWindow.hasClass('expanded')) {
-           chatWindow.css('bottom' , 0);
-       } else {
-           chatWindow.css('bottom' , -chatWindow.height() + 60);
+    if (!isChatPage) {
+       const chatWindow = $("#chat-window");
+       const chatWindowToggle = $("#chat-window-toggle");
+       // const chatList = $("#chat-list");
+       // console.log(chatWindow.height());
+       // intially keep chat window shinkred
+       setTimeout(function () {
+           chatWindow.css('bottom' , -chatWindow.height() + 65);
+       }, 1000);
+
+       function toggleChatWindow() {
+           if (chatWindow.hasClass('expanded')) {
+               chatWindow.css('bottom' , 0);
+           } else {
+               chatWindow.css('bottom' , -chatWindow.height() + 60);
+           }
        }
-   }
 
-   chatWindowToggle.click(function () {
-       chatWindow.toggleClass('expanded');
-       toggleChatWindow();
-   });
+       chatWindowToggle.click(function () {
+           chatWindow.toggleClass('expanded');
+           toggleChatWindow();
+       });
+    }
+
+   // chat page search bar
+    const searchActiveChat = $('#search-active-chat');
+    const searchActiveInput = searchActiveChat.children('#chat-search');
+
+    searchActiveChat.click(function () {
+        $(this).addClass('expand');
+    });
+
+    searchActiveInput.focusout(function () {
+        searchActiveChat.removeClass('expand');
+        this.value = '';
+    });
+    // chat page body scroll to latest
+    const chatWindow = $("#active-chat");
+    const chatWindowMessages = chatWindow.children('.active-chat__body');
+    if (chatWindow.length) {
+        chatWindowMessages.scrollTop(chatWindowMessages[0].scrollHeight);
+    }
+
 
    /*
         Mobile navigation sticky trigger
@@ -84,30 +121,6 @@ jQuery(document).ready(function($) {
     searchInput.focusin(function () {
         showHideSuggBox();
     });
-
-    /*
-    *   Dropdown menu toggle
-    */
-    // const dropdownMenuTrigger = $(".nav-item--has-dropdown > .nav-item--link");
-    // const megaMenu = $('.mw-megamenu');
-    //
-    // dropdownMenuTrigger.click(function (e) {
-    //     e.preventDefault();
-    //     let currentMegaMenu = $(this).siblings(megaMenu);
-    //     // hide all other dropdowns
-    //     megaMenu.removeClass('show');
-    //     // show-toggle clicked menus dropdown
-    //     currentMegaMenu.toggleClass('show');
-    //     e.stopPropagation();
-    // });
-    //
-    // megaMenu.click(function (e) {
-    //     e.stopPropagation();
-    // });
-    //
-    // $(document).click(function(){
-    //     $('.mw-megamenu.show').removeClass('show');
-    // });
 
     /*
     *   Notification dorpdowns

@@ -11,14 +11,48 @@
   }
 
   .profile-card {
+    position: relative;
+
     .user-profile__pp {
       width: 180px;
       min-width: 180px;
       overflow: hidden;
       margin: -90px 20px 0 0;
+      z-index: 4;
 
       img {
         width: 100%;
+      }
+    }
+
+    .card-head {
+      position: relative;
+    }
+    &__actions {
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem;
+
+      svg {
+        height: 25px;
+        width: 22px;
+      }
+
+      .btn-add-friend svg {
+        height: 26px;
+        width: 25px;
+      }
+
+      .btn {
+        background-color: #fff;
+        @extend .fs-14;
+
+        &:hover {
+          background-color: $primary;
+        }
+        .icon {
+          margin-left: 10px;
+        }
       }
     }
   }
@@ -136,19 +170,31 @@
 @media screen and (max-width: 767px) {
   .page-profile {
     .profile-card {
+      &__actions {
+        bottom: 10px;
+        right: 10px;
+        .text {
+          display: none;
+        }
+        .btn {
+          .icon {
+            margin-left: 0;
+          }
+        }
+      }
       .card-body {
         position: relative;
-        padding-top: 60px;
+        padding-top: 0;
         flex-wrap: wrap;
       }
       .user-profile__pp {
         width: 100px;
         min-width: 100px;
-        margin: 0;
-        top: -60px;
-        left: 50%;
-        transform: translateX(-50%);
-        position: absolute;
+        margin: 20px auto;
+        //top: 20px;
+        //left: 50%;
+        //transform: translateX(-50%);
+        //position: absolute;
       }
       .card-body__left,
       .card-body__right {
@@ -158,6 +204,7 @@
       }
       .card-body__left {
         margin-bottom: 1.25rem;
+        flex-direction: column;
       }
     }
 

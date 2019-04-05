@@ -84,11 +84,12 @@ jQuery(document).ready(function($) {
     const lightboxOverlay = $("#lightboxOverlay");
 
     function imageLightbox (img) {
+        lightbox.children('img').first().attr('src', img);
         lightboxOverlay.addClass('show-me');
         lightbox.addClass('show-me');
     }
 
-    $('.uf__post__image a').click(function (e) {
+    $('.uf__post__image a, .gallery-photo').click(function (e) {
         e.preventDefault();
         let imgAddress = $(this).attr('href');
         // console.log(imgAddress);

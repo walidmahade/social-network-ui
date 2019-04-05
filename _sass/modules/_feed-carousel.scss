@@ -3,12 +3,18 @@
   padding: 1.25rem .5rem;
   border-radius: 10px;
 
+  &__item {
+    overflow: hidden;
+  }
+
   .card-footer:before {
     content: none;
   }
 
   .user-profile {
     margin: 0 auto;
+    width: auto;
+    min-width: auto;
   }
 
   .btn {

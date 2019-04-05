@@ -3,10 +3,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  //width: 80%;
-  //max-width: 800px;
   opacity: 0;
   z-index: -1;
+  border-radius: 10px;
+  overflow: hidden;
+
+  img {
+    border-radius: 10px;
+  }
 
   &.show-me {
     z-index: 300;

@@ -1,7 +1,6 @@
 .page-profile {
-
   .main-content {
-    max-width: 900px;
+    max-width: 980px;
     width: 96%;
     margin-left: auto;
     margin-right: auto;
@@ -76,8 +75,30 @@
         }
       }
     }
+
+    // recent photos gallery
+    .card--recent-photos {
+      .gallery-photo {
+        width: 23%;
+        display: inline-block;
+        margin-bottom: 5px;
+
+        &:nth-last-child(1),
+        &:nth-last-child(2),
+        &:nth-last-child(3),
+        &:nth-last-child(4) {
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
   }
 
+  // friends tab content
   .friends-tab-content {
     padding: 0 .5rem;
 
@@ -92,5 +113,77 @@
         }
       }
     }
+  }
+
+  // photos tab content
+  .photos-tab-content {
+    margin-top: -10px;
+
+    .gallery-photo {
+      overflow: hidden;
+      width: 25%;
+      padding: 10px;
+
+      .img-thumbnail {
+          border-radius: 10px !important;
+      }
+    }
+  }
+
+}
+
+/*---- responsive styles -----*/
+@media screen and (max-width: 767px) {
+  .page-profile {
+    .profile-card {
+      .card-body {
+        position: relative;
+        padding-top: 60px;
+        flex-wrap: wrap;
+      }
+      .user-profile__pp {
+        width: 100px;
+        min-width: 100px;
+        margin: 0;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+      }
+      .card-body__left,
+      .card-body__right {
+        width: 100%;
+        text-align: center;
+        justify-content: center !important;
+      }
+      .card-body__left {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .profile-card__tabs {
+      margin-left: 0;
+      text-align: center;
+      .nav-pills {
+        justify-content: center;
+      }
+    }
+
+    // tab content
+    // friends tab content
+    .friends-tab-content {
+      .friend-card {
+        width: 47%;
+      }
+    }
+
+    // photos tab content
+    .photos-tab-content {
+      .gallery-photo {
+        width: 33.333333%;
+        padding: 5px;
+      }
+    }
+
   }
 }

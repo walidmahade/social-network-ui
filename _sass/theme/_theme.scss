@@ -23,6 +23,15 @@ body {
 //  display: block;
 //}
 
+input,
+textarea,
+.form-control {
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
 ::placeholder {
   color: $text-secondary!important;
 }

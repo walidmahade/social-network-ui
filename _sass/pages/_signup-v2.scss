@@ -53,6 +53,29 @@
       }
     }
   }
+
+  // login form header
+  .login-form {
+    //margin: 24px 0;
+    //position: relative;
+    .btn {
+      padding: 7px 15px;
+    }
+
+    .form-control {
+      @extend .fs-14;
+      width: 250px;
+      outline: none;
+      box-shadow: none;
+      border: none;
+
+      &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
 }
 
 .password-reset {
@@ -60,28 +83,6 @@
   //position: absolute;
   a:hover {
     color: $primary;
-  }
-}
-
-.login-form {
-  //margin: 24px 0;
-  //position: relative;
-  .btn {
-    padding: 7px 15px;
-  }
-
-  .form-control {
-    @extend .fs-14;
-    width: 250px;
-    outline: none;
-    box-shadow: none;
-    border: none;
-
-    &:focus {
-      border: none;
-      outline: none;
-      box-shadow: none;
-    }
   }
 }
 

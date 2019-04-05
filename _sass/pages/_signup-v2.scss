@@ -1,0 +1,172 @@
+.page-signup--v2 {
+  margin-top: 118px;
+  margin-bottom: 0px;
+  background-color: white;
+
+  .main-content {
+    height: calc(100vh - 118px);
+    min-height: 620px;
+    //overflow: scroll;
+  }
+
+  .left-col{
+    img {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  .right-col {
+    background-color: #fff;
+
+    input,
+    .form-control {
+      outline: none;
+      box-shadow: none;
+      @extend .fs-14;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .right-col-wrap {
+    width: 100%;
+    max-width: 500px;
+  }
+  // footer
+  .footer-links {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 1rem;
+
+    a {
+      @extend .text-dark;
+      padding-right: .8rem;
+
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  }
+}
+
+.password-reset {
+  text-decoration: underline;
+  //position: absolute;
+  a:hover {
+    color: $primary;
+  }
+}
+
+.login-form {
+  //margin: 24px 0;
+  //position: relative;
+  .btn {
+    padding: 7px 15px;
+  }
+
+  .form-control {
+    @extend .fs-14;
+    width: 250px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+
+    &:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+/*---- responsive styles ----*/
+@media screen and (max-width: 992px) {
+  .page-signup--v2 {
+    .header {
+      padding-left: 15px;
+      padding-right: 15px;
+      .container {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .brand {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .login-form {
+        width: 100%;
+
+        input.form-control {
+          width: auto;
+        }
+
+        .form-inline {
+          justify-content: center!important;
+        }
+        .password-reset {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .left-col {
+    width: 45%!important;
+    padding: 25px;
+  }
+  .right-col {
+    width: 55%!important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-signup--v2 {
+    margin-top: 200px;
+
+    .main-content {
+      flex-wrap: wrap;
+      //height: 100%;
+    }
+    .left-col {
+      width: 100% !important;
+      padding: 25px;
+      display: none !important;
+    }
+    .right-col {
+      width: 100% !important;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .page-signup--v2 {
+    //overflow-x: hidden;
+    .login-form {
+      input.form-control {
+        margin-bottom: 1rem;
+      }
+    }
+    .password-reset {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+
+    .footer-links {
+      position: relative;
+      left: 0px;
+      right: 0px;
+      transform: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

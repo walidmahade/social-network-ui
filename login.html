@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="page-login">
-<header class="header py-4 bg-white">
+<header class="header py-4 bg-dark">
     <div class="container py-1">
         <div class="row d-flex justify-content-between align-items-center">
             <div class="brand">
@@ -25,101 +25,47 @@
             </div>
 
             <div class="login-form">
-                <form class="form-inline justify-content-end">
-                    <div class="input-group">
-                        <label class="sr-only" for="inlineFormInputName2">Name</label>
-                        <input type="text" class="form-control mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-                    </div>
-
-                    <div class="input-group mr-sm-2">
-                        <label class="sr-only" for="loginpassword">Passsword</label>
-                        <input type="password" class="form-control" id="loginpassword" placeholder="password">
-                    </div>
-
-                    <button type="submit" class="btn btn-outline-dark fs-12">Sign In</button>
-                </form>
-                <div class="password-reset">
-                    <a href="#" class="text-light fs-12">Forgot Password?</a>
-                </div>
+                <a href="signup.html" class="btn btn-link text-white fs-12">Sign Up</a>
             </div>
         </div>
     </div>
     <!-- end container -->
 </header>
 
-<main class="main-content d-flex">
+<main class="main-content d-flex mt-4">
     <!-- ============  content =============== -->
-    <!--left column-->
-    <div class="w-50 left-col bg-primary d-flex justify-content-center align-items-center flex-column">
-        <div class="left-col-wrap text-center text-white">
-            <div class="brand">
-                <img src="img/award_logo.png" alt="" class="img-fluid">
-            </div>
-            <div class="brand my-5">
-                <img src="img/Recognition-Certificate.png" alt="" class="img-fluid">
-            </div>
-
-            <p class="mt-2">Awarded To</p>
-
-            <div class="brand">
-                <img src="img/logo.png" alt="" class="img-fluid">
-            </div>
-            <div class="divider mt-5"></div>
-            <div class="text-group mt-4">
-                <p class="fs-14">For finishing as</p>
-                <h3 class="fs-20 text-uppercase">Runner Up</h3>
-                <p class="fs-12 m-0">at the Gulf real Estate Awards 2019</p>
-                <p class="fs-12">In the Best Media and Communications Category</p>
-            </div>
-        </div>
-    </div>
-    <!--right column-->
-    <div class="w-50 right-col px-5 d-flex justify-content-start align-items-center flex-wrap">
-        <div class="right-col-wrap">
-            <h2 class="h3 font-weight-bold">Create an account</h2>
-            <p>See what’s happening in the world right now</p>
-            <form class="fs-14 my-4 py-2">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">First Name</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Last Name</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password">
-                </div>
-                <div class="form-group">
-                    <label for="password-confirm">Retype Password</label>
-                    <input type="password" class="form-control" id="password-confirm">
-                </div>
-                <div class="form-row disclaimer fs-12 mb-4 text-light">
+    <div class="container">
+        <div class="row my-5 p-5 fs-14 justify-content-center">
+            <div class="col-12 col-sm-10 col-md-6 col-lg-5 col-xl-4">
+                <form class="login-form">
                     <div class="form-group">
-                        By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive
-                        SMS notifications from us and can opt out at any time.
+                        <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
                     </div>
-                </div>
-                <button type="submit" class="btn btn-primary fs-14 text-white px-5">Sign Up</button>
-            </form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="sr-only">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline-dark fs-12">Sign In</button>
+                    </div>
+                    <div class="form-row ml-2">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                        <a href="#" class="forgot-password btn-link ml-4">Forgot Password?</a>
+                    </div>
+                </form>
+                <div class="divider"></div>
+                <div class="text-center">Not a member? <a href="signup.html" class="signup-page btn-link ml-4">Sign Up Now</a></div>
+            </div>
+            <!--column end-->
         </div>
-        <!--right col wrap end-->
-        <div class="footer-links w-auto fs-12 d-flex justify-content-start flex-wrap">
-            <a href="#" class="footer-links-item">About</a>
-            <a href="#" class="footer-links-item">Help Center</a>
-            <a href="#" class="footer-links-item">Blog</a>
-            <a href="#" class="footer-links-item">Status</a>
-            <a href="#" class="footer-links-item">Jobs</a>
-            <a href="#" class="footer-links-item">Terms</a>
-            <a href="#" class="footer-links-item">Privacy Policy</a>
-            <a href="#" class="footer-links-item">Advertise</a>
-            <a href="#" class="footer-links-item">Settings</a>
-        </div>
+        <!--row end-->
     </div>
-    <!--right col end-->
+    <!--container end-->
 </main>
 
 

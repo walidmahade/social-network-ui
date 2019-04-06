@@ -1,4 +1,20 @@
 jQuery(document).ready(function($) {
+    /*
+     * Add new post text are
+     */
+    const addNewPost = $("#add-new-post");
+    const addPostInput = $('#add-post');
+    addPostInput.focusin(function () {
+        addNewPost.addClass('focus-mobile');
+        addPostInput.animate({height: "200px"}, 200);
+    });
+    addPostInput.focusout(function () {
+        if (!addPostInput.val()) {
+            addNewPost.removeClass('focus-mobile');
+            addPostInput.animate({height: "110px"}, 200);
+        }
+    });
+
     /**
      * Popup Chat window toggle
      */
@@ -11,7 +27,7 @@ jQuery(document).ready(function($) {
         popupChatWindowMessages.scrollTop(popupChatWindowMessages[0].scrollHeight);
 
         popupChatWindow.children('.card-head').click(function () {
-            popupChatWindow.toggleClass('show-me');
+            $(this).parent(popupChatWindow).toggleClass('show-me');
         });
     }
     /*
@@ -78,6 +94,34 @@ jQuery(document).ready(function($) {
            $('body').removeClass('fixed-header--active');
        }
    });
+
+   // search bar show hide
+    const headerSearchBar = $(".header__search");
+
+    $(window).on("resize", function () {
+        checkScreenSize();
+    });
+
+    checkScreenSize();
+
+    function checkScreenSize(){
+        let newWindowWidth = $(window).width();
+        if (newWindowWidth < 576) {
+            let position = $(window).scrollTop();
+            // should start at 0
+            $(window).scroll(function() {
+                let scroll = $(window).scrollTop();
+                if (scroll < 75) {
+                    headerSearchBar.removeClass('hide-me');
+                } else if (scroll > position) {
+                    headerSearchBar.removeClass('hide-me');
+                } else {
+                    headerSearchBar.addClass('hide-me');
+                }
+                position = scroll;
+            });
+        }
+    }
 
    /*
     // lightbox

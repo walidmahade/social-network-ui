@@ -11,6 +11,7 @@
     left: 25px;
     top: 25px;
     width: 50px;
+    transition: .8s;
   }
 
   .custom-textarea {
@@ -21,6 +22,19 @@
   #custom-video-upload-input {
     visibility: hidden;
     width: 35px;
+  }
+
+  &.focus-mobile {
+    .user_info {
+      opacity: 0;
+      z-index: -1;
+    }
+    .add-post-textarea {
+      padding: 30px 40px 30px 30px;
+    }
+    #insert-emoji {
+      padding: 10px 10px 0 0;
+    }
   }
 }
 // general add post extention icons styles
@@ -86,6 +100,7 @@
   resize: none;
   box-shadow: 0 3px 20px 0 rgba(#D3D8E0, .4);
   padding: 30px 60px 30px 100px;
+  transition: .8s;
 
   &:focus,
   &:hover,
@@ -99,14 +114,17 @@
   position: absolute;
   right: 0;
   padding: 30px 30px 0 0;
+
   svg {
     height: 22px;
     width: 22px;
     cursor: pointer;
+
     * {
       fill: $icon-color;
       stroke: $icon-color;
     }
+
     &:hover {
       * {
         fill: $primary;
@@ -136,6 +154,15 @@
   [data-isVarified="false"] {
     opacity: 0;
     z-index: -1;
+  }
+
+  // post actions wrap
+  .uf__post__actions__wrap {
+    .text {
+      display: none;
+      font-size: 14px;
+      color: $text-muted;
+    }
   }
 
   &__actions__meta {
@@ -264,8 +291,22 @@
   }
 
 }
+.uf__post--no-posts {
+  svg {
+    width: 80px;
+    cursor: default;
+
+    &:hover {
+      * {
+        stroke: $icon-color;
+        fill: $icon-color;
+      }
+    }
+  }
+}
 
 // responsive styles
+
 @include media-breakpoint-up(sm) {
   .uf__post {
     .ufp__comment {
@@ -296,5 +337,63 @@
   .user-feed {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header__nav svg {
+    width: 18px;
+  }
+
+  .header__nav .nav-item--link {
+    padding: 5px 12px;
+    display: inline-block;
+  }
+
+  .uf__post {
+    .uf__post__actions__wrap {
+      flex-wrap: wrap;
+
+      .uf__post__actions {
+        width: 100%;
+        justify-content: space-between !important;
+        //margin-bottom: 15px;
+        padding: 0 15px;
+
+        .upa__item {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          &:last-child {
+            margin-right: 0 !important;
+          }
+        }
+      }
+
+      .text {
+        display: inline-block;
+        margin-left: 10px;
+        color: rgba(69, 69, 69, 0.4);
+      }
+
+      .uf__post__actions__meta {
+        display: none !important;
+      }
+
+    } // uf_post_wrap
+  } // uf_post
+
+  .ufp__comment__actions {
+    font-size: 12px;
+    line-height: 1.4 !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #notifications__mega-menu,
+  #messages__mega-menu,
+  #settings__mega-menu {
+    left: 0 !important;
   }
 }

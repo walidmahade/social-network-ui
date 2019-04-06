@@ -259,3 +259,38 @@ body {
     }
   }
 }
+@media screen and (max-width: 575px) {
+  .brand {
+    display: none;
+  }
+  .header__nav {
+    order: 1;
+    padding-top: 0;
+  }
+  .header__search {
+    order: 2;
+    margin-top: 10px;
+    &.hide-me {
+      display: none;
+    }
+  }
+  .header.sticky--active .header__search {
+    display: block;
+
+    &.hide-me {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .status-update-ext .input-group {
+    margin-right: 20px !important;
+  }
+  .status-update-ext .input-group:nth-last-child(1) {
+    margin-right: 0;
+  }
+  .status-update-ext svg {
+    width: 22px !important;
+  }
+}

@@ -47,6 +47,19 @@ textarea,
   border-radius: .2rem;
 }
 
+/*------- more info question mark btn style ---------*/
+.not-found-icon {
+  svg {
+    width: 80px;
+    cursor: default;
+    * {
+      fill: #D3D8E0;
+      stroke: #D3D8E0;
+    }
+  }
+}
+
+
 // responsive styles
 @include media-breakpoint-up(xl) {
   body {

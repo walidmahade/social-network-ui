@@ -3,6 +3,10 @@
   min-width: 330px;
 }
 
+.user-activity-mobile {
+  display: none;
+}
+
 .varified-badge {
   svg * {
     fill: $primary;
@@ -85,6 +89,146 @@
     .card {
       width: 100%;
       margin: 0 0 1rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .user-activity {
+    flex-wrap: wrap;
+  }
+  .user-activity-card {
+    width: 100%;
+    margin-bottom: 30px;
+    .card-title {
+      text-align: center;
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  // turn into carousel in mobile
+  #carousel-mobile-1,
+  #carousel-mobile-2 {
+    &.owl-carousel {
+      padding: 0 35px;
+
+      .suggested-user {
+        margin: 0 !important;
+        //justify-content: center!important;
+
+        .su__pp {
+          width: 50px;
+          min-width: 50px;
+        }
+
+        .su__send-fr {
+          margin-left: 25px;
+        }
+
+        .btn-group {
+          margin-top: 15px !important;
+        }
+      }
+
+      .su__view-all {
+        text-align: center;
+        padding-top: 15px;
+      }
+    } // when owl carousel active
+
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: white;
+      border: 1px solid $border-color;
+      border-radius: 10px;
+      padding: 4px 10px !important;
+      font-size: 30px;
+      color: $text-secondary;
+      &:hover {
+        background: $light;
+        color: $dark;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .owl-next {
+      right: -4px;
+    }
+    .owl-prev {
+      left: -4px;
+    }
+    .owl-dots {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #carousel-mobile-1,
+  #carousel-mobile-2 {
+    &.owl-carousel {
+      padding: 0;
+
+      .suggested-user {
+        margin: 0 !important;
+        justify-content: center!important;
+
+        .su__pp {
+          width: 50px;
+          min-width: 50px;
+        }
+      }
+    }
+    // when wl carousel active
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //position: absolute;
+      //bottom: -20px;
+      margin-top: 35px;
+    }
+    .owl-nav .owl-prev,
+    .owl-nav .owl-next {
+      position: relative;
+      left: auto;
+      transform: translateX(0);
+      background: white;
+      border-radius: 50%;
+      padding: 8px !important;
+      height: 40px;
+      width: 40px;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: $light;
+        color: $dark;
+      }
+      &:focus {
+        outline: none;
+      }
+
+      svg {
+        width: 17px;
+      }
+    }
+    .owl-next {
+      right: -4px;
+    }
+    .owl-prev {
+      left: -4px;
+    }
+    .owl-dots {
+      display: none;
     }
   }
 }

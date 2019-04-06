@@ -46,3 +46,12 @@
     right: 0;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .owl-carousel .owl-nav .owl-prev {
+    left: -6px;
+  }
+  .owl-carousel .owl-nav .owl-next {
+    right: -6px;
+  }
+}

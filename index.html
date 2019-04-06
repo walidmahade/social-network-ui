@@ -1538,13 +1538,13 @@
                 </section>
                 <!-- ============ end user feed ============ -->
                 <!--============ more user activity =============-->
-                <section class="col user-activity d-flex justify-content-between d-xl-block">
+                <section class="col user-activity d-flex justify-content-between d-xl-block" id="user-activity-col">
                     <!--card 1 -friend suggestions-->
-                    <div class="card" id="friends-suggestion">
+                    <div class="card user-activity-card" id="friends-suggestion">
                         <div class="card-body">
                             <h5 class="card-title">Connect Your feed</h5>
 
-                            <div class="suggested-users-group">
+                            <div class="suggested-users-group" id="carousel-mobile-1">
                                 <!--suggested user start-->
                                 <div class="suggested-user d-flex justify-content-start flex-wrap align-items-center mt-4 mb-4 req-sent">
                                     <div class="su__pp">
@@ -1659,11 +1659,11 @@
                     </div>
                     <!--end card-friend suggestions-->
                     <!--card 2 -friend suggestions-->
-                    <div class="card" id="pending-friends">
+                    <div class="card user-activity-card" id="pending-friends">
                         <div class="card-body">
                             <h5 class="card-title">Pending requests</h5>
 
-                            <div class="suggested-users-group user-pending-friends">
+                            <div class="suggested-users-group user-pending-friends" id="carousel-mobile-2">
                                 <!--suggested user start-->
                                 <div class="suggested-user d-flex justify-content-start align-items-center mt-4 mb-4 req-sent">
                                     <div class="su__pp">
@@ -1756,6 +1756,7 @@
                         </div>
                     </div>
                     <!--end card-friend suggestions-->
+
                 </section>
                 <!--============ more user activity end =============-->
                 <!--row end-->
@@ -1901,7 +1902,7 @@
     <div id="popup-chat">
         <!--max-window allowed to be open 2-->
         <!--window 1-->
-        <div class="popup-chat__window card" data-chat-window="1">
+        <div class="popup-chat__window card user-is-active" data-chat-window="1">
             <div class="card-head px-3 py-2">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="su__pp">
@@ -2013,7 +2014,7 @@
         </div>
 
         <!------window 2------>
-        <div class="popup-chat__window card" data-chat-window="2">
+        <div class="popup-chat__window card user-is-active" data-chat-window="2">
             <div class="card-head px-3 py-2">
                 <div class="d-flex justify-content-start align-items-center">
                     <div class="su__pp">

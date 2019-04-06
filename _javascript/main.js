@@ -5,10 +5,12 @@ jQuery(document).ready(function($) {
     const popupChatWindow = $(".popup-chat__window");
     const popupChatWindowMessages = $('.popup-chat__window__messages');
     const popupChatWindowHeight = popupChatWindow.height();
+
     if (popupChatWindow.length) {
         popupChatWindow.css('bottom', -popupChatWindowHeight + 60);
         popupChatWindowMessages.scrollTop(popupChatWindowMessages[0].scrollHeight);
-        popupChatWindow.click(function () {
+
+        popupChatWindow.children('.card-head').click(function () {
             popupChatWindow.toggleClass('show-me');
         });
     }

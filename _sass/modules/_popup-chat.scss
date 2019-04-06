@@ -1,7 +1,4 @@
 #popup-chat {
-
-  display: none;
-
   position: fixed;
   bottom: 0;
   right: 380px;
@@ -18,6 +15,35 @@
     &.show-me {
       bottom: 0 !important;
     }
+
+    &__actions {
+      height: 32px;
+
+      svg {
+        width: 20px;
+        * {
+          fill: $icon-color;
+          stroke: $icon-color;
+        }
+      }
+    }
+
+    .action-item {
+      margin-right: 10px;
+    }
+    .custom-video-upload svg {
+      width: 25px;
+    }
+    .vocie-call {
+      margin-top: -4px;
+      svg {
+        width: 16px;
+      }
+    }
+    .send-emoji {
+      margin-top: -7px;
+    }
+
   }
 
   .popup-chat__window__messages {
@@ -33,6 +59,7 @@
     border-bottom: 1px solid #ebebeb;
   }
   .card-footer{
+    padding: 10px 15px 2px 15px;
     &:before {
       content: none;
     }
@@ -63,4 +90,10 @@
   background: transparent;
   outline: none;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  #popup-chat {
+    display: none;
+  }
 }

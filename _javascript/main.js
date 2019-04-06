@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
     const popupChatWindowHeight = popupChatWindow.height();
 
     if (popupChatWindow.length) {
-        popupChatWindow.css('bottom', -popupChatWindowHeight + 60);
+        popupChatWindow.css('bottom', -popupChatWindowHeight + 41);
         popupChatWindowMessages.scrollTop(popupChatWindowMessages[0].scrollHeight);
 
         popupChatWindow.children('.card-head').click(function () {
@@ -26,14 +26,14 @@ jQuery(document).ready(function($) {
        // console.log(chatWindow.height());
        // intially keep chat window shinkred
        setTimeout(function () {
-           chatWindow.css('bottom' , -chatWindow.height() + 65);
+           chatWindow.css('bottom' , -chatWindow.height() + 45);
        }, 1000);
 
        function toggleChatWindow() {
            if (chatWindow.hasClass('expanded')) {
                chatWindow.css('bottom' , 0);
            } else {
-               chatWindow.css('bottom' , -chatWindow.height() + 60);
+               chatWindow.css('bottom' , -chatWindow.height() + 45);
            }
        }
 

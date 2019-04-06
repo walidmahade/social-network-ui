@@ -34,9 +34,9 @@ $cwhHeight: 60px;
   }
 
   .card-head {
-    padding: 1.25rem;
+    padding: 10px 1.25rem ;
     border-bottom: 1px solid #ebebeb;
-    height: $cwhHeight;
+    //height: $cwhHeight;
 
     [data-new-message='true'] {
       position: relative;

@@ -29,7 +29,7 @@
     }
 
     .action-item {
-      margin-right: 10px;
+      margin-right: 15px;
     }
     .custom-video-upload svg {
       width: 25px;
@@ -55,7 +55,7 @@
   }
   .card-head {
     cursor: pointer;
-    height: 60px;
+    height: 42px;
     border-bottom: 1px solid #ebebeb;
   }
   .card-footer{
@@ -76,11 +76,54 @@
   }
 
   .popup-chat__window__messages {
-    p {
-      width: 85%;
+    .message__body {
+      width: 90%;
+      .text {
+        @extend .fs-14;
+        @extend .rounded-sm;
+        padding: 15px;
+        margin-bottom: 10px;
+      }
+      .message__time {
+        @extend .fs-12;
+      }
     }
-    .user-message {
-      background: rgba($primary, .15) !important;
+
+    .received-message {
+      .user_info {
+        width: 30px;
+        min-width: 30px;
+      }
+      .message__body {
+        .text {
+          background: #f8f9fa;
+        }
+      }
+      .message__time {
+        text-align: right;
+      }
+    }
+
+    .sent-message{
+      .message__body {
+        margin-left: auto;
+        .text {
+          background: #E3EFFF;
+        }
+      }
+    }
+
+    // sticker message styles
+    .sent-message,
+    .received-message {
+      &--has-sticker {
+        align-items: center;
+        .message__body {
+          background: white;
+          padding: 0;
+          width: 150px;
+        }
+      }
     }
   }
 }

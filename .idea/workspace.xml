@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8adbf968-a06a-435d-bb77-8e3bf6515346" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -278,12 +277,12 @@
       <workItem from="1554440601953" duration="1504000" />
       <workItem from="1554442531710" duration="22801000" />
       <workItem from="1554525573156" duration="4827000" />
-      <workItem from="1554537288661" duration="1046000" />
+      <workItem from="1554537288661" duration="1113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153616000" />
+    <option name="totallyTimeSpent" value="153683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="158" y="0" width="1759" height="1080" extended-state="0" />
@@ -684,7 +683,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>

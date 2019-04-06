@@ -23,7 +23,7 @@
   position: absolute;
   top: 11px !important;
   left: 0;
-  width: 500px;
+  width: 400px;
   max-height: 70vh;
   @extend .card;
   overflow: visible;
@@ -48,16 +48,25 @@
     overflow-y: auto;
 
     &::-webkit-scrollbar {
-      //width: 1em;
+      width: 8px;
+      border-radius: 50px;
     }
 
     &::-webkit-scrollbar-track {
       -webkit-box-shadow: none;
+      border-radius: 50px;
     }
 
     &::-webkit-scrollbar-thumb {
-      //background-color: transparent;
+      background-color: white;
       outline: none;
+      border-radius: 50px;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: $border-color;
+      }
     }
   }
 
@@ -72,7 +81,7 @@
     }
 
     &:hover {
-      background-color: rgba($primary, 0.05);
+      background-color: rgba($primary, 0.05)  !important;
     }
 
     &__link {
@@ -80,7 +89,7 @@
       justify-content: flex-start;
       align-content: flex-start;
       color: $text-primary;
-      padding: 20px;
+      padding: 10px 15px;
 
       &:hover {
         color: $text-primary;
@@ -89,17 +98,37 @@
 
     .notification-body {
       margin-left: 1rem;
+      font-size: 14px;
     }
 
     &.seen {
-      background-color: white;
+      background-color: #ffffff;
+    }
+  }
+
+  //megamenu footer
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 30px 3px rgba(0,0,0,.1);
+    background-color: #ffffff;
+
+    .btn {
+      border-radius: 0 0 10px 10px;
+      background-color: #ffffff;
+      border: 0;
+      &:hover {
+        border: 0;
+        background-color: rgba($primary, .1);
+      }
     }
   }
 
   // svg icons
   svg {
     fill: $icon-color;
-    width: 50px;
+    width: 32px;
   }
 }
 // all seen btn style
@@ -139,7 +168,7 @@
 
 /*--- settings mega menu styles ---*/
 #more-options-dowpdown {
-  width: 300px;
+  width: 240px;
   top: 15px !important;
   border-radius: 10px 0 10px 10px;
   .mw-megamenu__line__item {

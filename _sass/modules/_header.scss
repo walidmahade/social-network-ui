@@ -13,9 +13,14 @@
   position: relative;
   input {
     padding-right: 40px;
+
     &::placeholder {
       @extend .fs-14;
       font-weight: 600;
+    }
+
+    &.dropdown-visible {
+      border-radius: .25rem .25rem 0 0;
     }
   }
 

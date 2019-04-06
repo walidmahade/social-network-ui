@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8adbf968-a06a-435d-bb77-8e3bf6515346" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/_javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/modules/_chat-window.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/modules/_chat-window.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/modules/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/modules/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_sass/modules/_popup-chat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/modules/_popup-chat.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.min.js.map" afterDir="false" />
     </list>
@@ -22,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="1896" column="45" selection-start-line="1896" selection-start-column="45" selection-end-line="1896" selection-end-column="45" />
+            <state relative-caret-position="301">
+              <caret line="1900" column="22" lean-forward="true" selection-start-line="1900" selection-start-column="22" selection-end-line="1900" selection-end-column="22" />
               <folding>
                 <element signature="n#section#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#1;n#section#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -44,27 +45,25 @@
                 <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_sass/modules/_popup-chat.scss">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/modules/_chat-window.scss">
+        <entry file="file://$PROJECT_DIR$/_sass/modules/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="711">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -72,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_javascript/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="73">
+              <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -90,8 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nav-item--user</find>
-      <find>text</find>
       <find>border</find>
       <find>textare</find>
       <find>padding</find>
@@ -110,7 +107,6 @@
       <find>form</find>
       <find>.left</find>
       <find>footer</find>
-      <find>input</find>
       <find>.footer</find>
       <find>&lt;div class=&quot;col-12 col-md-4 friend-card&quot;&gt;</find>
       <find>light</find>
@@ -120,6 +116,9 @@
       <find>profile-card</find>
       <find>chat-wi</find>
       <find>popup</find>
+      <find>input</find>
+      <find>ajax</find>
+      <find>search</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;div class=&quot;comment__author h5 fs-20&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;text-dark&quot;&gt;Alan Walker&lt;/a&gt;&lt;/div&gt;</replace>
@@ -134,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/img/icons/checkmark.svg" />
         <option value="$PROJECT_DIR$/img/icons/add-friend-icon.svg" />
         <option value="$PROJECT_DIR$/img/icons/photo.svg" />
         <option value="$PROJECT_DIR$/img/icons/video.svg" />
@@ -158,7 +156,6 @@
         <option value="$PROJECT_DIR$/_sass/modules/_footer.scss" />
         <option value="$PROJECT_DIR$/404.html" />
         <option value="$PROJECT_DIR$/_sass/vendor/animate.min.css" />
-        <option value="$PROJECT_DIR$/_sass/modules/_header.scss" />
         <option value="$PROJECT_DIR$/_sass/modules/_megamenu.scss" />
         <option value="$PROJECT_DIR$/_sass/modules/_news-feed.scss" />
         <option value="$PROJECT_DIR$/img/icons/triple-dot.svg" />
@@ -182,9 +179,11 @@
         <option value="$PROJECT_DIR$/profile-v2.html" />
         <option value="$PROJECT_DIR$/_sass/pages/_profile.scss" />
         <option value="$PROJECT_DIR$/_sass/modules/_chat-window.scss" />
-        <option value="$PROJECT_DIR$/_javascript/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_sass/modules/_popup-chat.scss" />
+        <option value="$PROJECT_DIR$/_sass/modules/_header.scss" />
+        <option value="$PROJECT_DIR$/_javascript/main.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -285,18 +284,19 @@
       <workItem from="1554400040760" duration="15731000" />
       <workItem from="1554440601953" duration="1504000" />
       <workItem from="1554442531710" duration="22801000" />
-      <workItem from="1554525573156" duration="3739000" />
+      <workItem from="1554525573156" duration="4827000" />
+      <workItem from="1554537288661" duration="947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151482000" />
+    <option name="totallyTimeSpent" value="153517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="158" y="0" width="1759" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12734509" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16941445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -311,7 +311,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.40075615" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.40075615" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -344,16 +344,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/simple-lightbox.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/components/_user-profile.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -433,13 +423,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_css/modules/_megamenu.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/modules/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="88" column="18" lean-forward="true" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/img/icons/_ionicons_svg_md-close.svg">
       <provider selected="true" editor-type-id="images" />
@@ -649,24 +632,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_javascript/main.js">
+    <entry file="file://$PROJECT_DIR$/_sass/modules/_chat-window.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="1640">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/modules/_chat-window.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/modules/_popup-chat.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="41" column="25" lean-forward="true" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+        <state relative-caret-position="273">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_javascript/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/modules/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="1896" column="45" selection-start-line="1896" selection-start-column="45" selection-end-line="1896" selection-end-column="45" />
+        <state relative-caret-position="301">
+          <caret line="1900" column="22" lean-forward="true" selection-start-line="1900" selection-start-column="22" selection-end-line="1900" selection-end-column="22" />
           <folding>
             <element signature="n#section#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#section#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
@@ -687,16 +684,14 @@
             <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/modules/_popup-chat.scss">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>

@@ -66,6 +66,17 @@
   }
   .su__pp {
     width: 25px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      right: -3px;
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: #469A1F;
+    }
   }
   .close-chat-window {
     width: 22px;
@@ -91,8 +102,8 @@
 
     .received-message {
       .user_info {
-        width: 30px;
-        min-width: 30px;
+        width: 22px;
+        min-width: 22px;
       }
       .message__body {
         .text {
@@ -133,6 +144,7 @@
   background: transparent;
   outline: none;
   width: 100%;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 767px) {

@@ -110,8 +110,10 @@ jQuery(document).ready(function($) {
 
     function showHideSuggBox() {
         if (searchInput.val() === null || searchInput.val() === "") {
+            searchInput.removeClass('dropdown-visible');
             searchSuggBox.removeClass('show');
         } else {
+            searchInput.addClass('dropdown-visible');
             searchSuggBox.addClass('show');
         }
     }
@@ -119,6 +121,7 @@ jQuery(document).ready(function($) {
         showHideSuggBox();
     });
     searchInput.focusout(function () {
+        searchInput.removeClass('dropdown-visible');
         searchSuggBox.removeClass('show');
     });
     searchInput.focusin(function () {

@@ -1,0 +1,28 @@
+.page-settings {
+  .list-group-item {
+    position: relative;
+    transition: .3s;
+
+    &:after {
+      content: '';
+      background-image: url("../img/next.png");
+      height: 12px;
+      width: 12px;
+      background-size: 11px 11px;
+      position: absolute;
+      right: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.active {
+      background: transparent;
+      color: inherit;
+      border-color: $border-color;
+
+      &:after {
+        background-image: url("../img/down-arrow.png");
+      }
+    }
+  }
+}

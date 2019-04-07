@@ -16147,6 +16147,37 @@ body.fixed-header--active {
     margin: .7% 0;
   }
 }
+/* line 2, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
+.page-settings .list-group-item {
+  position: relative;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+/* line 6, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
+.page-settings .list-group-item:after {
+  content: '';
+  background-image: url("../img/next.png");
+  height: 12px;
+  width: 12px;
+  background-size: 11px 11px;
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 18, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
+.page-settings .list-group-item.active {
+  background: transparent;
+  color: inherit;
+  border-color: #ebebeb;
+}
+/* line 23, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
+.page-settings .list-group-item.active:after {
+  background-image: url("../img/down-arrow.png");
+}
 
 
 

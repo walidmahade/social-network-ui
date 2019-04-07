@@ -609,9 +609,47 @@
         <div class="container">
             <div class="row">
                 <!--settings menu column-->
-                <div class="col-12 col-lg-3 col-xl-4"></div>
+                <div class="col-12 col-lg-3 col-xl-4">
+                    <div class="list-group settings-tab-menu" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-account-list" data-toggle="list" href="#list-account" role="tab" aria-controls="account">
+                            Account
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                            Privacy & Security
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                            Password
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-notification-list" data-toggle="list" href="#list-notification" role="tab" aria-controls="notification">
+                            Notifications
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-ads-list" data-toggle="list" href="#list-ads" role="tab" aria-controls="ads">
+                            Ads
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-block-list" data-toggle="list" href="#list-block" role="tab" aria-controls="block">
+                            Block List
+                        </a>
+                        <a class="list-group-item list-group-item-action" id="list-videos-list" data-toggle="list" href="#list-videos" role="tab" aria-controls="videos">
+                            Videos
+                        </a>
+                    </div>
+                </div>
                 <!--settings menu column end-->
                 <!--settings content-->
+                <div class="col-12 col-lg-9 col-xl-8">
+                    <div class="tab-content settings-tab-content card" id="v-pills-tabContent">
+                        <div class="tab-content card-body" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-account" role="tabpanel" aria-labelledby="list-account-list">1</div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">2</div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">3</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">4</div>
+                            <div class="tab-pane fade" id="list-notification" role="tabpanel" aria-labelledby="list-notification-list">4</div>
+                            <div class="tab-pane fade" id="list-ads" role="tabpanel" aria-labelledby="list-ads-list">4</div>
+                            <div class="tab-pane fade" id="list-block" role="tabpanel" aria-labelledby="list-block-list">4</div>
+                            <div class="tab-pane fade" id="list-videos" role="tabpanel" aria-labelledby="list-videos-list">4</div>
+                        </div>
+                    </div>
+                </div>
                 <!--settings content end-->
             </div>
             <!--row end-->

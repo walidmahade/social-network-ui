@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8adbf968-a06a-435d-bb77-8e3bf6515346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/pages/_settigns.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/modules/_chat-window.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/modules/_chat-window.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/pages/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/pages/_profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-v2.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-v2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepros-6.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros-6.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/settings.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="613" column="39" lean-forward="true" selection-start-line="613" selection-start-column="39" selection-end-line="613" selection-end-column="39" />
+            <state relative-caret-position="768">
+              <caret line="644" column="94" lean-forward="true" selection-start-line="644" selection-start-column="94" selection-end-line="644" selection-end-column="94" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
@@ -101,6 +100,15 @@
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/pages/_settigns.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -163,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/img/icons/question-mark.svg" />
         <option value="$PROJECT_DIR$/img/question-mark.svg" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/js/main.min.js" />
@@ -194,7 +201,6 @@
         <option value="$PROJECT_DIR$/index-empty.html" />
         <option value="$PROJECT_DIR$/404.html" />
         <option value="$PROJECT_DIR$/_sass/base/_helpers.scss" />
-        <option value="$PROJECT_DIR$/_sass/main.scss" />
         <option value="$PROJECT_DIR$/img/icons/checked-circle.svg" />
         <option value="$PROJECT_DIR$/_sass/vendor/bootstrap/_customize.scss" />
         <option value="$PROJECT_DIR$/_sass/components/_lightbox.scss" />
@@ -213,6 +219,8 @@
         <option value="$PROJECT_DIR$/_sass/pages/_profile.scss" />
         <option value="$PROJECT_DIR$/profile-v2.html" />
         <option value="$PROJECT_DIR$/profile.html" />
+        <option value="$PROJECT_DIR$/_sass/main.scss" />
+        <option value="$PROJECT_DIR$/_sass/pages/_settigns.scss" />
         <option value="$PROJECT_DIR$/settings.html" />
       </list>
     </option>
@@ -242,13 +250,13 @@
             <path>
               <item name="Project-teb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project-teb" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Project-teb" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project-teb" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="about-company-logos" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -328,12 +336,12 @@
       <workItem from="1554525573156" duration="4827000" />
       <workItem from="1554537288661" duration="22846000" />
       <workItem from="1554602440238" duration="11971000" />
-      <workItem from="1554630080988" duration="5060000" />
+      <workItem from="1554630080988" duration="7341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192447000" />
+    <option name="totallyTimeSpent" value="194728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="342" y="0" width="1578" height="1080" extended-state="0" />
@@ -387,9 +395,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/icons/double-checkmark.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/icons/double-checkmark.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -549,13 +554,6 @@
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#svg#0;n#button#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -825,6 +823,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -893,10 +898,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/pages/_settigns.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="613" column="39" lean-forward="true" selection-start-line="613" selection-start-column="39" selection-end-line="613" selection-end-column="39" />
+        <state relative-caret-position="768">
+          <caret line="644" column="94" lean-forward="true" selection-start-line="644" selection-start-column="94" selection-end-line="644" selection-end-column="94" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />

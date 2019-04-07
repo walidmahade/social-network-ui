@@ -228,7 +228,7 @@
 @media screen and (max-width: 1024px) {
   #popup-chat {
     .popup-chat__window {
-      &:nth-child(2) {
+      &[data-chat-window="2"] {
         display: none;
       }
     }

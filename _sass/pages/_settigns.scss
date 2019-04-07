@@ -1,4 +1,6 @@
 .page-settings {
+  margin-bottom: 160px;
+
   .list-group-item {
     position: relative;
     transition: .3s;
@@ -22,6 +24,50 @@
 
       &:after {
         background-image: url("../img/down-arrow.png");
+      }
+    }
+  }
+
+  .form-group--label {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    &.has-checkbox {
+      align-items: flex-start;
+    }
+
+    label {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-check-input {
+    position: static;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .deactivate-btn {
+    &:hover {
+      background-color: rgba($primary, .1)!important;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .page-settings {
+    .settings-tab-menu {
+      margin-top: 25px;
+    }
+
+    .form-check-label {
+      width: 87%;
+    }
+    .card-body-wrap {
+      .card-body {
+        margin: 0 !important;
       }
     }
   }

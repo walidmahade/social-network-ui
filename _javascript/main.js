@@ -29,6 +29,12 @@ jQuery(document).ready(function($) {
         popupChatWindow.children('.card-head').click(function () {
             $(this).parent(popupChatWindow).toggleClass('show-me');
         });
+
+        const chatWindowToggleCloseIcon = $(".close-chat-window");
+        chatWindowToggleCloseIcon.click(function (e) {
+            e.stopImmediatePropagation();
+            $(this).closest(popupChatWindow).remove();
+        });
     }
     /*
         chat menu show hide toggle
@@ -38,6 +44,7 @@ jQuery(document).ready(function($) {
     if (!isChatPage) {
        const chatWindow = $("#chat-window");
        const chatWindowToggle = $("#chat-window-toggle");
+
        // const chatList = $("#chat-list");
        // console.log(chatWindow.height());
        // intially keep chat window shinkred

@@ -7949,7 +7949,7 @@ button.bg-dark:focus {
 }
 
 /* line 61, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/vendor/bootstrap/utilities/_borders.scss */
-.rounded-lg, .active-chat__body__message, .active-chat__body__message .user__message__item {
+.rounded-lg, .page-chat #chat-window .chat-window__online__user, .active-chat__body__message, .active-chat__body__message .user__message__item {
   border-radius: 0.625rem !important;
 }
 
@@ -14414,7 +14414,6 @@ body.fixed-header--active {
 }
 /* line 37, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
 #chat-window .card-head {
-  padding: 10px 1.25rem;
   border-bottom: 1px solid #ebebeb;
 }
 /* line 42, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
@@ -14425,27 +14424,41 @@ body.fixed-header--active {
 #chat-window .card-head [data-new-message='true']:after {
   content: '';
   position: absolute;
-  right: -10px;
-  top: -2px;
+  right: 50px;
+  top: 10px;
   height: 8px;
   width: 8px;
   border-radius: 50%;
   background-color: #469A1F;
 }
-/* line 57, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
-#chat-window .card-head .icon svg {
+/* line 56, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+#chat-window .card-head .card-head__left {
+  width: 65%;
+  padding: 10px 0 10px 1.25rem;
+}
+/* line 60, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+#chat-window .card-head .card-head__right {
+  width: auto;
+  padding: 10px 1.25rem 10px 0;
+}
+/* line 66, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+#chat-window .card-head .icons svg {
   width: 18px;
   cursor: pointer;
 }
-/* line 60, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
-#chat-window .card-head .icon svg * {
+/* line 69, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+#chat-window .card-head .icons svg * {
   fill: rgba(69, 69, 69, 0.4);
 }
-/* line 64, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
-#chat-window .card-head .icon svg:hover * {
+/* line 73, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+#chat-window .card-head .icons svg:hover * {
   fill: #EFB200;
 }
-/* line 73, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+/* line 79, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+#chat-window .card-head .icons .icon__settings svg {
+  width: 22px;
+}
+/* line 87, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
 #chat-window .chat-window__online .user__pp:after {
   content: '';
   position: absolute;
@@ -14456,16 +14469,16 @@ body.fixed-header--active {
   border-radius: 50%;
   background-color: #469A1F;
 }
-/* line 84, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+/* line 98, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
 #chat-window .user__pp {
   width: 50px;
   position: relative;
 }
-/* line 89, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+/* line 103, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
 #chat-window .search__chat-list {
   position: relative;
 }
-/* line 93, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+/* line 107, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
 #chat-window .search__icon,
 #chat-window .chat-settings {
   position: absolute;
@@ -14475,24 +14488,24 @@ body.fixed-header--active {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 99, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+/* line 113, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
 #chat-window .search__icon svg,
 #chat-window .chat-settings svg {
   width: 16px;
 }
-/* line 104, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+/* line 118, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
 #chat-window .chat-settings {
   right: 10px;
   left: auto;
 }
 
-/* line 111, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+/* line 125, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
 #chat-window-toggle {
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  /* line 117, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
+  /* line 131, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_chat-window.scss */
   #chat-window {
     width: 260px;
     right: 20px;
@@ -15341,46 +15354,70 @@ body.fixed-header--active {
   height: 100%;
   padding-bottom: 1.25rem;
 }
-/* line 18, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 19, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-window .card-body {
   overflow: hidden;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
-/* line 22, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 25, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+.page-chat #chat-window .search__chat-list {
+  margin: 0 20px;
+}
+/* line 29, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-window .chat-window__online {
   overflow: auto;
   height: 100%;
   margin: 1.25rem 0;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
-/* line 28, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 35, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-window .chat-window__online::-webkit-scrollbar {
   width: 8px;
   border-radius: 50px;
 }
-/* line 33, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 40, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-window .chat-window__online::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
   border-radius: 50px;
 }
-/* line 38, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 45, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-window .chat-window__online::-webkit-scrollbar-thumb {
   background-color: white;
   outline: none;
   border-radius: 50px;
 }
-/* line 45, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 52, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-window .chat-window__online:hover::-webkit-scrollbar-thumb {
   background-color: #ebebeb;
 }
-/* line 50, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 57, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-window .chat-window__online__user {
-  padding-right: 2rem;
+  margin: 0 20px !important;
+  padding: 15px 20px;
+  cursor: pointer;
 }
-/* line 52, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 63, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+.page-chat #chat-window .chat-window__online__user:hover {
+  background: rgba(239, 178, 0, 0.1);
+}
+/* line 68, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+.page-chat #chat-window .chat-window__online__user .su__workplace__title:hover {
+  color: initial !important;
+}
+/* line 73, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-window .chat-window__online__user:first-child {
   margin-top: 0 !important;
 }
-/* line 60, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 77, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+.page-chat #chat-window .chat-window__online__user .user__pp:after {
+  background: #D3D8E0;
+}
+/* line 80, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+.page-chat #chat-window .chat-window__online__user .user__pp.on:after {
+  background-color: #469A1F;
+}
+/* line 89, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat #chat-page-container {
   position: fixed;
   top: 50%;
@@ -15393,65 +15430,69 @@ body.fixed-header--active {
   height: calc(100vh - 100px);
   overflow: hidden;
 }
-/* line 73, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 102, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .page-chat .chat-window__online {
   overflow: auto;
 }
+/* line 107, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+.page-chat #chat-window .card-head [data-new-message='true']:after {
+  content: none;
+}
 
 /*------ active chat styles -----*/
-/* line 79, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 113, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 #active-chat {
   overflow: hidden;
   height: calc(100vh - 100px);
   padding: 0 1.8rem;
 }
-/* line 84, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 118, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 #active-chat .active-chat__head {
   height: 67px;
 }
-/* line 87, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 121, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 #active-chat .active-chat__body {
   height: calc( 100% - 176px);
 }
-/* line 90, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 124, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 #active-chat .active-chat__footer {
   height: 70px;
 }
 
-/* line 96, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 130, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__head {
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(235, 235, 235, 0.5);
 }
 
-/* line 101, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 135, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-/* line 104, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 138, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options__item {
   cursor: pointer;
 }
-/* line 108, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 142, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options svg {
   width: 22px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
 }
-/* line 112, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 146, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options svg * {
   fill: #D3D8E0;
   stroke: #D3D8E0;
 }
-/* line 118, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 152, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options svg:hover * {
   fill: #EFB200;
   stroke: #EFB200;
 }
-/* line 126, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 160, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options .search {
   position: relative;
   width: 30px;
@@ -15460,15 +15501,15 @@ body.fixed-header--active {
   transition: width .3s ease-in-out;
   cursor: pointer;
 }
-/* line 132, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 166, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options .search.expand {
   width: 250px;
 }
-/* line 135, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 169, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options .search.expand #chat-search {
   padding-left: 2.5rem;
 }
-/* line 140, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 174, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options .search label {
   position: absolute;
   top: 50%;
@@ -15478,13 +15519,13 @@ body.fixed-header--active {
   transform: translateY(-50%);
   cursor: pointer;
 }
-/* line 153, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 187, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options #chat-search {
   border: 0;
   width: 100%;
   padding-left: 1.5rem;
 }
-/* line 158, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 192, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options #chat-search ::-webkit-input-placeholder {
   color: white;
 }
@@ -15497,7 +15538,7 @@ body.fixed-header--active {
 .active-chat__options #chat-search ::placeholder {
   color: white;
 }
-/* line 165, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 199, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__options #chat-search:focus ::-webkit-input-placeholder {
   color: #6c757d;
 }
@@ -15511,7 +15552,7 @@ body.fixed-header--active {
   color: #6c757d;
 }
 
-/* line 173, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 207, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body {
   margin-top: 1.5rem;
   overflow: auto;
@@ -15519,7 +15560,7 @@ body.fixed-header--active {
   padding-right: 1.5rem;
   margin-bottom: 15px;
 }
-/* line 180, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 214, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body__message {
   width: auto;
   max-width: 85%;
@@ -15531,51 +15572,51 @@ body.fixed-header--active {
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
-/* line 190, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 224, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body__message.has-sticker {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
-/* line 194, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 228, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body__message .user__message__item {
   padding: 1.25rem;
   margin-bottom: 8px;
 }
-/* line 199, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 233, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body__message .user__message__item--sticker {
   background-color: transparent !important;
 }
-/* line 202, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 236, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body__message .user__message__item .sticker {
   max-width: 150px;
 }
-/* line 208, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 242, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .user__profile {
   margin-right: 1.5rem;
   width: 40px;
   min-width: 40px;
 }
-/* line 214, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 248, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .received {
   margin-right: auto;
 }
-/* line 217, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 251, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .received .user__message__item {
   background: #f8f9fa;
 }
-/* line 222, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 256, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .sent {
   margin-left: auto;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-/* line 226, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 260, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .sent .user__message__item {
   background: #E3EFFF;
 }
-/* line 230, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 264, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .sent .user__profile {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
@@ -15583,48 +15624,48 @@ body.fixed-header--active {
   margin-right: 0;
   margin-left: 1.5rem;
 }
-/* line 235, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 269, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .sent .user__message {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
 }
-/* line 239, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 273, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .sent .message__time {
   -webkit-box-ordinal-group: 1;
   -ms-flex-order: 0;
   order: 0;
   margin: 0 1.25rem 0 0;
 }
-/* line 245, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 279, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body .message__time {
   margin-left: 1.25rem;
 }
-/* line 250, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 284, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body::-webkit-scrollbar {
   width: 8px;
 }
-/* line 254, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 288, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body::-webkit-scrollbar-track {
   -webkit-box-shadow: none;
 }
-/* line 258, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 292, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body::-webkit-scrollbar-thumb {
   background-color: white;
   outline: none;
   border-radius: 50px;
   margin-left: 1rem;
 }
-/* line 266, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 300, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body:hover::-webkit-scrollbar-thumb {
   background-color: #ebebeb;
 }
 
-/* line 274, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 308, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body__message.seen .message__time {
   position: relative;
 }
-/* line 276, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 310, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__body__message.seen .message__time:before {
   content: '';
   position: absolute;
@@ -15638,58 +15679,58 @@ body.fixed-header--active {
 }
 
 /*------ chat page footer -------*/
-/* line 292, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 326, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer {
   border-top: 2px solid #ebebeb;
 }
-/* line 296, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 330, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer svg {
   width: 22px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
 }
-/* line 300, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 334, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer svg * {
   fill: #D3D8E0;
   stroke: #D3D8E0;
 }
-/* line 306, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 340, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer svg:hover * {
   fill: #EFB200;
   stroke: #EFB200;
 }
-/* line 314, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 348, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer label {
   margin-bottom: 0;
 }
-/* line 318, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 352, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer .acf__attach {
   width: 70px;
 }
-/* line 322, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 356, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer .acf__send-new-message {
   width: 100%;
   padding-right: 1.5rem;
 }
-/* line 327, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 361, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer .acf__more-options {
   width: 230px;
 }
-/* line 330, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 364, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer .acf__more-options .input-group {
   padding-left: 15px;
 }
-/* line 334, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 368, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer .acf__more-options .send-emoji {
   border-right: 1px solid #ebebeb;
   padding-right: 15px;
 }
-/* line 339, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 373, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer .acf__more-options .vocie-call svg {
   width: 16px;
 }
-/* line 344, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 378, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer #new-message {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -15699,7 +15740,7 @@ body.fixed-header--active {
   box-shadow: none;
   resize: none;
 }
-/* line 350, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+/* line 384, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
 .active-chat__footer #new-message:focus, .active-chat__footer #new-message:active {
   border: 0;
   -webkit-box-shadow: none;
@@ -15709,22 +15750,22 @@ body.fixed-header--active {
 
 /*---- responsive styles -----*/
 @media (max-width: 1199.98px) {
-  /* line 362, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 396, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat #chat-page-container {
     min-width: 100%;
   }
-  /* line 367, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 401, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat #chat-window .user__send-message {
     display: none;
   }
 }
 @media (max-width: 767.98px) {
-  /* line 375, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 409, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   #chat-window {
     display: none;
   }
 
-  /* line 378, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 412, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   #active-chat {
     width: 100%;
     max-width: 100%;
@@ -15734,51 +15775,51 @@ body.fixed-header--active {
   }
 }
 @media screen and (max-width: 992px) {
-  /* line 387, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 421, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat #chat-page-container,
   .page-chat #active-chat {
     height: calc(100vh - 150px);
   }
-  /* line 392, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 426, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body {
     padding-right: 0;
   }
-  /* line 395, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 429, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body__message {
     width: 90%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  /* line 399, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 433, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body__message .message__time {
     width: 100%;
     margin-left: 45px;
   }
-  /* line 405, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 439, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body .user__profile {
     width: 30px;
     min-width: 30px;
     margin-right: 15px;
   }
-  /* line 410, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 444, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body .user__message {
     width: calc(100% - 50px);
   }
-  /* line 415, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 449, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body .has-sticker .user__message {
     width: 150px;
   }
-  /* line 417, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 451, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body .has-sticker .user__message .sticker {
     width: 100%;
   }
-  /* line 424, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 458, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body .sent .user__profile {
     width: 30px;
     min-width: 30px;
     margin: 0 0 0 15px;
   }
-  /* line 432, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  /* line 466, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
   .page-chat .active-chat__body .sent .message__time {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
@@ -15787,28 +15828,33 @@ body.fixed-header--active {
   }
 }
 /* line 1, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+.page-about {
+  margin-bottom: 50px;
+}
+
+/* line 5, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-hero {
   line-height: 1.8;
 }
-/* line 3, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 7, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-hero .h5 {
   line-height: 1.8;
 }
-/* line 6, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 10, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-hero .section-title {
   border-bottom: 2px solid #ebebeb;
   text-transform: uppercase;
 }
 
-/* line 12, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 16, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .custom-list {
   padding-left: 0;
 }
-/* line 15, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 19, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .custom-list li {
   list-style: none;
 }
-/* line 19, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 23, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .custom-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15818,7 +15864,7 @@ body.fixed-header--active {
   justify-content: flex-start;
   margin-bottom: 25px;
 }
-/* line 25, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 29, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .custom-list__item__icon {
   background: #EFB200;
   width: 28px;
@@ -15826,7 +15872,7 @@ body.fixed-header--active {
   border-radius: 50%;
   margin-right: 35px;
 }
-/* line 32, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 36, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .custom-list__item__icon svg {
   width: 30px;
   height: 30px;
@@ -15834,7 +15880,7 @@ body.fixed-header--active {
   margin-left: -1px;
 }
 
-/* line 44, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 48, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-video__wrap {
   background-image: url("../img/about-video-bg.jpg");
   background-repeat: no-repeat;
@@ -15852,7 +15898,7 @@ body.fixed-header--active {
   align-items: center;
 }
 
-/* line 56, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 60, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .play-trigger {
   background: #ffffff;
   height: 70px;
@@ -15870,22 +15916,23 @@ body.fixed-header--active {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  cursor: pointer;
 }
-/* line 66, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 71, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .play-trigger svg {
   width: 22px;
   height: 22px;
 }
-/* line 71, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 76, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .play-trigger:hover {
   background: #EFB200;
 }
 
-/* line 76, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 81, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-award-box {
   position: relative;
 }
-/* line 79, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 84, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-award-box .award-logo {
   position: absolute;
   top: -50px;
@@ -15895,27 +15942,27 @@ body.fixed-header--active {
   transform: translateX(-50%);
   width: 100px;
 }
-/* line 87, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 92, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-award-box .title {
   font-size: 50px;
   font-weight: bold;
 }
-/* line 92, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 97, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-award-box .desc {
   font-size: 25px;
 }
-/* line 96, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 101, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-award-box__content {
   padding: 50px 20px 50px 20px;
   -webkit-box-shadow: 10px 10px 50px rgba(61, 61, 61, 0.08);
   box-shadow: 10px 10px 50px rgba(61, 61, 61, 0.08);
 }
 
-/* line 104, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 109, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-gallery__carousel .owl-carousel {
   padding: 0 60px;
 }
-/* line 107, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 112, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-gallery__carousel .owl-carousel .owl-nav .owl-prev,
 .about-gallery__carousel .owl-carousel .owl-nav .owl-next {
   position: absolute;
@@ -15940,36 +15987,36 @@ body.fixed-header--active {
   align-items: center;
   border: 1px solid #EFB200;
 }
-/* line 123, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 128, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-gallery__carousel .owl-carousel .owl-nav .owl-prev:hover,
 .about-gallery__carousel .owl-carousel .owl-nav .owl-next:hover {
   background: #f8f9fa;
   color: #343a40;
 }
-/* line 127, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 132, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-gallery__carousel .owl-carousel .owl-nav .owl-prev:focus,
 .about-gallery__carousel .owl-carousel .owl-nav .owl-next:focus {
   outline: none;
 }
-/* line 131, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 136, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-gallery__carousel .owl-carousel .owl-nav .owl-prev svg,
 .about-gallery__carousel .owl-carousel .owl-nav .owl-next svg {
   width: 17px;
 }
-/* line 135, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 140, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-gallery__carousel .owl-carousel .owl-next {
   right: -4px;
 }
-/* line 138, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 143, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-gallery__carousel .owl-carousel .owl-prev {
   left: -4px;
 }
-/* line 141, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 146, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .about-gallery__carousel .owl-carousel .owl-dots {
   display: none;
 }
 
-/* line 148, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 153, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .company-logos .company-logos__item {
   width: 24%;
   border: 1px solid #ebebeb;
@@ -15988,13 +16035,13 @@ body.fixed-header--active {
   -ms-flex-line-pack: center;
   align-content: center;
 }
-/* line 160, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 165, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .company-logos .company-logos__item img {
   width: 100%;
   max-width: 100px;
 }
 
-/* line 169, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 174, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .footer--about .row {
   padding-top: 30px;
   margin-top: 60px;
@@ -16005,61 +16052,85 @@ body.fixed-header--active {
   -ms-flex-line-pack: center;
   align-content: center;
 }
-/* line 178, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 183, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .footer--about .footer-links a {
   margin-right: 10px;
   padding: 5px 8px;
 }
-/* line 183, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 188, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .footer--about .footer-links a:last-child {
   margin-right: 0;
   padding-right: 0;
 }
-/* line 188, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+/* line 193, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .footer--about .footer-links a:hover {
   color: #EFB200 !important;
 }
 
 /*-----responsive styles----*/
 @media screen and (max-width: 992px) {
-  /* line 197, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  /* line 202, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
   .about-video__wrap {
     height: 400px;
   }
 }
 @media screen and (max-width: 768px) {
-  /* line 203, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  /* line 208, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
   .company-logos {
     padding: 0 10px;
   }
-  /* line 205, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  /* line 210, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
   .company-logos .company-logos__item {
     width: 32%;
     padding: 30px;
     margin: .7% 0;
   }
 
-  /* line 213, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  /* line 218, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
   .about-award-box .title {
     font-size: 35px !important;
   }
-  /* line 216, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  /* line 221, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
   .about-award-box .desc {
     font-size: 18px !important;
   }
 
-  /* line 221, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  /* line 226, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
   .about-video__wrap {
     height: 350px;
   }
+
+  /* line 230, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  .footer-links,
+  .copyright-text {
+    text-align: center;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+
+  /* line 235, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  .footer-links {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  /* line 238, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  .copyright-text {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 575px) {
-  /* line 228, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  /* line 246, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
   .about-video__wrap {
     height: 280px;
   }
 
-  /* line 233, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
+  /* line 251, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
   .company-logos .company-logos__item {
     width: 49%;
     padding: 20px;

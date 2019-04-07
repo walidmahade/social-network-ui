@@ -15,15 +15,22 @@
       height: 100%;
       padding-bottom: 1.25rem;
     }
+
     .card-body {
       overflow: hidden;
+      padding-right: 0!important;
+      padding-left: 0!important;
+    }
+
+    .search__chat-list {
+      margin: 0 20px;
     }
 
     .chat-window__online {
       overflow: auto;
       height: 100%;
       margin: 1.25rem 0;
-      padding-bottom: 1.5rem;
+      padding-bottom: 2.5rem;
 
       &::-webkit-scrollbar {
         width: 8px;
@@ -48,12 +55,34 @@
       }
 
       &__user {
-        padding-right: 2rem;
+        margin: 0 20px !important;
+        padding: 15px 20px;
+        @extend .rounded-lg;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba($primary, 0.1);
+        }
+
+        .su__workplace__title {
+          &:hover {
+            color: initial!important;
+          }
+        }
+
         &:first-child {
           margin-top: 0 !important;
         }
+        // active green dot
+        .user__pp:after  {
+          background: $icon-color;
+        }
+        .user__pp.on:after {
+          background-color: #469A1F;
+        }
+
       }
-    }
+    } // chat window online
 
   }
 
@@ -72,6 +101,11 @@
 
   .chat-window__online {
     overflow: auto;
+  }
+
+  // hide green dot after messaging title for this page only
+  #chat-window .card-head [data-new-message='true']:after {
+    content: none;
   }
 }
 

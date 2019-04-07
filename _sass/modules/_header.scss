@@ -259,9 +259,36 @@ body {
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .logged-out {
+    .brand {
+      display: block;
+    }
+    .header.sticky--active {
+      .brand {
+        display: block;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 575px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .brand {
     display: none;
+  }
+  .logged-out {
+    .brand {
+      display: block;
+    }
+    .header.sticky--active {
+      .brand {
+        display: block;
+      }
+    }
   }
   .header__nav {
     order: 1;

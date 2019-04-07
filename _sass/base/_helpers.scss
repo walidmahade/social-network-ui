@@ -25,6 +25,9 @@
 .fs-22 {
   font-size: 22px;
 }
+.fs-30 {
+  font-size: 30px;
+}
 
 // bos shadow
 @mixin box-sad($x: 0px, $y: 3px, $color: $icon-color,$a: .4) {

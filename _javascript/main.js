@@ -124,7 +124,7 @@ jQuery(document).ready(function($) {
     }
 
    /*
-    // lightbox
+    // lightbox image
    */
     const lightbox = $("#imageLightbox");
     const lightboxOverlay = $("#lightboxOverlay");
@@ -146,6 +146,7 @@ jQuery(document).ready(function($) {
         lightbox.removeClass('show-me');
         lightboxOverlay.removeClass('show-me');
     });
+
     /*
     *   Header search suggestions trigger
     */
@@ -218,42 +219,6 @@ jQuery(document).ready(function($) {
         });
     }
 
-    // if ( $(window).width() < 576 ) {
-    //     startCarousel();
-    // } else {
-    //     userActivityCard.children('.suggested-users-group').addClass('off');
-    // }
-
-    // $(window).resize(function() {
-    //     if ( $(window).width() < 576 ) {
-    //         startCarousel();
-    //     } else {
-    //         stopCarousel();
-    //     }
-    // });
-
-    // function startCarousel(){
-    //     userActivityCard.children('.suggested-users-group').owlCarousel({
-    //         navigation : true, // Show next and prev buttons
-    //         slideSpeed : 500,
-    //         margin:10,
-    //         paginationSpeed : 400,
-    //         autoplay:true,
-    //         items : 1,
-    //         itemsDesktop : false,
-    //         itemsDesktopSmall : false,
-    //         itemsTablet: false,
-    //         itemsMobile : false,
-    //         loop:true,
-    //         nav:true,
-    //         navText: ["<i class='fa fa-angle-left' aria-hidden='true'></i>","<i class='fa fa-angle-right' aria-hidden='true'></i>"]
-    //     });
-    // }
-    // function stopCarousel() {
-    //     let owl = userActivityCard.children('.suggested-users-group');
-    //     owl.trigger('destroy.owl.carousel');
-    //     owl.addClass('off');
-    // }
 
     $('.user-feed__connect-carousel-wrap').owlCarousel({
         items:2,

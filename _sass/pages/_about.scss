@@ -42,7 +42,8 @@
 
 // video section
 .about-video__wrap {
-  background-image: url("../img/about-video-bg.png");
+  @extend .rounded-sm;
+  background-image: url("../img/about-video-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

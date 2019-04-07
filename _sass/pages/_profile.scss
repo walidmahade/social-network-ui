@@ -91,10 +91,17 @@
     .user__bio {
       svg {
         width: 18px;
+        height: 18px;
         cursor: pointer;
         * {
           stroke: $icon-color;
           fill: $icon-color;
+        }
+        &:hover {
+          * {
+            stroke: $primary;
+            fill: $primary;
+          }
         }
       }
       // bio item

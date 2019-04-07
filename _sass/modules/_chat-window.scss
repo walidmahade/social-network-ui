@@ -84,6 +84,11 @@ $cwhHeight: 60px;
   }
 
   .chat-window__online {
+    &__user {
+      &:last-child {
+        margin-bottom: 0!important;
+      }
+    }
     .user__pp:after {
       content: '';
       position: absolute;

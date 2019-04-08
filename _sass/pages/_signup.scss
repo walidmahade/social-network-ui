@@ -1,9 +1,13 @@
 .page-signup {
-  margin-top: 118px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  .header {
+    position: static;
+  }
 
   .main-content {
-    height: calc(100vh - 118px);
+    height: calc(100vh - 115px);
     min-height: 620px;
     //overflow: scroll;
   }
@@ -20,6 +24,7 @@
     background-color: #F8F8F8;
     position: relative;
     overflow: hidden;
+    padding-bottom: 25px;
 
     input,
     input.form-control {
@@ -29,12 +34,11 @@
   .right-col-wrap {
     width: 100%;
     max-width: 500px;
+    margin-top: 100px;
   }
   .footer-links {
-    position: absolute;
-    bottom: 50px;
-    left: 3rem;
-    margin-right: 1rem;
+    position: relative;
+    align-self: flex-end;
 
     a {
       @extend .text-dark;
@@ -115,7 +119,6 @@
 }
 @media screen and (max-width: 767px) {
   .page-signup {
-    margin-top: 200px;
     background-color: #f8f8f8;
 
     .main-content {

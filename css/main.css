@@ -13154,7 +13154,7 @@ textarea:focus,
   }
   /* line 76, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   .user-activity .card, .user-activity .mw-megamenu {
-    width: 35%;
+    width: 45%;
     margin: 0 1rem;
   }
 }
@@ -13174,19 +13174,32 @@ textarea:focus,
     margin: 0 0 1rem 0;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   /* line 97, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  .user-activity-card,
+  .user-activity > .card,
+  .user-activity > .mw-megamenu {
+    width: 100%;
+  }
+  /* line 101, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  .user-activity-card:nth-child(2),
+  .user-activity > .card:nth-child(2),
+  .user-activity > .mw-megamenu:nth-child(2) {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  /* line 108, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   .user-activity {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  /* line 100, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 112, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   .user-activity-card {
-    width: 100%;
     margin-bottom: 30px;
   }
-  /* line 103, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 115, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   .user-activity-card .card-title {
     text-align: center;
     margin-bottom: 25px;
@@ -13194,39 +13207,42 @@ textarea:focus,
     border-bottom: 1px solid #ebebeb;
   }
 
-  /* line 114, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 126, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1.owl-carousel,
   #carousel-mobile-2.owl-carousel {
     padding: 0 35px;
   }
-  /* line 117, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 129, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1.owl-carousel .suggested-user,
   #carousel-mobile-2.owl-carousel .suggested-user {
     margin: 0 !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
   }
-  /* line 121, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 133, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1.owl-carousel .suggested-user .su__pp,
   #carousel-mobile-2.owl-carousel .suggested-user .su__pp {
     width: 50px;
     min-width: 50px;
   }
-  /* line 126, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 138, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1.owl-carousel .suggested-user .su__send-fr,
   #carousel-mobile-2.owl-carousel .suggested-user .su__send-fr {
     margin-left: 25px;
   }
-  /* line 130, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 142, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1.owl-carousel .suggested-user .btn-group,
   #carousel-mobile-2.owl-carousel .suggested-user .btn-group {
     margin-top: 15px !important;
   }
-  /* line 135, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 147, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1.owl-carousel .su__view-all,
   #carousel-mobile-2.owl-carousel .su__view-all {
     text-align: center;
     padding-top: 15px;
   }
-  /* line 141, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 153, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-nav .owl-prev,
   #carousel-mobile-1 .owl-nav .owl-next,
   #carousel-mobile-2 .owl-nav .owl-prev,
@@ -13243,7 +13259,7 @@ textarea:focus,
     font-size: 30px;
     color: rgba(69, 69, 69, 0.4);
   }
-  /* line 152, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 164, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-nav .owl-prev:hover,
   #carousel-mobile-1 .owl-nav .owl-next:hover,
   #carousel-mobile-2 .owl-nav .owl-prev:hover,
@@ -13251,50 +13267,43 @@ textarea:focus,
     background: #f8f9fa;
     color: #343a40;
   }
-  /* line 156, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 168, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-nav .owl-prev:focus,
   #carousel-mobile-1 .owl-nav .owl-next:focus,
   #carousel-mobile-2 .owl-nav .owl-prev:focus,
   #carousel-mobile-2 .owl-nav .owl-next:focus {
     outline: none;
   }
-  /* line 160, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 171, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  #carousel-mobile-1 .owl-nav .owl-prev svg,
+  #carousel-mobile-1 .owl-nav .owl-next svg,
+  #carousel-mobile-2 .owl-nav .owl-prev svg,
+  #carousel-mobile-2 .owl-nav .owl-next svg {
+    width: 14px;
+  }
+  /* line 175, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-next,
   #carousel-mobile-2 .owl-next {
     right: -4px;
   }
-  /* line 163, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 178, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-prev,
   #carousel-mobile-2 .owl-prev {
     left: -4px;
   }
-  /* line 166, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 181, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-dots,
   #carousel-mobile-2 .owl-dots {
     display: none;
   }
 }
 @media screen and (max-width: 440px) {
-  /* line 175, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 190, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1.owl-carousel,
   #carousel-mobile-2.owl-carousel {
     padding: 0;
   }
-  /* line 178, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
-  #carousel-mobile-1.owl-carousel .suggested-user,
-  #carousel-mobile-2.owl-carousel .suggested-user {
-    margin: 0 !important;
-    -webkit-box-pack: center !important;
-    -ms-flex-pack: center !important;
-    justify-content: center !important;
-  }
-  /* line 182, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
-  #carousel-mobile-1.owl-carousel .suggested-user .su__pp,
-  #carousel-mobile-2.owl-carousel .suggested-user .su__pp {
-    width: 50px;
-    min-width: 50px;
-  }
-  /* line 189, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 194, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-nav,
   #carousel-mobile-2 .owl-nav {
     display: -webkit-box;
@@ -13308,7 +13317,7 @@ textarea:focus,
     align-items: center;
     margin-top: 35px;
   }
-  /* line 197, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 202, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-nav .owl-prev,
   #carousel-mobile-1 .owl-nav .owl-next,
   #carousel-mobile-2 .owl-nav .owl-prev,
@@ -13334,7 +13343,7 @@ textarea:focus,
     -ms-flex-align: center;
     align-items: center;
   }
-  /* line 212, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 217, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-nav .owl-prev:hover,
   #carousel-mobile-1 .owl-nav .owl-next:hover,
   #carousel-mobile-2 .owl-nav .owl-prev:hover,
@@ -13342,31 +13351,31 @@ textarea:focus,
     background: #f8f9fa;
     color: #343a40;
   }
-  /* line 216, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 221, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-nav .owl-prev:focus,
   #carousel-mobile-1 .owl-nav .owl-next:focus,
   #carousel-mobile-2 .owl-nav .owl-prev:focus,
   #carousel-mobile-2 .owl-nav .owl-next:focus {
     outline: none;
   }
-  /* line 220, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 225, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-nav .owl-prev svg,
   #carousel-mobile-1 .owl-nav .owl-next svg,
   #carousel-mobile-2 .owl-nav .owl-prev svg,
   #carousel-mobile-2 .owl-nav .owl-next svg {
     width: 17px;
   }
-  /* line 224, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 229, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-next,
   #carousel-mobile-2 .owl-next {
     right: -4px;
   }
-  /* line 227, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 232, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-prev,
   #carousel-mobile-2 .owl-prev {
     left: -4px;
   }
-  /* line 230, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
+  /* line 235, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/components/_user-activity-card.scss */
   #carousel-mobile-1 .owl-dots,
   #carousel-mobile-2 .owl-dots {
     display: none;

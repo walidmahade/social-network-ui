@@ -74,7 +74,7 @@
   .user-activity {
     justify-content: center !important;
     .card {
-      width: 35%;
+      width: 45%;
       margin: 0 1rem;
     }
   }
@@ -93,12 +93,24 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .user-activity-card,
+  .user-activity > .card {
+    width: 100%;
+
+    &:nth-child(2) {
+      margin-top: 40px;
+    }
+  }
+}
+
 @media screen and (max-width: 575px) {
   .user-activity {
     flex-wrap: wrap;
+
   }
   .user-activity-card {
-    width: 100%;
+    //width: 100%;
     margin-bottom: 30px;
     .card-title {
       text-align: center;
@@ -116,7 +128,7 @@
 
       .suggested-user {
         margin: 0 !important;
-        //justify-content: center!important;
+        justify-content: center!important;
 
         .su__pp {
           width: 50px;
@@ -156,6 +168,9 @@
       &:focus {
         outline: none;
       }
+      svg {
+        width: 14px;
+      }
     }
     .owl-next {
       right: -4px;
@@ -174,16 +189,6 @@
   #carousel-mobile-2 {
     &.owl-carousel {
       padding: 0;
-
-      .suggested-user {
-        margin: 0 !important;
-        justify-content: center!important;
-
-        .su__pp {
-          width: 50px;
-          min-width: 50px;
-        }
-      }
     }
     // when wl carousel active
     .owl-nav {

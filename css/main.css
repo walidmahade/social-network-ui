@@ -15150,8 +15150,8 @@ body.fixed-header--active {
 }
 /* line 1, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .page-signup--v2 {
-  margin-top: 118px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: white;
 }
 /* line 6, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
@@ -15187,30 +15187,25 @@ body.fixed-header--active {
 .page-signup--v2 .right-col-wrap {
   width: 100%;
   max-width: 500px;
+  margin-top: 50px;
 }
-/* line 40, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+/* line 41, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .page-signup--v2 .footer-links {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  padding: 0 1rem;
+  padding: 50px 1rem !important;
 }
-/* line 47, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+/* line 44, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .page-signup--v2 .footer-links a {
   padding-right: .8rem;
 }
-/* line 51, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+/* line 48, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .page-signup--v2 .footer-links a:hover {
   color: #EFB200 !important;
 }
-/* line 61, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+/* line 58, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .page-signup--v2 .login-form .btn {
   padding: 7px 15px;
 }
-/* line 65, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+/* line 62, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .page-signup--v2 .login-form .form-control {
   width: 250px;
   outline: none;
@@ -15218,7 +15213,7 @@ body.fixed-header--active {
   box-shadow: none;
   border: none;
 }
-/* line 72, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+/* line 69, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .page-signup--v2 .login-form .form-control:focus {
   border: none;
   outline: none;
@@ -15226,96 +15221,96 @@ body.fixed-header--active {
   box-shadow: none;
 }
 
-/* line 81, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+/* line 78, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .password-reset {
   text-decoration: underline;
 }
-/* line 84, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+/* line 81, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
 .password-reset a:hover {
   color: #EFB200;
 }
 
 /*---- responsive styles ----*/
 @media screen and (max-width: 992px) {
-  /* line 92, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 89, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .header {
     padding-left: 15px;
     padding-right: 15px;
   }
-  /* line 95, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 92, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .header .container {
     width: 100%;
     max-width: 100%;
   }
-  /* line 100, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 97, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .header .brand {
     width: 100%;
     text-align: center;
     margin-bottom: 1.5rem;
   }
-  /* line 106, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 103, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .header .login-form {
     width: 100%;
   }
-  /* line 109, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 106, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .header .login-form input.form-control {
     width: auto;
   }
-  /* line 113, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 110, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .header .login-form .form-inline {
     -webkit-box-pack: center !important;
     -ms-flex-pack: center !important;
     justify-content: center !important;
   }
-  /* line 116, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 113, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .header .login-form .password-reset {
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 125, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 122, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .left-col {
     width: 45% !important;
     padding: 25px;
   }
 
-  /* line 129, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 126, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .right-col {
     width: 55% !important;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 134, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 131, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 {
-    margin-top: 200px;
+    margin-top: 0;
   }
-  /* line 137, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 134, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .main-content {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  /* line 141, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 138, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .left-col {
     width: 100% !important;
     padding: 25px;
     display: none !important;
   }
-  /* line 146, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 143, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .right-col {
     width: 100% !important;
   }
 }
 @media screen and (max-width: 575px) {
-  /* line 155, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 153, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .login-form input.form-control {
     margin-bottom: 1rem;
   }
-  /* line 159, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 157, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .password-reset {
     margin-top: 8px;
     font-size: 12px;
   }
-  /* line 164, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
+  /* line 162, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_signup-v2.scss */
   .page-signup--v2 .footer-links {
     position: relative;
     left: 0px;

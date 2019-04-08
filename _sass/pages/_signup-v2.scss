@@ -1,6 +1,6 @@
 .page-signup--v2 {
-  margin-top: 118px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: white;
 
   .main-content {
@@ -35,14 +35,11 @@
   .right-col-wrap {
     width: 100%;
     max-width: 500px;
+    margin-top: 50px;
   }
   // footer
   .footer-links {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0 1rem;
+    padding: 50px 1rem !important;
 
     a {
       @extend .text-dark;
@@ -132,7 +129,7 @@
 }
 @media screen and (max-width: 767px) {
   .page-signup--v2 {
-    margin-top: 200px;
+    margin-top: 0;
 
     .main-content {
       flex-wrap: wrap;
@@ -151,6 +148,7 @@
 @media screen and (max-width: 575px) {
   .page-signup--v2 {
     //overflow-x: hidden;
+
     .login-form {
       input.form-control {
         margin-bottom: 1rem;

@@ -30,11 +30,14 @@ jQuery(document).ready(function($) {
             $(this).parent(popupChatWindow).toggleClass('show-me');
         });
 
-        const chatWindowToggleCloseIcon = $(".close-chat-window");
-        chatWindowToggleCloseIcon.click(function (e) {
-            e.stopImmediatePropagation();
-            $(this).closest(popupChatWindow).remove();
-        });
+
+        // destroy popup chat window
+        //     const chatWindowToggleCloseIcon = $(".close-chat-window");
+        //     chatWindowToggleCloseIcon.click(function (e) {
+        //         e.stopImmediatePropagation();
+        //         $(this).closest(popupChatWindow).remove();
+        //     });
+
     }
     /*
         chat menu show hide toggle

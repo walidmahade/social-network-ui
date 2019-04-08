@@ -2591,5 +2591,20 @@
     <!--<script src="js/simple-lightbox.min.js"></script>-->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            if ($(window).width() < 992) {
+                // $(".list-group-item").click(function () {
+                //     console.log("clicked");
+                    // $(".settings-tab-content").scrollTop(0);
+                // });
+                $(".list-group-item").click(function() {
+                    $([document.documentElement, document.body]).animate({
+                        scrollTop: $(".settings-tab-content").offset().top - 150
+                    }, 2000);
+                });
+            }
+        });
+    </script>
 </body>
 </html>

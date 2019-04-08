@@ -74,7 +74,7 @@
           margin-top: 0 !important;
         }
         // active green dot
-        .user__pp:after  {
+        .user__pp:after {
           background: $icon-color;
         }
         .user__pp.on:after {
@@ -471,4 +471,13 @@
     } // active chat bdy
 
   } // page chat
+}
+
+@media screen and (max-width: 575px) {
+  .page-chat {
+    #chat-page-container,
+    #active-chat {
+      height: calc(100vh - 180px);
+    }
+  }
 }

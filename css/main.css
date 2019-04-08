@@ -15839,6 +15839,13 @@ body.fixed-header--active {
     margin-left: 45px;
   }
 }
+@media screen and (max-width: 575px) {
+  /* line 478, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_chat.scss */
+  .page-chat #chat-page-container,
+  .page-chat #active-chat {
+    height: calc(100vh - 180px);
+  }
+}
 /* line 1, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_about.scss */
 .page-about {
   margin-bottom: 50px;

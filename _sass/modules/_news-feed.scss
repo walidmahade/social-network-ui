@@ -151,6 +151,10 @@
     width: 60px;
   }
 
+  .dropdown-menu {
+    font-size: 14px;
+  }
+
   [data-isVarified="false"] {
     opacity: 0;
     z-index: -1;
@@ -192,6 +196,12 @@
     &:hover * {
       fill: $primary;
       stroke: $primary;
+    }
+  }
+
+  &__settings-trigger {
+    svg {
+      width: 24px;
     }
   }
 

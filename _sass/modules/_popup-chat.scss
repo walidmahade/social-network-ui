@@ -1,7 +1,7 @@
 #popup-chat {
   position: fixed;
   bottom: 0;
-  right: 300px;
+  right: 290px;
   width: auto;
   z-index: 99;
   height: auto;
@@ -17,7 +17,7 @@
     transition: bottom .3s ease-out;
 
     &:nth-child(2) {
-      right: 320px;
+      right: 310px;
     }
 
     &.show-me {
@@ -81,13 +81,13 @@
 
   .popup-chat__window--btn {
     position: absolute;
-    right: 640px;
-    height: 50px;
+    right: 620px;
+    height: 45px;
     overflow: visible;
     bottom: 0;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .1);
     transition: bottom .3s ease-out;
-    width: 80px;
+    width: 55px;
     border-radius: 10px 10px 0 0;
 
     .dropdown-item {
@@ -96,7 +96,7 @@
 
     .btn-dp-tr-chat {
       svg{
-        width: 35px;
+        width: 27px;
         padding-top: 5px;
         * {
           fill: $icon-color;

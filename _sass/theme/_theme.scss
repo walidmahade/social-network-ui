@@ -4,24 +4,11 @@ body {
   z-index: 2;
 }
 /*--- customize dropdown appearance ---*/
-//.dropdown-menu.fade {
-//  display: none;
-//  border: 0;
-//  //border-top: 3px solid $primary;
-//  //border-radius: 0;
-//  @include box-sad(0, 6px, $icon-color, 1);
-//  top: 80px !important;
-//  opacity: 0;
-//  transition: top .3s ease-in-out, opacity .3s ease-in-out, z-index .3s ease-in-out;
-//  z-index: -1;
-//}
-
-//.dropdown-menu.fade.show {
-//  top: 0 !important;
-//  opacity: 1;
-//  z-index: 9;
-//  display: block;
-//}
+.dropdown-menu {
+  @include box-sad();
+  border: 1px solid #ebebeb;
+  @extend .fs-14;
+}
 
 input,
 textarea,

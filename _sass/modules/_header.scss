@@ -250,9 +250,16 @@ body {
   }
   &>a {
     border: 2px solid white;
-    padding: 1px 6px;
-    border-radius: 4px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
     color: white;
+    font-size: 13px;
+
     &:hover {
       color: $primary;
       border: 2px solid $primary;

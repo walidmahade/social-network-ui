@@ -1,3 +1,46 @@
+@mixin owl_nav {
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 50%;
+    padding: 8px !important;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primary;
+
+    &:hover {
+      background: $light;
+      color: $dark;
+    }
+    &:focus {
+      outline: none;
+    }
+
+    svg {
+      width: 17px;
+    }
+
+    &.disabled {
+      opacity: 0;
+    }
+  }
+  .owl-next {
+    right: -4px;
+  }
+  .owl-prev {
+    left: -4px;
+  }
+  .owl-dots {
+    display: none;
+  }
+}
 .page-about {
   margin-bottom: 50px;
 }
@@ -8,8 +51,19 @@
     line-height: 1.8;
   }
   .section-title {
-    border-bottom: 2px solid $border-color;
+    //border-bottom: 2px solid $border-color;
     text-transform: uppercase;
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 3px;
+      width: 100px;
+      background: #3d3d3d;
+      position: absolute;
+      bottom: -24px;
+      left: 0;
+    }
   }
 }
 
@@ -109,49 +163,20 @@
   .owl-carousel {
     padding: 0 60px;
 
-    .owl-nav .owl-prev,
-    .owl-nav .owl-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: white;
-      border-radius: 50%;
-      padding: 8px !important;
-      height: 40px;
-      width: 40px;
-      font-size: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid $primary;
-
-      &:hover {
-        background: $light;
-        color: $dark;
-      }
-      &:focus {
-        outline: none;
-      }
-
-      svg {
-        width: 17px;
-      }
-    }
-    .owl-next {
-      right: -4px;
-    }
-    .owl-prev {
-      left: -4px;
-    }
-    .owl-dots {
-      display: none;
-    }
+    @include owl_nav;
   }
 }
 
 .company-logos {
+  background: #f8f8f8;
+  padding-bottom: 96px;
+
+  .owl-carousel {
+    padding: 0 60px;
+    @include owl_nav;
+  }
+
   .company-logos__item {
-    width: 24%;
     border: 1px solid $border-color;
     @extend .rounded-sm;
     padding: 40px;
@@ -161,10 +186,12 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    width: 100%;
+    background: white;
 
     img {
-      width: 100%;
-      max-width: 100px;
+      height: 60px;
+      width: auto;
     }
   }
 }
@@ -172,9 +199,9 @@
 // footer styles
 .footer--about {
   .row {
-    padding-top: 30px;
+    //padding-top: 30px;
     margin-top: 60px;
-    border-top: 2px solid $border-color;
+    //border-top: 2px solid $border-color;
     align-items: center;
     align-content: center;
   }
@@ -238,6 +265,11 @@
   .copyright-text {
     order: 2;
     margin-top: 20px;
+  }
+  .about-hero {
+    .col-right {
+      margin-top: 45px !important;
+    }
   }
 
 }

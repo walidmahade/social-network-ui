@@ -479,5 +479,59 @@
     #active-chat {
       height: calc(100vh - 180px);
     }
-  }
+
+    .active-chat__body__message {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .sent.has-sticker{
+      .message__time {
+        margin-left: 145px;
+      }
+    }
+
+    .active-chat__footer {
+      flex-wrap: wrap;
+
+      .acf__attach {
+        order: 0;
+        width: 20%;
+        padding-left: 15px;
+      }
+
+      .acf__send-new-message {
+        order: 2;
+        padding-right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+        #new-message {
+          width: 85%;
+        }
+        #send-message-btn {
+          width: 15%;
+          padding: 0;
+          svg {
+            height: 22px;
+            width: 22px;
+          }
+        }
+      }
+
+      .acf__more-options {
+        order: 1;
+        width: 80%;
+        .input-group {
+          justify-content: center;
+        }
+        .send-emoji {
+          border: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  } //page chat
 }

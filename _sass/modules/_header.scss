@@ -291,21 +291,27 @@ body {
     }
   }
   .header__nav {
+    background: #000000;
     order: 1;
     padding-top: 0;
   }
   .header__search {
     order: 2;
     margin-top: 10px;
-    &.hide-me {
-      display: none;
-    }
   }
+
   .header.sticky--active .header__search {
     display: block;
+    height: auto;
+    left: 0;
+    max-height: 120px;
+    opacity: 1;
+    transition: left .3s ease-in-out, max-height .6s ease-in-out, opacity .3s ease-out;
 
     &.hide-me {
-      display: none;
+      left: -450px;
+      max-height: 0;
+      opacity: 0;
     }
   }
 }

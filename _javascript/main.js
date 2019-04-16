@@ -109,12 +109,12 @@ jQuery(document).ready(function($) {
     const headerSearchBar = $(".header__search");
 
     $(window).on("resize", function () {
-        checkScreenSize();
+        updateSearchbarVisibility();
     });
 
-    checkScreenSize();
+    updateSearchbarVisibility();
 
-    function checkScreenSize(){
+    function updateSearchbarVisibility(){
         let newWindowWidth = $(window).width();
         if (newWindowWidth < 576) {
             let position = $(window).scrollTop();
@@ -124,9 +124,9 @@ jQuery(document).ready(function($) {
                 if (scroll < 75) {
                     headerSearchBar.removeClass('hide-me');
                 } else if (scroll > position) {
-                    headerSearchBar.removeClass('hide-me');
-                } else {
                     headerSearchBar.addClass('hide-me');
+                } else {
+                    headerSearchBar.removeClass('hide-me');
                 }
                 position = scroll;
             });

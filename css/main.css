@@ -13688,45 +13688,51 @@ body.fixed-header--active {
 
   /* line 293, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
   .header__nav {
+    background: #000000;
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
     padding-top: 0;
   }
 
-  /* line 297, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
+  /* line 298, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
   .header__search {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
     margin-top: 10px;
   }
-  /* line 300, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
-  .header__search.hide-me {
-    display: none;
-  }
 
-  /* line 304, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
+  /* line 303, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
   .header.sticky--active .header__search {
     display: block;
+    height: auto;
+    left: 0;
+    max-height: 120px;
+    opacity: 1;
+    -webkit-transition: left .3s ease-in-out, max-height .6s ease-in-out, opacity .3s ease-out;
+    -o-transition: left .3s ease-in-out, max-height .6s ease-in-out, opacity .3s ease-out;
+    transition: left .3s ease-in-out, max-height .6s ease-in-out, opacity .3s ease-out;
   }
-  /* line 307, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
+  /* line 311, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
   .header.sticky--active .header__search.hide-me {
-    display: none;
+    left: -450px;
+    max-height: 0;
+    opacity: 0;
   }
 }
 @media screen and (max-width: 425px) {
-  /* line 314, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
+  /* line 320, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
   .status-update-ext .input-group {
     margin-right: 20px !important;
   }
 
-  /* line 317, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
+  /* line 323, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
   .status-update-ext .input-group:nth-last-child(1) {
     margin-right: 0;
   }
 
-  /* line 320, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
+  /* line 326, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/modules/_header.scss */
   .status-update-ext svg {
     width: 22px !important;
   }

@@ -119,7 +119,7 @@
     height: 67px;
   }
   .active-chat__body {
-    height: calc( 100% - 176px);
+    height: calc( 100% - 190px);
   }
   .active-chat__footer {
     height: 70px;
@@ -324,9 +324,7 @@
 
 /*------ chat page footer -------*/
 .active-chat__footer {
-  border-top: 2px solid $border-color;
-
-
+  border-top: 1px solid $border-color;
   svg {
     width: 22px;
     transition: .3s;
@@ -356,6 +354,10 @@
   .acf__send-new-message {
     width: 100%;
     padding-right: 1.5rem;
+
+    .mobile-submit {
+      display: none;
+    }
   }
 
   .acf__more-options {
@@ -519,6 +521,10 @@
             width: 22px;
           }
         }
+
+        .mobile-submit {
+          display: inline-block;
+        }
       }
 
       .acf__more-options {
@@ -534,4 +540,61 @@
       }
     }
   } //page chat
+}
+
+
+/*----- chat page mobile ----*/
+@media screen and (max-width: 767px) {
+  .page-chat--mobile {
+
+    #chat-window {
+      height: 100%;
+      max-height: 100%;
+      overflow: visible;
+      display: block;
+
+      .card {
+        height: 100%;
+        padding-bottom: 1.25rem;
+      }
+
+      .card-body {
+        overflow: visible;
+        padding-bottom: 0;
+      }
+
+
+      .chat-window__online {
+        overflow: auto;
+        height: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      } // chat window online
+
+      .user__send-message {
+        display: inline-block;
+      }
+
+    }
+
+    #chat-page-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      bottom: auto;
+      height: 100%;
+      max-height: 100%;
+      overflow: visible;
+    }
+
+    .chat-window__online {
+      overflow: visible;
+    }
+
+    // hide green dot after messaging title for this page only
+    #chat-window .card-head [data-new-message='true']:after {
+      content: none;
+    }
+  }
 }

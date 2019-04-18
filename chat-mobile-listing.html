@@ -8,18 +8,13 @@
     <title>Tarik Eamin | Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="css/animate.min.css">-->
+    <!--<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        .content-404 {
-            min-height: calc(100vh - 200px);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-        }
-    </style>
 </head>
-<body class="404">
+<body class="page-chat page-chat--mobile">
 <!--site header-->
 <header class="header bg-dark py-2">
     <div class="container pt-1 pb-1">
@@ -611,39 +606,267 @@
 <!--site header end-->
 
 <main class="main-content mt-4">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-md-6 text-center py-3 content-404">
-                <div class="content-404-wrap">
-                    <h1 class="font-weight-bold">It looks like you’re lost...</h1>
-                    <img src="img/404-img.png" alt="404 page art" class="img-fluid">
-                    <p class="text-light fs-14 mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard</p>
-                    <a href="/" class="btn btn-dark fs-16 py-2 px-4 mt-4">Go back home</a>
+    <div class="container" id="chat-page-container">
+        <div class="row">
+            <!--section start chat window-->
+            <section id="chat-window" class="col-12">
+                <div class="card w-100">
+                    <div class="card-head d-flex justify-content-between align-items-center">
+                        <div id="chat-window-toggle" class="card-head__left" data-new-message="true">Messaging</div>
+
+                        <div class="icons card-head__right">
+                            <a href="settings.html" class="icon__edit mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="512px" viewBox="0 -1 401.52289 401" width="512px" class=""><g><path d="m370.589844 250.972656c-5.523438 0-10 4.476563-10 10v88.789063c-.019532 16.5625-13.4375 29.984375-30 30h-280.589844c-16.5625-.015625-29.980469-13.4375-30-30v-260.589844c.019531-16.558594 13.4375-29.980469 30-30h88.789062c5.523438 0 10-4.476563 10-10 0-5.519531-4.476562-10-10-10h-88.789062c-27.601562.03125-49.96875 22.398437-50 50v260.59375c.03125 27.601563 22.398438 49.96875 50 50h280.589844c27.601562-.03125 49.96875-22.398437 50-50v-88.792969c0-5.523437-4.476563-10-10-10zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#454545"/><path d="m376.628906 13.441406c-17.574218-17.574218-46.066406-17.574218-63.640625 0l-178.40625 178.40625c-1.222656 1.222656-2.105469 2.738282-2.566406 4.402344l-23.460937 84.699219c-.964844 3.472656.015624 7.191406 2.5625 9.742187 2.550781 2.546875 6.269531 3.527344 9.742187 2.566406l84.699219-23.464843c1.664062-.460938 3.179687-1.34375 4.402344-2.566407l178.402343-178.410156c17.546875-17.585937 17.546875-46.054687 0-63.640625zm-220.257812 184.90625 146.011718-146.015625 47.089844 47.089844-146.015625 146.015625zm-9.40625 18.875 37.621094 37.625-52.039063 14.417969zm227.257812-142.546875-10.605468 10.605469-47.09375-47.09375 10.609374-10.605469c9.761719-9.761719 25.589844-9.761719 35.351563 0l11.738281 11.734375c9.746094 9.773438 9.746094 25.589844 0 35.359375zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#454545"/></g> </svg>
+                            </a>
+                            <a href="settings.html" class="icon__settings">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M413.967 276.8c1.06-6.235 1.06-13.518 1.06-20.8s-1.06-13.518-1.06-20.8l44.667-34.318c4.26-3.118 5.319-8.317 2.13-13.518L418.215 115.6c-2.129-4.164-8.507-6.235-12.767-4.164l-53.186 20.801c-10.638-8.318-23.394-15.601-36.16-20.801l-7.448-55.117c-1.06-4.154-5.319-8.318-10.638-8.318h-85.098c-5.318 0-9.577 4.164-10.637 8.318l-8.508 55.117c-12.767 5.2-24.464 12.482-36.171 20.801l-53.186-20.801c-5.319-2.071-10.638 0-12.767 4.164L49.1 187.365c-2.119 4.153-1.061 10.399 2.129 13.518L96.97 235.2c0 7.282-1.06 13.518-1.06 20.8s1.06 13.518 1.06 20.8l-44.668 34.318c-4.26 3.118-5.318 8.317-2.13 13.518L92.721 396.4c2.13 4.164 8.508 6.235 12.767 4.164l53.187-20.801c10.637 8.318 23.394 15.601 36.16 20.801l8.508 55.117c1.069 5.2 5.318 8.318 10.637 8.318h85.098c5.319 0 9.578-4.164 10.638-8.318l8.518-55.117c12.757-5.2 24.464-12.482 36.16-20.801l53.187 20.801c5.318 2.071 10.637 0 12.767-4.164l42.549-71.765c2.129-4.153 1.06-10.399-2.13-13.518l-46.8-34.317zm-158.499 52c-41.489 0-74.46-32.235-74.46-72.8s32.971-72.8 74.46-72.8 74.461 32.235 74.461 72.8-32.972 72.8-74.461 72.8z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body" id="chat-list">
+                        <!--search users-->
+                        <div class="field-group search__chat-list">
+                            <form action="/">
+                                <input type="search" placeholder="Search" class="form-control f-14 pl-5 pr-5">
+                                <button type="submit" class="search__icon p-0 border-0">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>search-iocn</title><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9636" stroke="#000" fill="#000" d="M22.715 21.040c1.794-2.156 2.882-4.953 2.882-8.005 0-6.934-5.622-12.556-12.556-12.556s-12.556 5.622-12.556 12.556c0 6.934 5.622 12.556 12.556 12.556 3.052 0 5.849-1.089 8.025-2.899l-0.020 0.017 8.594 8.609 1.679-1.679zM13.034 23.223c-5.627 0-10.189-4.562-10.189-10.189s4.562-10.189 10.189-10.189c5.627 0 10.188 4.561 10.189 10.187v0c-0.002 5.627-4.563 10.188-10.189 10.191h-0z"></path></svg>
+                                </button>
+                            </form>
+                            <div class="chat-settings">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="19.5" viewBox="0 0 17.5 19.5"><g transform="translate(0.25 0.25)"><path d="M10.082,1.255h0a2.582,2.582,0,0,1,0,5v10.15a.582.582,0,1,1-1.163,0V6.257a2.582,2.582,0,0,1,0-5V.593a.582.582,0,1,1,1.163,0Zm-1.939,2.5A1.357,1.357,0,1,0,9.5,2.372,1.372,1.372,0,0,0,8.143,3.756ZM3.1,10.743h0a2.582,2.582,0,0,1,0,5v.662a.582.582,0,1,1-1.163,0v-.662a2.582,2.582,0,0,1,0-5V.593A.582.582,0,1,1,3.1.593Zm-1.939,2.5A1.372,1.372,0,0,0,2.52,14.628a1.384,1.384,0,0,0,0-2.767A1.372,1.372,0,0,0,1.163,13.244Zm15.9-6.059h0a2.582,2.582,0,0,1,0,5v4.22a.582.582,0,1,1-1.163,0v-4.22a2.582,2.582,0,0,1,0-5V.593a.582.582,0,1,1,1.163,0Zm-1.939,2.5A1.357,1.357,0,1,0,16.48,8.3,1.372,1.372,0,0,0,15.122,9.686Z" transform="translate(17) rotate(90)" stroke-width="0.5"/></g></svg>
+                            </div>
+                        </div>
+                        <!--online users-->
+                        <div class="chat-window__online">
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp on">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp on">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp on">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp on">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                            <!--start user-->
+                            <div class="chat-window__online__user d-flex justify-content-between flex-wrap align-items-center mt-4 mb-4 req-sent">
+                                <div class="user__info d-flex justify-content-start align-items-center">
+                                    <div class="user__pp">
+                                        <a href="#"><img src="img/img-pp.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <div class="d-flex flex-column ml-3">
+                                        <a href="#" class="text-dark"><h3 class="h5 user__title m-0 fs-17">Manzel_2019</h3></a>
+                                        <a href="#" class="su__workplace__title">SpaceX</a>
+                                    </div>
+                                </div>
+                                <!--send message  btn-->
+                                <div class="user__send-message" data-user-id="786786688">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26.853" height="24.117" viewBox="0 0 26.853 24.117"><g transform="translate(0.3 0.3)"><g transform="translate(0)"><path d="M101.767,97.5H82.486A3.5,3.5,0,0,0,79,100.993V112.4a3.5,3.5,0,0,0,3.486,3.5h6.422l2.818,4.858a.524.524,0,0,0,.9,0l2.825-4.858h6.311a3.5,3.5,0,0,0,3.486-3.5V100.986A3.491,3.491,0,0,0,101.767,97.5Zm2.447,14.884a2.462,2.462,0,0,1-2.447,2.462H95.145a.516.516,0,0,0-.452.252l-2.521,4.346L89.649,115.1a.516.516,0,0,0-.452-.252H82.486a2.462,2.462,0,0,1-2.447-2.462v-11.4a2.456,2.456,0,0,1,2.447-2.455h19.282a2.456,2.456,0,0,1,2.447,2.455Z" transform="translate(-79 -97.5)" stroke-width="0.6"></path><rect width="16.464" height="1.038" transform="translate(4.895 12.378)" stroke-width="0.6"></rect><rect width="16.464" height="1.038" transform="translate(4.895 8.595)" stroke-width="0.6"></rect><rect width="9.27" height="1.038" transform="translate(4.895 4.813)" stroke-width="0.6"></rect></g></g></svg>
+                                </div>
+                            </div>
+                            <!--end user-->
+                        </div>
+                        <!--offline users-->
+                    </div>
                 </div>
-            </div>
+            </section>
+            <!--section end chat window-->
         </div>
-        <!--row end-->
     </div>
-    <!--container end-->
 </main>
 
-<footer class="footer mt-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-md-6 text-center text-light">
-                <a href="javascript:history.back()" class="footer-link-a">Previous Page</a>
-                <a href="#" class="footer-link-a">Help Center</a>
-                <a href="#" class="footer-link-a">Settings</a>
-                <a href="#" class="footer-link-a">News Feed</a>
-            </div>
-        </div>
-    </div>
-</footer>
 
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/popper.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <!--<script src="js/vendor/owl.carousel.min.js"></script>-->
-    <script src="js/main.min.js"></script>
+
+<!--=========== image lightbox ============-->
+<div id="imageLightbox">
+    <img src="img/post-img.png" alt="lightbox image" class="img-fluid">
+</div>
+<div id="lightboxOverlay">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"> <g id="X"> <line id="_x5C_" fill="none" stroke="white" stroke-width="10" transform="translate(5, 5)" stroke-miterlimit="10" x1="5" y1="5" x2="50" y2="50" stroke-linecap="round"/> <line id="_x2F_" fill="none" stroke="white" stroke-width="10" transform="translate(5, 5)" stroke-miterlimit="10" x1="5" y1="50" x2="50" y2="5" stroke-linecap="round"/> </g>  <g id="circle"> <circle id="XMLID_16_" opacity="0" fill="none" stroke-width="3" stroke="#fff" stroke-miterlimit="10" cx="30" cy="30" r="40"/> </g> </svg>
+</div>
+<!--=========== end image lightbox ============-->
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/popper.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

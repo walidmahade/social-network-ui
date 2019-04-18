@@ -46,6 +46,41 @@ textarea,
   }
 }
 
+/*------- scrollbar style : used inside a element - not stand alone---------*/
+@mixin custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 50px;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border-radius: 50px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: white;
+    outline: none;
+    border-radius: 50px;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: $border-color;
+    }
+  }
+}
+
+//.hidden-desktop {
+//  display: none;
+//}
+//
+//.hidden-mobile {
+//  display: block;
+//  @media screen and (max-width: 575px) {
+//    display: none;
+//  }
+//}
 
 // responsive styles
 @include media-breakpoint-up(xl) {

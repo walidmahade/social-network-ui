@@ -48,6 +48,9 @@
 }
 
 @media screen and (max-width: 575px) {
+  .user-feed__connect-carousel {
+    border: none !important;
+  }
   .owl-carousel .owl-nav .owl-prev {
     left: -6px;
   }

@@ -1,6 +1,15 @@
 .page-settings {
   margin-bottom: 160px;
 
+  .settings-tab-menu {
+    &--mobile {
+      display: none !important;
+    }
+    &--desktop {
+
+    }
+  }
+
   .list-group-item {
     position: relative;
     transition: .3s;
@@ -56,10 +65,64 @@
 
 }
 
+
 @media screen and (max-width: 768px) {
   .page-settings {
+    margin-top: 115px;
+
+    h2,
+    h3,
+    .fs-20 {
+      font-size: 20px;
+    }
+
+    .settings-menu-col {
+      //position: sticky;
+      //top: 100px;
+      //z-index: 99999;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ebebeb;
+    }
     .settings-tab-menu {
       margin-top: 25px;
+
+      &--mobile {
+        display: flex!important;
+        justify-content: space-between;
+        flex-direction: row;
+        //z-index: 99999;
+
+        svg {
+          width: 22px;
+          height: 22px;
+          * {
+            fill: $icon-color;
+          }
+        }
+
+        .settings-tab-menu-mobile-nav {
+          width: 40px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+
+          &.active {
+            svg {
+              * {
+                fill: $primary;
+              }
+            }
+          }
+        }
+
+      }
+      &--desktop {
+        display: none;
+      }
+    }
+
+    .settings-tab-content {
+      margin-top: 15px;
     }
 
     .form-check-label {

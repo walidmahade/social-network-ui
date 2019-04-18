@@ -1,0 +1,50 @@
+.users-list-modal {
+
+  .modal-body {
+    padding-right: 5px;
+  }
+}
+
+.list-user {
+  @extend .fs-14;
+  max-height: 500px;
+  //height: 100%;
+  overflow: auto;
+  padding-right: 10px;
+
+  @include custom-scrollbar;
+
+  &__item {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 15px;
+    color: $text-primary;
+
+    &__name {
+      color: $text-primary;
+      &:hover {
+        text-decoration: underline;
+        color: $primary;
+      }
+    }
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    &__item__img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    &__send-message {
+      color: $text-primary;
+
+      svg {
+        width: 22px;
+        padding-right: 4px;
+      }
+    }
+  }
+}

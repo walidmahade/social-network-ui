@@ -1,9 +1,23 @@
 .page-profile {
+
   .main-content {
-    max-width: 980px;
-    width: 96%;
+    //max-width: 980px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .page-profile-left {
+    width: calc(100% - 330px);
+    padding-right: 15px;
+  }
+
+  .page-profile-right {
+    width: auto;
+  }
+
+  .about-tab-content-left {
+    padding-right: 0!important;
   }
 
   .user-feed {
@@ -174,6 +188,38 @@
 }
 
 /*---- responsive styles -----*/
+@media screen and (max-width: 1200px) {
+  .page-profile {
+    .page-profile-left,
+    .page-profile-right {
+      width: 100%;
+      padding: 0 15px;
+    }
+    .user-feed {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+    .user-activity {
+      width: 100%;
+      min-width: 100%;
+    }
+    //.user-activity-card {
+    //  width: 100%;
+    //  margin-bottom: 15px;
+    //}
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page-profile {
+    .about-tab-content-left {
+      padding-right: 15px!important;
+    }
+    .about-tab-content-right {
+      margin-top: 16px;
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   .page-profile {
     .profile-card {

@@ -609,16 +609,42 @@
         <div class="container">
             <div class="row">
                 <!--settings menu column-->
-                <div class="col-12 col-lg-3 col-xl-4">
-                    <div class="list-group settings-tab-menu mb-3 rounded-lg" id="list-tab" role="tablist">
+                <div class="col-12 col-lg-3 col-xl-4 settings-menu-col">
+                    <!--tab menu mobile-->
+                    <div class="settings-tab-menu mb-3 rounded-lg settings-tab-menu--mobile"  role="tablist">
+                        <a class="settings-tab-menu-mobile-nav active" data-toggle="list" href="#list-account" role="tab" aria-controls="account">
+                            <!--Account-->
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve"><g><g id="account-circle"><path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M255,76.5 c43.35,0,76.5,33.15,76.5,76.5s-33.15,76.5-76.5,76.5c-43.35,0-76.5-33.15-76.5-76.5S211.65,76.5,255,76.5z M255,438.6 c-63.75,0-119.85-33.149-153-81.6c0-51,102-79.05,153-79.05S408,306,408,357C374.85,405.45,318.75,438.6,255,438.6z"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        </a>
+                        <a class="settings-tab-menu-mobile-nav" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                            <!--Privacy & Security-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M376 186h-20v-40c0-55-45-100-100-100S156 91 156 146v40h-20c-22.002 0-40 17.998-40 40v200c0 22.002 17.998 40 40 40h240c22.002 0 40-17.998 40-40V226c0-22.002-17.998-40-40-40zM256 368c-22.002 0-40-17.998-40-40s17.998-40 40-40 40 17.998 40 40-17.998 40-40 40zm62.002-182H193.998v-40c0-34.004 28.003-62.002 62.002-62.002 34.004 0 62.002 27.998 62.002 62.002v40z"></path></svg>
+                        </a>
+                        <a class="settings-tab-menu-mobile-nav"  data-toggle="list" href="#list-notification" role="tab" aria-controls="notification">
+                            <!--Notifications-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459.334 459.334"><path d="M175.216 404.514c-.001.12-.009.239-.009.359 0 30.078 24.383 54.461 54.461 54.461s54.461-24.383 54.461-54.461c0-.12-.008-.239-.009-.359H175.216zM403.549 336.438l-49.015-72.002v-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485C254.152 10.963 243.19 0 229.667 0s-24.485 10.963-24.485 24.485v27.663c-57.237 11.381-100.381 61.879-100.381 122.459v89.83l-49.015 72.002a24.76 24.76 0 0 0 20.468 38.693H383.08a24.761 24.761 0 0 0 20.469-38.694z"/></svg>
+                        </a>
+                        <a class="settings-tab-menu-mobile-nav"  data-toggle="list" href="#list-ads" role="tab" aria-controls="ads">
+                            <!--Ads-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999"><path d="M467.069 212.578L267.381 12.861c-11.777-11.748-30.828-11.609-42.451-.015-11.689 11.719-11.689 30.747 0 42.451L424.647 255c11.7 11.7 30.721 11.7 42.422 0 11.732-11.732 11.732-30.692 0-42.422zM210.115 82.905l-1.503 7.534c-10.587 52.958-36.317 103.269-71.118 144.046l108.647 108.647c40.772-34.794 90.39-61.215 143.35-71.815l7.548-1.503L210.115 82.905zM117.575 256.989l-74.253 74.238c-17.545 17.545-17.618 46.029 0 63.647l42.422 42.422c17.545 17.545 46.029 17.617 63.647 0l74.246-74.246-106.062-106.061zm10.606 116.675c-5.859 5.859-15.352 5.859-21.211 0-5.859-5.859-5.859-15.352 0-21.211l21.211-21.211c5.859-5.859 15.352-5.859 21.211 0 5.859 5.859 5.859 15.352 0 21.211l-21.211 21.211zM286.266 445.278l20.405-20.405c17.619-17.616 17.561-46.1.001-63.631l-15.156-15.167c-8.377 5.627-16.377 11.741-24.155 18.265l18.1 18.127c5.845 5.815 5.886 15.279 0 21.196l-20.742 20.742-30.482-29.533-42.424 42.424 68.057 65.947c11.614 11.644 30.683 11.71 42.407-.015 11.704-11.704 11.704-30.732 0-42.437l-16.011-15.513zM346.864 0c-8.291 0-15 6.709-15 15v30c0 8.291 6.709 15 15 15s15-6.709 15-15V15c0-8.291-6.709-15-15-15zM466.864 120h-30c-8.291 0-15 6.709-15 15s6.709 15 15 15h30c8.291 0 15-6.709 15-15s-6.709-15-15-15zM447.469 34.394c-5.859-5.859-15.352-5.859-21.211 0l-30 30c-5.859 5.859-5.859 15.352 0 21.211s15.352 5.86 21.211 0l30-30c5.859-5.859 5.859-15.352 0-21.211z"/></svg>
+                        </a>
+                        <a class="settings-tab-menu-mobile-nav" data-toggle="list" href="#list-block" role="tab" aria-controls="block">
+                            <!--Block List-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.731 25.731"><path d="M19.418 13.068a6.313 6.313 0 1 0 0 12.626 6.313 6.313 0 0 0 0-12.626zm3.483 7.21h-6.978v-1.793h6.978v1.793z" fill="#030104"/><path d="M11.606 19.38c0-1.791.609-3.438 1.624-4.756-.151-.352-.21-.891.063-1.734h-.008c1.555-1.625 2.586-4.242 2.586-6.818 0-3.959-2.438-6.035-5.452-6.035-3.017 0-5.438 2.076-5.438 6.035 0 2.586 1.024 5.213 2.588 6.836.609 1.623-.48 2.225-.709 2.311C3.704 16.377 0 18.49 0 20.576v.781c0 2.842 5.427 3.488 10.45 3.488 1.102 0 2.216-.033 3.289-.111a7.782 7.782 0 0 1-2.133-5.354z" fill="#030104"/></svg>
+                        </a>
+                        <a  class="settings-tab-menu-mobile-nav" data-toggle="list" href="#list-videos" role="tab" aria-controls="videos">
+                            <!--Videos-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30 0C13.458 0 0 13.458 0 30s13.458 30 30 30 30-13.458 30-30S46.542 0 30 0zm15.563 30.826l-22 15a1.002 1.002 0 0 1-1.03.058A.999.999 0 0 1 22 45V15a.999.999 0 0 1 1.564-.826l22 15a1.001 1.001 0 0 1-.001 1.652z"/></svg>
+                        </a>
+                    </div>
+                    <!--tab menu mobile end-->
+                    <!--tab menu desktop-->
+                    <div class="list-group settings-tab-menu mb-3 rounded-lg settings-tab-menu--desktop" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active" id="list-account-list" data-toggle="list" href="#list-account" role="tab" aria-controls="account">
                             Account
                         </a>
                         <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
                             Privacy & Security
-                        </a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
-                            Password
                         </a>
                         <a class="list-group-item list-group-item-action" id="list-notification-list" data-toggle="list" href="#list-notification" role="tab" aria-controls="notification">
                             Notifications
@@ -633,6 +659,7 @@
                             Videos
                         </a>
                     </div>
+                    <!--tab menu desktop end -->
                 </div>
                 <!--settings menu column end-->
                 <!--settings content-->
@@ -831,196 +858,6 @@
                             </div>
 
                             <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                                <div class="card-header bg-transparent">
-                                    <h2 class="font-weight-bold fs-20">Account</h2>
-                                </div>
-                                <div class="card-body-wrap">
-                                    <form>
-                                        <!-- basic elements-->
-                                        <div class="card-body ml-4">
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="username">Name</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="text" class="form-control" id="username" placeholder="Name" value="Tarik Eamin">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="userslug">Username</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <div class="input-group mb-2">
-                                                        <div class="input-group-prepend">
-                                                            <div class="input-group-text">jaizer.com /</div>
-                                                        </div>
-                                                        <input type="email" class="form-control" id="userslug" placeholder="Email" value="tarik">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="useremail">Email</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="email" class="form-control" id="useremail" placeholder="Email" value="example@domain.com">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="inputAddress-1">Address</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="text" class="form-control" id="inputAddress-1" placeholder="1234 Main St">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="inputAddress-2">Address 2</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="text" class="form-control" id="inputAddress-2" placeholder="Apartment, studio, or floor">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="inputState">Language</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <select id="inputState" class="form-control w-100">
-                                                        <option selected>Choose...</option>
-                                                        <option>Arabic</option>
-                                                        <option selected>English</option>
-                                                        <option>Spanish</option>
-                                                        <option>French</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- basic elements end-->
-                                        <hr class="mt-0">
-                                        <!--account settings-->
-                                        <div class="card-header border-0 bg-transparent">
-                                            <h2 class="font-weight-bold fs-20">Account</h2>
-                                        </div>
-                                        <div class="card-body ml-4">
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    Login Verification
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <a href="#" class="btn btn-outline-primary py-2 px-4 fs-14">Enable Verification</a>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label has-checkbox col-md-3">
-                                                    <label class="form-check-label" for="exampleCheck1">
-                                                        Password Reset
-                                                        Verification
-                                                    </label>
-                                                </div>
-                                                <div class="form-group col-md-9">
-                                                    <div class="input-group">
-                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                        <label class="form-check-label" for="exampleCheck1">
-                                                            Require personal information to reset your password
-                                                        </label>
-                                                    </div>
-                                                    <small id="helpexampleCheck1" class="form-text text-muted">
-                                                        For added security, this requires you to confirm your email or phone number
-                                                        while resetting your password.
-                                                    </small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--account settings end-->
-                                        <hr class="mt-0">
-                                        <!--account settings-->
-                                        <div class="card-header border-0 bg-transparent">
-                                            <h2 class="font-weight-bold fs-20">Content</h2>
-                                        </div>
-                                        <div class="card-body ml-4">
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="country_select">Language</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <select id="country_select" class="form-control w-100">
-                                                        <option selected>Choose...</option>
-                                                        <option selected>UAE</option>
-                                                        <option>USA</option>
-                                                        <option>ESP</option>
-                                                        <option>FR</option>
-                                                        <option>BR</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label has-checkbox col-md-3">
-                                                    <label class="form-check-label" for="exampleCheck1">
-                                                        Video Posts
-                                                    </label>
-                                                </div>
-                                                <div class="form-group col-md-9">
-                                                    <div class="input-group">
-                                                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                                        <label class="form-check-label" for="exampleCheck2">
-                                                            Autoplay videos
-                                                        </label>
-                                                    </div>
-                                                    <small id="helpexampleCheck2" class="form-text text-muted">
-                                                        For added security, this requires you to confirm your email or phone number
-                                                        while resetting your password.
-                                                    </small>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label has-checkbox col-md-3">
-                                                    <label class="form-check-label" for="exampleCheck1">
-                                                        Timeline
-                                                    </label>
-                                                </div>
-                                                <div class="form-group col-md-9">
-                                                    <div class="input-group">
-                                                        <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                                                        <label class="form-check-label" for="exampleCheck3">
-                                                            Show most recent as first
-                                                        </label>
-                                                    </div>
-                                                    <small id="helpexampleCheck3" class="form-text text-muted">
-                                                        For added security, this requires you to confirm your email or phone number
-                                                        while resetting your password.
-                                                    </small>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="col-md-9 offset-md-3">
-                                                    <input type="submit" class="btn btn-primary py-2 px-4 fs-14 text-white text-capitalize" value="Save Changes">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--account settings end-->
-                                    </form>
-                                </div>
-                                <div class="card-footer position-static p-0 mt-4">
-                                    <a href="#" class="deactivate-btn text-primary border-0 bg-white fs-16 d-block w-100 text-center p-4"
-                                       data-toggle="modal" data-target="#deactivate-account-modal">
-                                        Deactivate Your Account
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
                                 <div class="card-header bg-transparent">
                                     <h2 class="font-weight-bold fs-20">Account</h2>
                                 </div>
@@ -1782,191 +1619,78 @@
 
                             <div class="tab-pane fade" id="list-block" role="tabpanel" aria-labelledby="list-block-list">
                                 <div class="card-header bg-transparent">
-                                    <h2 class="font-weight-bold fs-20">Account</h2>
+                                    <h2 class="font-weight-bold fs-20">Block List</h2>
                                 </div>
-                                <div class="card-body-wrap">
-                                    <form>
-                                        <!-- basic elements-->
-                                        <div class="card-body ml-4">
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="username">Name</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="text" class="form-control" id="username" placeholder="Name" value="Tarik Eamin">
-                                                </div>
+                                <div class="card-body-wrap p-3">
+                                    <!--blocklist-->
+                                    <div class="list-user">
+                                        <!--listed user -item-->
+                                        <div class="list-user__item d-flex justify-content-start align-items-center mb-3">
+                                            <div>
+                                                <span class="list-user__item__img">
+                                                    <img src="img/user.png" alt="user">
+                                                </span>
+                                                <span class="list-user__item__name pl-2">
+                                                    Elon Must
+                                                </span>
                                             </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="userslug">Username</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <div class="input-group mb-2">
-                                                        <div class="input-group-prepend">
-                                                            <div class="input-group-text">jaizer.com /</div>
-                                                        </div>
-                                                        <input type="email" class="form-control" id="userslug" placeholder="Email" value="tarik">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="useremail">Email</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="email" class="form-control" id="useremail" placeholder="Email" value="example@domain.com">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="inputAddress-1">Address</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="text" class="form-control" id="inputAddress-1" placeholder="1234 Main St">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="inputAddress-2">Address 2</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="text" class="form-control" id="inputAddress-2" placeholder="Apartment, studio, or floor">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="inputState">Language</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <select id="inputState" class="form-control w-100">
-                                                        <option selected>Choose...</option>
-                                                        <option>Arabic</option>
-                                                        <option selected>English</option>
-                                                        <option>Spanish</option>
-                                                        <option>French</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                            <a href="#" class="list-user__item__send-message btn btn-outline-primary btn-sm ml-auto">
+                                                <span>Unblock</span>
+                                            </a>
                                         </div>
-                                        <!-- basic elements end-->
-                                        <hr class="mt-0">
-                                        <!--account settings-->
-                                        <div class="card-header border-0 bg-transparent">
-                                            <h2 class="font-weight-bold fs-20">Account</h2>
+                                        <!--listed user -item end-->
+                                        <!--listed user -item-->
+                                        <div class="list-user__item d-flex justify-content-start align-items-center mb-3">
+                                            <div>
+                                                <span class="list-user__item__img">
+                                                    <img src="img/user.png" alt="user">
+                                                </span>
+                                                <span class="list-user__item__name pl-2">
+                                                    Elon Must
+                                                </span>
+                                            </div>
+                                            <a href="#" class="list-user__item__send-message btn btn-outline-primary btn-sm ml-auto">
+                                                <span>Unblock</span>
+                                            </a>
                                         </div>
-                                        <div class="card-body ml-4">
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    Login Verification
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <a href="#" class="btn btn-outline-primary py-2 px-4 fs-14">Enable Verification</a>
-                                                </div>
+                                        <!--listed user -item end-->
+                                        <!--listed user -item-->
+                                        <div class="list-user__item d-flex justify-content-start align-items-center mb-3">
+                                            <div>
+                                                <span class="list-user__item__img">
+                                                    <img src="img/user.png" alt="user">
+                                                </span>
+                                                <span class="list-user__item__name pl-2">
+                                                    Elon Must
+                                                </span>
                                             </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label has-checkbox col-md-3">
-                                                    <label class="form-check-label" for="exampleCheck1">
-                                                        Password Reset
-                                                        Verification
-                                                    </label>
-                                                </div>
-                                                <div class="form-group col-md-9">
-                                                    <div class="input-group">
-                                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                        <label class="form-check-label" for="exampleCheck1">
-                                                            Require personal information to reset your password
-                                                        </label>
-                                                    </div>
-                                                    <small id="helpexampleCheck1" class="form-text text-muted">
-                                                        For added security, this requires you to confirm your email or phone number
-                                                        while resetting your password.
-                                                    </small>
-                                                </div>
-                                            </div>
+                                            <a href="#" class="list-user__item__send-message btn btn-outline-primary btn-sm ml-auto">
+                                                <span>Unblock</span>
+                                            </a>
                                         </div>
-                                        <!--account settings end-->
-                                        <hr class="mt-0">
-                                        <!--account settings-->
-                                        <div class="card-header border-0 bg-transparent">
-                                            <h2 class="font-weight-bold fs-20">Content</h2>
+                                        <!--listed user -item end-->
+                                        <!--listed user -item-->
+                                        <div class="list-user__item d-flex justify-content-start align-items-center mb-3">
+                                            <div>
+                                                <span class="list-user__item__img">
+                                                    <img src="img/user.png" alt="user">
+                                                </span>
+                                                <span class="list-user__item__name pl-2">
+                                                    Elon Must
+                                                </span>
+                                            </div>
+                                            <a href="#" class="list-user__item__send-message btn btn-outline-primary btn-sm ml-auto">
+                                                <span>Unblock</span>
+                                            </a>
                                         </div>
-                                        <div class="card-body ml-4">
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label col-md-3">
-                                                    <label for="country_select">Language</label>
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <select id="country_select" class="form-control w-100">
-                                                        <option selected>Choose...</option>
-                                                        <option selected>UAE</option>
-                                                        <option>USA</option>
-                                                        <option>ESP</option>
-                                                        <option>FR</option>
-                                                        <option>BR</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label has-checkbox col-md-3">
-                                                    <label class="form-check-label" for="exampleCheck1">
-                                                        Video Posts
-                                                    </label>
-                                                </div>
-                                                <div class="form-group col-md-9">
-                                                    <div class="input-group">
-                                                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                                        <label class="form-check-label" for="exampleCheck2">
-                                                            Autoplay videos
-                                                        </label>
-                                                    </div>
-                                                    <small id="helpexampleCheck2" class="form-text text-muted">
-                                                        For added security, this requires you to confirm your email or phone number
-                                                        while resetting your password.
-                                                    </small>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="form-group form-group--label has-checkbox col-md-3">
-                                                    <label class="form-check-label" for="exampleCheck1">
-                                                        Timeline
-                                                    </label>
-                                                </div>
-                                                <div class="form-group col-md-9">
-                                                    <div class="input-group">
-                                                        <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                                                        <label class="form-check-label" for="exampleCheck3">
-                                                            Show most recent as first
-                                                        </label>
-                                                    </div>
-                                                    <small id="helpexampleCheck3" class="form-text text-muted">
-                                                        For added security, this requires you to confirm your email or phone number
-                                                        while resetting your password.
-                                                    </small>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-row">
-                                                <div class="col-md-9 offset-md-3">
-                                                    <input type="submit" class="btn btn-primary py-2 px-4 fs-14 text-white text-capitalize" value="Save Changes">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--account settings end-->
+                                        <!--listed user -item end-->
+                                    </div>
+                                    <!--blocklist end-->
+                                </div>
+                                <div class="card-footer bg-transparent">
+                                    <form class="cta">
+                                        <input type="submit" class="btn btn-primary py-2 px-4 fs-14 text-white text-capitalize" value="Save Changes">
                                     </form>
-                                </div>
-                                <div class="card-footer position-static p-0 mt-4">
-                                    <a href="#" class="deactivate-btn text-primary border-0 bg-white fs-16 d-block w-100 text-center p-4"
-                                       data-toggle="modal" data-target="#deactivate-account-modal">
-                                        Deactivate Your Account
-                                    </a>
                                 </div>
                             </div>
 
@@ -2607,23 +2331,16 @@
     </div>
     <!-- deactivate account Modal -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!--<script src="js/simple-lightbox.min.js"></script>-->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/popper.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
     <script src="js/main.min.js"></script>
     <script>
         jQuery(document).ready(function ($) {
-            if ($(window).width() < 992) {
-                // $(".list-group-item").click(function () {
-                //     console.log("clicked");
-                    // $(".settings-tab-content").scrollTop(0);
-                // });
-                $(".list-group-item").click(function() {
-                    $([document.documentElement, document.body]).animate({
-                        scrollTop: $(".settings-tab-content").offset().top - 150
-                    }, 2000);
+            if ($(window).width() < 768) {
+                $(".settings-tab-menu-mobile-nav").click(function () {
+                    $(this).siblings().removeClass('active');
                 });
             }
         });

@@ -8,18 +8,13 @@
     <title>Tarik Eamin | Home</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="css/animate.min.css">-->
+    <!--<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        .content-404 {
-            min-height: calc(100vh - 200px);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
-        }
-    </style>
 </head>
-<body class="404">
+<body class="page-chat page-chat--chatbox">
 <!--site header-->
 <header class="header bg-dark py-2">
     <div class="container pt-1 pb-1">
@@ -611,39 +606,179 @@
 <!--site header end-->
 
 <main class="main-content mt-4">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-md-6 text-center py-3 content-404">
-                <div class="content-404-wrap">
-                    <h1 class="font-weight-bold">It looks like you’re lost...</h1>
-                    <img src="img/404-img.png" alt="404 page art" class="img-fluid">
-                    <p class="text-light fs-14 mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard</p>
-                    <a href="/" class="btn btn-dark fs-16 py-2 px-4 mt-4">Go back home</a>
+    <div class="container" id="chat-page-container">
+        <div class="row">
+            <!--active chat box-->
+            <section id="active-chat" class="col-12">
+                <!--chat header-->
+                <div class="active-chat__head d-flex justify-content-between flex-row">
+                    <div class="active-chat__user d-flex justify-content-start align-items-center">
+                        <div class="acu__pp">
+                            <img src="img/elon.png" alt="">
+                        </div>
+                        <div class="acu__title h5 mb-0 ml-3">Elon Mask</div>
+                    </div>
+                    <div class="active-chat__options px-1 d-flex justify-content-end align-items-center">
+                        <div class="search active-chat__options__item ml-4" id="search-active-chat">
+                            <label for="chat-search">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>search-iocn</title><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.9636" stroke="#000" fill="#000" d="M22.715 21.040c1.794-2.156 2.882-4.953 2.882-8.005 0-6.934-5.622-12.556-12.556-12.556s-12.556 5.622-12.556 12.556c0 6.934 5.622 12.556 12.556 12.556 3.052 0 5.849-1.089 8.025-2.899l-0.020 0.017 8.594 8.609 1.679-1.679zM13.034 23.223c-5.627 0-10.189-4.562-10.189-10.189s4.562-10.189 10.189-10.189c5.627 0 10.188 4.561 10.189 10.187v0c-0.002 5.627-4.563 10.188-10.189 10.191h-0z"></path></svg>
+                            </label>
+                            <input type="search" id="chat-search" class="form-control fs-14" placeholder="search chat">
+                        </div>
+                        <div class="attach active-chat__options__item ml-4">
+                            <label for="custom-video-upload-input">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29.481" height="27.09" viewBox="0 0 29.481 27.09"><path id="Path_259" data-name="Path 259" d="M41.242,23.129a8.417,8.417,0,0,0-2.469-5.786,8.163,8.163,0,0,0-11.533-.193L14.782,29.609h0l-.231.231c-.039.039-.039.039-.039.077a6.68,6.68,0,0,0,.116,9.141,6.481,6.481,0,0,0,4.59,1.89,6.861,6.861,0,0,0,4.551-1.736.135.135,0,0,0,.077-.039L35.881,27.141a4.787,4.787,0,0,0-.116-6.711,4.947,4.947,0,0,0-3.356-1.466,4.73,4.73,0,0,0-3.317,1.311l-8.64,8.563a.382.382,0,0,0,.54.54l8.6-8.6a3.661,3.661,0,0,1,2.777-1.08,4.039,4.039,0,0,1,2.816,1.234,4.372,4.372,0,0,1,1.234,2.816,3.872,3.872,0,0,1-1.08,2.777L23.5,38.326a5.786,5.786,0,1,1-8.177-8.177L27.781,17.691a7.419,7.419,0,0,1,10.453.193,7.618,7.618,0,0,1,2.276,5.284,6.95,6.95,0,0,1-2.083,5.169L28.861,37.9a.373.373,0,0,0,0,.54.373.373,0,0,0,.54,0l9.566-9.566A7.852,7.852,0,0,0,41.242,23.129Z" transform="translate(-12.262 -14.36)" fill="#d3d8e0" stroke="#d3d8e0" stroke-width="1"/></svg>
+                            </label>
+                            <input type="file" class="" id="custom-video-upload-input" hidden="">
+                        </div>
+                        <div class="dots active-chat__options__item ml-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29.401" height="6.918" viewBox="0 0 29.401 6.918"><g id="Group_953" data-name="Group 953" transform="translate(737.401 -1759) rotate(90)"><circle id="Ellipse_37" data-name="Ellipse 37" cx="3.459" cy="3.459" r="3.459" transform="translate(1759 708)" fill="#d3d8e0"/><circle id="Ellipse_38" data-name="Ellipse 38" cx="3.459" cy="3.459" r="3.459" transform="translate(1759 719.242)" fill="#d3d8e0"/><circle id="Ellipse_39" data-name="Ellipse 39" cx="3.459" cy="3.459" r="3.459" transform="translate(1759 730.483)" fill="#d3d8e0"/></g></svg>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <!--chat body-->
+                <div class="active-chat__body fs-14">
+                    <!--message 1-->
+                    <div class="received active-chat__body__message">
+                        <div class="user__profile">
+                            <a href="#">
+                                <img src="img/img-pp.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="user__message">
+                            <p class="user__message__item">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut debitis dolorem
+                                expedita id nam numquam placeat possimus, quo temporibus veniam vitae.
+                            </p>
+                            <p class="user__message__item">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut debitis dolorem
+                                expedita id nam numquam placeat possimus, quo temporibus veniam vitae.
+                            </p>
+                        </div>
+                        <div class="message__time text-light">
+                            22:16
+                        </div>
+                    </div>
+
+                    <!--message 2-->
+                    <div class="sent active-chat__body__message seen">
+                        <div class="user__profile">
+                            <a href="#">
+                                <img src="img/img-pp.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="user__message">
+                            <p class="user__message__item">Lorem ipsum dolor sit amet, consectetur </p>
+                            <p class="user__message__item">Lorem ipsum doloasd a  sadas  s asdasdasr sit amet, consectetur </p>
+                            <p class="user__message__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto aut consequuntur cumque dolor eum exercitationem expedita fuga fugit harum illo inventore ipsam iste itaque libero maiores nam nesciunt placeat reprehenderit repudiandae sapiente sint soluta suscipit tempora ut, veniam voluptate. A iure labore possimus.</p>
+                            <p class="user__message__item">Lorem ipsum dolor sit amet, consectetur </p>
+                        </div>
+                        <div class="message__time text-light">
+                            22:16
+                        </div>
+                    </div>
+                    <!--message 3: sticker message-->
+                    <div class="received active-chat__body__message has-sticker">
+                        <div class="user__profile">
+                            <a href="#">
+                                <img src="img/img-pp.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="user__message">
+                            <p class="user__message__item user__message__item--sticker">
+                                <img src="img/sticker.png" alt="" class="sticker">
+                            </p>
+                        </div>
+                        <div class="message__time text-light">
+                            22:16
+                        </div>
+                    </div>
+
+                    <!--message 4: sticker message-->
+                    <div class="sent active-chat__body__message has-sticker seen">
+                        <div class="user__profile">
+                            <a href="#">
+                                <img src="img/img-pp.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="user__message">
+                            <p class="user__message__item user__message__item--sticker">
+                                <img src="img/sticker.png" alt="" class="sticker">
+                            </p>
+                        </div>
+                        <div class="message__time text-light">
+                            22:16
+                        </div>
+                    </div>
+
+                </div>
+                <!--chat footer-->
+                <div class="active-chat__footer d-flex justify-content-between align-items-center">
+                    <div class="acf__attach">
+                        <label for="custom-attachment-upload-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29.481" height="27.09" viewBox="0 0 29.481 27.09"><path id="Path_259" data-name="Path 259" d="M41.242,23.129a8.417,8.417,0,0,0-2.469-5.786,8.163,8.163,0,0,0-11.533-.193L14.782,29.609h0l-.231.231c-.039.039-.039.039-.039.077a6.68,6.68,0,0,0,.116,9.141,6.481,6.481,0,0,0,4.59,1.89,6.861,6.861,0,0,0,4.551-1.736.135.135,0,0,0,.077-.039L35.881,27.141a4.787,4.787,0,0,0-.116-6.711,4.947,4.947,0,0,0-3.356-1.466,4.73,4.73,0,0,0-3.317,1.311l-8.64,8.563a.382.382,0,0,0,.54.54l8.6-8.6a3.661,3.661,0,0,1,2.777-1.08,4.039,4.039,0,0,1,2.816,1.234,4.372,4.372,0,0,1,1.234,2.816,3.872,3.872,0,0,1-1.08,2.777L23.5,38.326a5.786,5.786,0,1,1-8.177-8.177L27.781,17.691a7.419,7.419,0,0,1,10.453.193,7.618,7.618,0,0,1,2.276,5.284,6.95,6.95,0,0,1-2.083,5.169L28.861,37.9a.373.373,0,0,0,0,.54.373.373,0,0,0,.54,0l9.566-9.566A7.852,7.852,0,0,0,41.242,23.129Z" transform="translate(-12.262 -14.36)" fill="#d3d8e0" stroke="#d3d8e0" stroke-width="1"/></svg>
+                        </label>
+                        <input type="file" class="" id="custom-attachment-upload-2" hidden="">
+                    </div>
+
+                    <div class="acf__send-new-message">
+                        <input name="new-message" id="new-message" class="form-control fs-14" placeholder="Write a message to Elon">
+                        <button type="submit" class="bg-transparent border-0 btn mobile-submit" id="send-message-btn">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="535.5px" height="535.5px" viewBox="0 0 535.5 535.5" style="enable-background:new 0 0 535.5 535.5;" xml:space="preserve"><g><g id="send"><polygon points="0,497.25 535.5,267.75 0,38.25 0,216.75 382.5,267.75 0,318.75 		"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        </button>
+                    </div>
+
+                    <div class="acf__more-options">
+                        <div class=" d-flex justify-content-between">
+                            <!-- image uplaod-->
+                            <div class="input-group custom-img-upload">
+                                <label for="custom-img-upload-input">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32"><title>photo icon</title><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4305" stroke="#000" fill="#000" d="M37.525 25.088v-18.175c-0.011-3.694-3.003-6.686-6.696-6.697h-23.916c-3.694 0.011-6.686 3.003-6.697 6.696v18.176c0.011 3.694 3.003 6.686 6.696 6.697h23.916c3.694-0.011 6.686-3.003 6.697-6.696v-0.001zM6.912 2.128h23.915c2.638 0.008 4.775 2.145 4.783 4.782v10.094l-4.543-3.922c-0.998-0.867-2.31-1.395-3.746-1.395-1.535 0-2.93 0.604-3.958 1.588l0.002-0.002-3.013 2.823-2.009-2.487c-1.063-1.293-2.663-2.111-4.454-2.111-1.093 0-2.115 0.305-2.986 0.834l0.025-0.014-8.801 5.309v-10.715c0.007-2.639 2.145-4.777 4.784-4.784h0.001zM2.13 25.088v-5.213l9.758-5.931c0.568-0.351 1.257-0.559 1.994-0.559 1.2 0 2.271 0.551 2.975 1.413l0.005 0.007 12.197 15.067h-22.147c-2.639-0.007-4.777-2.145-4.784-4.784v-0.001zM31.499 29.823l-9.95-12.245 3.11-2.966c0.681-0.641 1.6-1.036 2.612-1.036 0.962 0 1.84 0.356 2.511 0.943l-0.004-0.004 5.836 5.022v5.549c-0.004 2.405-1.778 4.394-4.090 4.732l-0.026 0.003z"></path></svg>
+                                </label>
+                                <input type="file" class="" id="custom-img-upload-input" hidden="">
+                            </div>
+                            <!--insert emoji-->
+                            <div class="input-group send-emoji">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>Smile</title><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4305" stroke="#000" fill="#000" d="M11.009 9.847c-0.932 0-1.688 0.756-1.688 1.688s0.756 1.688 1.688 1.688c0.932 0 1.688-0.756 1.688-1.688v0c-0.007-0.929-0.758-1.68-1.687-1.688h-0.001z"></path><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4305" stroke="#000" fill="#000" d="M20.991 9.847c-0.932 0-1.688 0.756-1.688 1.688s0.756 1.688 1.688 1.688c0.932 0 1.688-0.756 1.688-1.688v0c-0.007-0.929-0.758-1.68-1.687-1.688h-0.001z"></path><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4305" stroke="#000" fill="#000" d="M16 0.215c-8.718 0-15.785 7.067-15.785 15.785s7.067 15.785 15.785 15.785c8.718 0 15.785-7.067 15.785-15.785v0c-0.007-8.715-7.070-15.777-15.784-15.785h-0.001zM16 2.144c7.653 0 13.856 6.204 13.856 13.856s-6.204 13.856-13.856 13.856c-7.653 0-13.856-6.204-13.856-13.856v0c0-0.007-0-0.016-0-0.024 0-7.639 6.193-13.832 13.832-13.832 0.009 0 0.017 0 0.026 0h-0.001z"></path><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4305" stroke="#000" fill="#000" d="M23.65 21.011c0.139-0.167 0.224-0.383 0.224-0.619 0-0.535-0.434-0.969-0.969-0.969-0.015 0-0.030 0-0.045 0.001l0.002-0c-0.35 0.037-0.646 0.235-0.818 0.517l-0.003 0.005c-1.377 1.867-3.568 3.064-6.039 3.064s-4.662-1.197-6.025-3.044l-0.014-0.020c-0.174-0.287-0.471-0.485-0.816-0.522l-0.005-0c-0.013-0.001-0.028-0.001-0.043-0.001-0.535 0-0.969 0.434-0.969 0.969 0 0.236 0.085 0.453 0.225 0.621l-0.001-0.002c1.72 2.404 4.504 3.953 7.649 3.953s5.929-1.548 7.63-3.924l0.019-0.028z"></path></svg>
+                            </div>
+                            <!--video uplaod-->
+                            <div class="input-group custom-video-upload">
+                                <label for="custom-video-upload-input2">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="43" height="32" viewBox="0 0 43 32"><title>video</title><path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.1371" stroke="#000" fill="#000" d="M41.358 7.708c-0.369-0.202-0.808-0.32-1.274-0.32-0.569 0-1.097 0.176-1.532 0.477l0.009-0.006-4.462 3.039v-3.062c0-0.004 0-0.010 0-0.015 0-3.992-3.226-7.231-7.213-7.253h-19.093c-3.993 0.017-7.224 3.257-7.224 7.253 0 0.005 0 0.010 0 0.016v-0.001 16.328c0 0.004 0 0.009 0 0.015 0 3.995 3.231 7.236 7.222 7.253h19.093c3.993-0.017 7.224-3.257 7.224-7.253 0-0.005 0-0.010-0-0.015v0.001-3.062l4.462 3.039c0.426 0.295 0.954 0.471 1.523 0.471 0.467 0 0.906-0.118 1.288-0.327l-0.014 0.007c0.861-0.471 1.436-1.371 1.436-2.405 0-0.004 0-0.007-0-0.011v0.001-11.754c0-0.002 0-0.004 0-0.006 0-1.037-0.578-1.94-1.43-2.402l-0.014-0.007zM41.178 21.877c0 0.002 0 0.004 0 0.006 0 0.604-0.489 1.093-1.093 1.093-0.229 0-0.441-0.070-0.616-0.19l0.004 0.002-6.998-4.766v6.142c0 0.003 0 0.006 0 0.010 0 3.094-2.499 5.604-5.589 5.622h-19.093c-3.095-0.013-5.599-2.525-5.599-5.622 0-0.003 0-0.007 0-0.010v0.001-16.328c0-0.003 0-0.007 0-0.011 0-3.097 2.504-5.609 5.598-5.622h19.092c3.095 0.013 5.599 2.525 5.599 5.622 0 0.004 0 0.008 0 0.012v-0.001 6.142l6.998-4.766c0.17-0.114 0.379-0.182 0.604-0.182 0.604 0 1.093 0.489 1.093 1.093 0 0 0 0 0 0v0z"></path></svg>
+                                </label>
+                                <input type="file" class="" id="custom-video-upload-input2" hidden="">
+                            </div>
+                            <!--voice call-->
+                            <div class="input-group vocie-call">
+                                <!--<label for="recorder">-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.61" height="28.681" viewBox="0 0 21.61 28.681"><g id="voice" transform="translate(0.201 0.2)"><g id="_24-voices" data-name="24-voices"><path id="Path_260" data-name="Path 260" d="M16.576,26.86H12.634A8.617,8.617,0,0,1,4,18.252V15.3H5.5v2.952a7.141,7.141,0,0,0,7.132,7.132h3.933A7.141,7.141,0,0,0,23.7,18.252V15.3h1.511v2.952a8.617,8.617,0,0,1-8.634,8.608Z" transform="translate(-4 -1.778)" fill="#d3d8e0" stroke="#d3d8e0" stroke-width="0.4"/><path id="Path_261" data-name="Path 261" d="M15.979,22.094H14.017A6.646,6.646,0,0,1,7.38,15.457V6.619A6.646,6.646,0,0,1,14.017,0h1.971a6.646,6.646,0,0,1,6.637,6.637v8.838a6.646,6.646,0,0,1-6.646,6.619ZM14.017,1.476A5.17,5.17,0,0,0,8.812,6.637v8.838a5.17,5.17,0,0,0,5.161,5.161h1.971a5.17,5.17,0,0,0,5.241-5.144V6.655a5.17,5.17,0,0,0-5.161-5.161Z" transform="translate(-4.393)" fill="#d3d8e0" stroke="#d3d8e0" stroke-width="0.4"/><rect id="Rectangle_162" data-name="Rectangle 162" width="1.476" height="3.933" transform="translate(9.872 24.348)" fill="#d3d8e0" stroke="#d3d8e0" stroke-width="0.4"/></g></g></svg>
+                                <!--</label>-->
+                                <!--<input type="file" accept="audio/*" capture id="recorder">-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--active chat box end-->
         </div>
-        <!--row end-->
     </div>
-    <!--container end-->
 </main>
 
-<footer class="footer mt-5">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-md-6 text-center text-light">
-                <a href="javascript:history.back()" class="footer-link-a">Previous Page</a>
-                <a href="#" class="footer-link-a">Help Center</a>
-                <a href="#" class="footer-link-a">Settings</a>
-                <a href="#" class="footer-link-a">News Feed</a>
-            </div>
-        </div>
-    </div>
-</footer>
 
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/popper.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <!--<script src="js/vendor/owl.carousel.min.js"></script>-->
-    <script src="js/main.min.js"></script>
+
+<!--=========== image lightbox ============-->
+<div id="imageLightbox">
+    <img src="img/post-img.png" alt="lightbox image" class="img-fluid">
+</div>
+<div id="lightboxOverlay">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"> <g id="X"> <line id="_x5C_" fill="none" stroke="white" stroke-width="10" transform="translate(5, 5)" stroke-miterlimit="10" x1="5" y1="5" x2="50" y2="50" stroke-linecap="round"/> <line id="_x2F_" fill="none" stroke="white" stroke-width="10" transform="translate(5, 5)" stroke-miterlimit="10" x1="5" y1="50" x2="50" y2="5" stroke-linecap="round"/> </g>  <g id="circle"> <circle id="XMLID_16_" opacity="0" fill="none" stroke-width="3" stroke="#fff" stroke-miterlimit="10" cx="30" cy="30" r="40"/> </g> </svg>
+</div>
+<!--=========== end image lightbox ============-->
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/popper.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>

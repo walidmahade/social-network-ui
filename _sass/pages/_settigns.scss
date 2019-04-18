@@ -135,3 +135,39 @@
     }
   }
 }
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .page-settings {
+
+    .settings-menu-col {
+      position: sticky;
+      top: 120px;
+      z-index: 999;
+      transition: top .3s;
+    }
+
+    &.fixed-header--active {
+      .settings-menu-col {
+        top: 64px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 0) and (max-width: 575px) {
+  .page-settings {
+
+    .settings-menu-col {
+      position: sticky;
+      top: 112px;
+      z-index: 999;
+      transition: top .3s;
+    }
+
+    &.mobile-searchbar-hidden {
+      .settings-menu-col {
+        top: 64px;
+      }
+    }
+  }
+}

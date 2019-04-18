@@ -16870,6 +16870,38 @@ body.fixed-header--active {
     margin: 0 !important;
   }
 }
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  /* line 142, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
+  .page-settings .settings-menu-col {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+    z-index: 999;
+    -webkit-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+  }
+  /* line 150, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
+  .page-settings.fixed-header--active .settings-menu-col {
+    top: 64px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 575px) {
+  /* line 160, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
+  .page-settings .settings-menu-col {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 112px;
+    z-index: 999;
+    -webkit-transition: top .3s;
+    -o-transition: top .3s;
+    transition: top .3s;
+  }
+  /* line 168, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
+  .page-settings.mobile-searchbar-hidden .settings-menu-col {
+    top: 64px;
+  }
+}
 
 
 

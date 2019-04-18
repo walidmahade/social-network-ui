@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+    const $body = $("body");
     /*
      * Add new post text are
      */
@@ -123,10 +124,13 @@ jQuery(document).ready(function($) {
                 let scroll = $(window).scrollTop();
                 if (scroll < 75) {
                     headerSearchBar.removeClass('hide-me');
+                    $body.removeClass('mobile-searchbar-hidden');
                 } else if (scroll > position) {
                     headerSearchBar.addClass('hide-me');
+                    $body.addClass('mobile-searchbar-hidden');
                 } else {
                     headerSearchBar.removeClass('hide-me');
+                    $body.removeClass('mobile-searchbar-hidden');
                 }
                 position = scroll;
             });

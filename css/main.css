@@ -12774,22 +12774,22 @@ a.text-dark:hover, .page-signup .footer-links a:hover, .page-signup--v2 .footer-
 /* line 10, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/base/_helpers.scss */
 .fs-14, .dropdown-menu, .list-user, .header__search input::-webkit-input-placeholder, #popup-chat .popup-chat__window--btn .dropdown-item, #popup-chat .popup-chat__window__messages .message__body .text, .footer-link-a, .page-profile .profile-card__actions .btn, .page-profile .about-tab-content .user__bio__item, .page-signup .right-col input,
 .page-signup .right-col input.form-control, .login-form input.form-control, .page-signup--v2 .right-col input,
-.page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control {
+.page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .search-result__item .btn {
   font-size: 14px;
 }
 .fs-14, .dropdown-menu, .list-user, .header__search input:-ms-input-placeholder, #popup-chat .popup-chat__window--btn .dropdown-item, #popup-chat .popup-chat__window__messages .message__body .text, .footer-link-a, .page-profile .profile-card__actions .btn, .page-profile .about-tab-content .user__bio__item, .page-signup .right-col input,
 .page-signup .right-col input.form-control, .login-form input.form-control, .page-signup--v2 .right-col input,
-.page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control {
+.page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .search-result__item .btn {
   font-size: 14px;
 }
 .fs-14, .dropdown-menu, .list-user, .header__search input::-ms-input-placeholder, #popup-chat .popup-chat__window--btn .dropdown-item, #popup-chat .popup-chat__window__messages .message__body .text, .footer-link-a, .page-profile .profile-card__actions .btn, .page-profile .about-tab-content .user__bio__item, .page-signup .right-col input,
 .page-signup .right-col input.form-control, .login-form input.form-control, .page-signup--v2 .right-col input,
-.page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control {
+.page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .search-result__item .btn {
   font-size: 14px;
 }
 .fs-14, .dropdown-menu, .list-user, .header__search input::placeholder, #popup-chat .popup-chat__window--btn .dropdown-item, #popup-chat .popup-chat__window__messages .message__body .text, .footer-link-a, .page-profile .profile-card__actions .btn, .page-profile .about-tab-content .user__bio__item, .page-signup .right-col input,
 .page-signup .right-col input.form-control, .login-form input.form-control, .page-signup--v2 .right-col input,
-.page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control {
+.page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .search-result__item .btn {
   font-size: 14px;
 }
 
@@ -12837,22 +12837,22 @@ button {
   /* line 48, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/base/_helpers.scss */
   .fs-12, #popup-chat .popup-chat__window__messages .message__body .message__time, .active-chat__body .message__time, .fs-13, .fs-14, .dropdown-menu, .list-user, .header__search input::-webkit-input-placeholder, #popup-chat .popup-chat__window--btn .dropdown-item, #popup-chat .popup-chat__window__messages .message__body .text, .footer-link-a, .page-profile .profile-card__actions .btn, .page-profile .about-tab-content .user__bio__item, .page-signup .right-col input,
   .page-signup .right-col input.form-control, .login-form input.form-control, .page-signup--v2 .right-col input,
-  .page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .fs-15, .fs-16, .uf__post__elem, .fs-17, .fs-18, .fs-20, .uf__post .h5, .fs-22, .fs-26, input, .h5, textarea {
+  .page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .search-result__item .btn, .fs-15, .fs-16, .uf__post__elem, .fs-17, .fs-18, .fs-20, .uf__post .h5, .fs-22, .fs-26, input, .h5, textarea {
     font-size: 90%;
   }
   .fs-12, #popup-chat .popup-chat__window__messages .message__body .message__time, .active-chat__body .message__time, .fs-13, .fs-14, .dropdown-menu, .list-user, .header__search input:-ms-input-placeholder, #popup-chat .popup-chat__window--btn .dropdown-item, #popup-chat .popup-chat__window__messages .message__body .text, .footer-link-a, .page-profile .profile-card__actions .btn, .page-profile .about-tab-content .user__bio__item, .page-signup .right-col input,
   .page-signup .right-col input.form-control, .login-form input.form-control, .page-signup--v2 .right-col input,
-  .page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .fs-15, .fs-16, .uf__post__elem, .fs-17, .fs-18, .fs-20, .uf__post .h5, .fs-22, .fs-26, input, .h5, textarea {
+  .page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .search-result__item .btn, .fs-15, .fs-16, .uf__post__elem, .fs-17, .fs-18, .fs-20, .uf__post .h5, .fs-22, .fs-26, input, .h5, textarea {
     font-size: 90%;
   }
   .fs-12, #popup-chat .popup-chat__window__messages .message__body .message__time, .active-chat__body .message__time, .fs-13, .fs-14, .dropdown-menu, .list-user, .header__search input::-ms-input-placeholder, #popup-chat .popup-chat__window--btn .dropdown-item, #popup-chat .popup-chat__window__messages .message__body .text, .footer-link-a, .page-profile .profile-card__actions .btn, .page-profile .about-tab-content .user__bio__item, .page-signup .right-col input,
   .page-signup .right-col input.form-control, .login-form input.form-control, .page-signup--v2 .right-col input,
-  .page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .fs-15, .fs-16, .uf__post__elem, .fs-17, .fs-18, .fs-20, .uf__post .h5, .fs-22, .fs-26, input, .h5, textarea {
+  .page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .search-result__item .btn, .fs-15, .fs-16, .uf__post__elem, .fs-17, .fs-18, .fs-20, .uf__post .h5, .fs-22, .fs-26, input, .h5, textarea {
     font-size: 90%;
   }
   .fs-12, #popup-chat .popup-chat__window__messages .message__body .message__time, .active-chat__body .message__time, .fs-13, .fs-14, .dropdown-menu, .list-user, .header__search input::placeholder, #popup-chat .popup-chat__window--btn .dropdown-item, #popup-chat .popup-chat__window__messages .message__body .text, .footer-link-a, .page-profile .profile-card__actions .btn, .page-profile .about-tab-content .user__bio__item, .page-signup .right-col input,
   .page-signup .right-col input.form-control, .login-form input.form-control, .page-signup--v2 .right-col input,
-  .page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .fs-15, .fs-16, .uf__post__elem, .fs-17, .fs-18, .fs-20, .uf__post .h5, .fs-22, .fs-26, input, .h5, textarea {
+  .page-signup--v2 .right-col .form-control, .page-signup--v2 .login-form .form-control, .page-login .main-content .login-form .form-control, .search-result__item .btn, .fs-15, .fs-16, .uf__post__elem, .fs-17, .fs-18, .fs-20, .uf__post .h5, .fs-22, .fs-26, input, .h5, textarea {
     font-size: 90%;
   }
 }
@@ -16900,6 +16900,190 @@ body.fixed-header--active {
   /* line 168, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_settigns.scss */
   .page-settings.mobile-searchbar-hidden .settings-menu-col {
     top: 64px;
+  }
+}
+/* line 1, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page {
+  margin: 0;
+}
+
+/* line 5, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-menu {
+  border-bottom: 1px solid #ebebeb;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: auto;
+  z-index: 9;
+}
+/* line 12, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-menu .nav.nav-tabs {
+  border-bottom: 0;
+}
+/* line 15, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-menu .nav-link__li {
+  margin-right: 70px;
+  overflow: hidden;
+}
+/* line 19, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-menu .nav-link__li:last-child {
+  margin-right: 0;
+}
+/* line 24, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-menu .nav-link__a {
+  color: rgba(108, 117, 125, 0.7);
+  padding: 20px 0;
+  display: inline-block;
+  position: relative;
+}
+/* line 31, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-menu .nav-link__a:after {
+  content: ' ';
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: #EFB200;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: bottom .3s;
+  -o-transition: bottom .3s;
+  transition: bottom .3s;
+}
+/* line 44, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-menu .nav-link__a.active {
+  color: #3D3D3D;
+}
+/* line 47, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-menu .nav-link__a.active:after {
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* line 56, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.filter-wrap {
+  margin: 2rem 0;
+}
+
+/* line 62, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-filter__item {
+  cursor: pointer;
+}
+/* line 66, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-filter .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  cursor: pointer;
+}
+/* line 72, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-filter .filter__title {
+  padding-left: 25px;
+  cursor: pointer;
+}
+/* line 77, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-filter .checkbox + .filter__title {
+  position: relative;
+  display: block;
+}
+/* line 81, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-filter .checkbox + .filter__title:before {
+  content: '';
+  height: 15px;
+  width: 15px;
+  border: 2px solid #EFB200;
+  display: inline-block;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+/* line 97, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-filter .checkbox:checked + .filter__title:before {
+  background-color: #EFB200;
+}
+
+/* line 103, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result-page__tab-content {
+  padding: 32px 0 65px 0;
+}
+
+/* line 110, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result__item .uf__post__text,
+.search-result__item .uf__post__image {
+  padding-left: calc(60px + 1rem);
+}
+/* line 115, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result__item .btn {
+  border-color: rgba(112, 112, 112, 0.2);
+  background-color: #f8f8f8;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+/* line 121, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result__item .btn svg * {
+  stroke: #3D3D3D !important;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+/* line 126, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result__item .btn:hover {
+  border-color: #EFB200;
+}
+/* line 129, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result__item .btn:hover svg * {
+  stroke: #EFB200 !important;
+}
+/* line 136, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result__item .icon--add-friend svg {
+  height: 16px !important;
+}
+/* line 141, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+.search-result__item .icon--like svg {
+  width: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 150, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .search-result-page__tab-menu .nav.nav-tabs {
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  /* line 153, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .search-result-page__tab-menu .nav-link__li {
+    margin: 0 15px;
+  }
+  /* line 155, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .search-result-page__tab-menu .nav-link__li:first-child {
+    margin-left: 0;
+  }
+  /* line 158, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .search-result-page__tab-menu .nav-link__li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  /* line 167, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .search-result-page__tab-menu .nav-link__li {
+    margin: 0 10px;
+  }
+
+  /* line 173, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .search-result__item .uf__post__text,
+  .search-result__item .uf__post__image {
+    padding-left: 0;
   }
 }
 

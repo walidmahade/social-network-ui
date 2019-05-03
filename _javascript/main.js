@@ -95,6 +95,16 @@ jQuery(document).ready(function($) {
    */
    const header = $(".header");
 
+   // search page filter header
+    function updateSearchFilterHeaderPosition() {
+        if ($body.hasClass('search-result-page')) {
+            setTimeout(function () {
+                let headerHeight = $('header.header').innerHeight();
+                $(".search-result-page__tab-menu").css('top', headerHeight);
+            }, 1000)
+        } else  {}
+    }
+
    $(window).scroll(function () {
        let sTop = $(window).scrollTop();
        if (sTop >= 73) {
@@ -111,6 +121,7 @@ jQuery(document).ready(function($) {
 
     $(window).on("resize", function () {
         updateSearchbarVisibility();
+        updateSearchFilterHeaderPosition();
     });
 
     updateSearchbarVisibility();
@@ -125,12 +136,15 @@ jQuery(document).ready(function($) {
                 if (scroll < 75) {
                     headerSearchBar.removeClass('hide-me');
                     $body.removeClass('mobile-searchbar-hidden');
+                    updateSearchFilterHeaderPosition();
                 } else if (scroll > position) {
                     headerSearchBar.addClass('hide-me');
                     $body.addClass('mobile-searchbar-hidden');
+                    updateSearchFilterHeaderPosition();
                 } else {
                     headerSearchBar.removeClass('hide-me');
                     $body.removeClass('mobile-searchbar-hidden');
+                    updateSearchFilterHeaderPosition();
                 }
                 position = scroll;
             });

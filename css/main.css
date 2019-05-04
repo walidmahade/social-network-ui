@@ -17055,35 +17055,78 @@ body.fixed-header--active {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 150, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  /* line 149, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
   .search-result-page__tab-menu .nav.nav-tabs {
     -webkit-box-pack: justify !important;
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
   }
-  /* line 153, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  /* line 152, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
   .search-result-page__tab-menu .nav-link__li {
     margin: 0 15px;
   }
-  /* line 155, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  /* line 154, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
   .search-result-page__tab-menu .nav-link__li:first-child {
     margin-left: 0;
   }
-  /* line 158, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  /* line 157, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
   .search-result-page__tab-menu .nav-link__li:last-child {
     margin-right: 0;
   }
 }
 @media screen and (max-width: 575px) {
-  /* line 167, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  /* line 166, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
   .search-result-page__tab-menu .nav-link__li {
     margin: 0 10px;
   }
 
-  /* line 173, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  /* line 172, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
   .search-result__item .uf__post__text,
   .search-result__item .uf__post__image {
     padding-left: 0;
+  }
+
+  /* line 179, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .filter__mobile-trigger {
+    border: 1px solid #EFB200;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    transition: background-color .3s;
+  }
+  /* line 187, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .filter__mobile-trigger:hover {
+    background-color: #EFB200;
+    color: white;
+  }
+
+  /* line 193, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .all_filters {
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    left: 15px;
+    top: 1500px;
+    z-index: 99;
+    border: 1px solid #EFB200;
+    padding: 0 25px;
+    width: calc(100% - 30px);
+    -webkit-box-shadow: 0 0 20px #ebebeb;
+    box-shadow: 0 0 20px #ebebeb;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: top .4s, opacity .2s;
+    -o-transition: top .4s, opacity .2s;
+    transition: top .4s, opacity .2s;
+  }
+  /* line 208, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/_search-result.scss */
+  .all_filters.show {
+    opacity: 1;
+    visibility: visible;
+    top: 50px;
   }
 }
 

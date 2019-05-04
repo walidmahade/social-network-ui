@@ -606,6 +606,7 @@
 <!--site header end-->
 
 <main class="main-content mt-4">
+
     <div class="search-result-page__tab-menu">
         <div class="container">
             <div class="row">
@@ -642,91 +643,93 @@
         <div class="row">
             <!--search filter column-->
             <div class="col-12 col-md-3">
-                <h3 class="fs-16">Filter Results</h3>
+                <h3 class="fs-16 filter__mobile-trigger" id="filter__mobile-trigger-js">Filter Results</h3>
 
-                <!--filter one-->
-                <div class="filter-wrap">
-                    <h3 class="fs-16 text-uppercase mb-3">Posts From</h3>
-                    <ul class="search-filter list-unstyled p-0 m-0">
-                        <li class="search-filter__item">
-                            <label for="checkbox-1">
-                                <input type="checkbox" class="checkbox" id="checkbox-1">
-                                <span class="filter__title">You</span>
-                            </label>
-                        </li>
-                        <li class="search-filter__item">
-                            <label for="checkbox-3">
-                                <input type="checkbox" class="checkbox" id="checkbox-3">
-                                <span class="filter__title">Your Friends</span>
-                            </label>
-                        </li>
-                        <li class="search-filter__item">
-                            <label for="checkbox-4">
-                                <input type="checkbox" class="checkbox" id="checkbox-4">
-                                <span class="filter__title">Your groups or pages</span>
-                            </label>
-                        </li>
-                        <li class="search-filter__item">
-                            <label for="checkbox-5">
-                                <input type="checkbox" class="checkbox" id="checkbox-5">
-                                <span class="filter__title">Public</span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <!--filter one end-->
+                <div class="all_filters">
+                    <!--filter one-->
+                    <div class="filter-wrap">
+                        <h3 class="fs-16 text-uppercase mb-3">Posts From</h3>
+                        <ul class="search-filter list-unstyled p-0 m-0">
+                            <li class="search-filter__item">
+                                <label for="checkbox-1">
+                                    <input type="checkbox" class="checkbox" id="checkbox-1">
+                                    <span class="filter__title">You</span>
+                                </label>
+                            </li>
+                            <li class="search-filter__item">
+                                <label for="checkbox-3">
+                                    <input type="checkbox" class="checkbox" id="checkbox-3">
+                                    <span class="filter__title">Your Friends</span>
+                                </label>
+                            </li>
+                            <li class="search-filter__item">
+                                <label for="checkbox-4">
+                                    <input type="checkbox" class="checkbox" id="checkbox-4">
+                                    <span class="filter__title">Your groups or pages</span>
+                                </label>
+                            </li>
+                            <li class="search-filter__item">
+                                <label for="checkbox-5">
+                                    <input type="checkbox" class="checkbox" id="checkbox-5">
+                                    <span class="filter__title">Public</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--filter one end-->
 
-                <!--filter two-->
-                <div class="filter-wrap">
-                    <h3 class="fs-16 text-uppercase mb-3">Post Type</h3>
-                    <ul class="search-filter list-unstyled p-0 m-0">
-                        <li class="search-filter__item">
-                            <label for="checkbox-6">
-                                <input type="checkbox" class="checkbox" id="checkbox-6">
-                                <span class="filter__title">All Posts</span>
-                            </label>
-                        </li>
-                        <li class="search-filter__item">
-                            <label for="checkbox-7">
-                                <input type="checkbox" class="checkbox" id="checkbox-7">
-                                <span class="filter__title">You Liked</span>
-                            </label>
-                        </li>
-                        <li class="search-filter__item">
-                            <label for="checkbox-8">
-                                <input type="checkbox" class="checkbox" id="checkbox-8">
-                                <span class="filter__title">You Commented</span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <!--filter two end-->
+                    <!--filter two-->
+                    <div class="filter-wrap">
+                        <h3 class="fs-16 text-uppercase mb-3">Post Type</h3>
+                        <ul class="search-filter list-unstyled p-0 m-0">
+                            <li class="search-filter__item">
+                                <label for="checkbox-6">
+                                    <input type="checkbox" class="checkbox" id="checkbox-6">
+                                    <span class="filter__title">All Posts</span>
+                                </label>
+                            </li>
+                            <li class="search-filter__item">
+                                <label for="checkbox-7">
+                                    <input type="checkbox" class="checkbox" id="checkbox-7">
+                                    <span class="filter__title">You Liked</span>
+                                </label>
+                            </li>
+                            <li class="search-filter__item">
+                                <label for="checkbox-8">
+                                    <input type="checkbox" class="checkbox" id="checkbox-8">
+                                    <span class="filter__title">You Commented</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--filter two end-->
 
-                <!--filter three-->
-                <div class="filter-wrap">
-                    <h3 class="fs-16 text-uppercase mb-3">Date</h3>
-                    <ul class="search-filter list-unstyled p-0 m-0">
-                        <li class="search-filter__item">
-                            <label for="checkbox-9">
-                                <input type="checkbox" class="checkbox" id="checkbox-9">
-                                <span class="filter__title">This Week</span>
-                            </label>
-                        </li>
-                        <li class="search-filter__item">
-                            <label for="checkbox-11">
-                                <input type="checkbox" class="checkbox" id="checkbox-11">
-                                <span class="filter__title">This Month</span>
-                            </label>
-                        </li>
-                        <li class="search-filter__item">
-                            <label for="checkbox-22">
-                                <input type="checkbox" class="checkbox" id="checkbox-22">
-                                <span class="filter__title">This year</span>
-                            </label>
-                        </li>
-                    </ul>
+                    <!--filter three-->
+                    <div class="filter-wrap">
+                        <h3 class="fs-16 text-uppercase mb-3">Date</h3>
+                        <ul class="search-filter list-unstyled p-0 m-0">
+                            <li class="search-filter__item">
+                                <label for="checkbox-9">
+                                    <input type="checkbox" class="checkbox" id="checkbox-9">
+                                    <span class="filter__title">This Week</span>
+                                </label>
+                            </li>
+                            <li class="search-filter__item">
+                                <label for="checkbox-11">
+                                    <input type="checkbox" class="checkbox" id="checkbox-11">
+                                    <span class="filter__title">This Month</span>
+                                </label>
+                            </li>
+                            <li class="search-filter__item">
+                                <label for="checkbox-22">
+                                    <input type="checkbox" class="checkbox" id="checkbox-22">
+                                    <span class="filter__title">This year</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--filter three end-->
                 </div>
-                <!--filter three end-->
 
             </div>
 
@@ -1134,6 +1137,18 @@
         let headerHeight = $('header.header').innerHeight();
         $('body').css('marginTop', headerHeight);
         $(".search-result-page__tab-menu").css('top', headerHeight);
+
+        $("#filter__mobile-trigger-js").click(function () {
+            if ($(this).hasClass('show')) {
+                $(this).removeClass('show');
+                $(this).siblings('.all_filters').removeClass('show');
+                $(this).text('Filter Results');
+            } else {
+                $(this).addClass('show');
+                $(this).siblings('.all_filters').addClass('show');
+                $(this).text('Hide Filters');
+            }
+        });
     });
 </script>
 </body>

@@ -142,7 +142,6 @@
       width: 15px;
     }
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -173,6 +172,43 @@
     .uf__post__text,
     .uf__post__image {
       padding-left: 0;
+    }
+  }
+
+  // mobile search filter hid show
+  .filter__mobile-trigger {
+    border: 1px solid $primary;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+
+  .all_filters {
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    left: 15px;
+    top: 1500px;
+    z-index: 99;
+    border: 1px solid $primary;
+    padding: 0 25px;
+    width: calc(100% - 30px);
+    box-shadow: 0 0 20px $border-color;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .4s, opacity .2s;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+      top: 50px;
     }
   }
 }

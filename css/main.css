@@ -17129,6 +17129,228 @@ body.fixed-header--active {
     top: 50px;
   }
 }
+/* line 5, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-profile__pp {
+  width: 150px;
+}
+/* line 8, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-profile__pp img {
+  border-radius: 50%;
+  width: 100%;
+  border: 3px solid #ECF3FE;
+}
+
+/* line 16, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__mobile-trigger {
+  display: none;
+}
+
+/* line 19, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__desktop {
+  padding: 20px 0;
+}
+/* line 21, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__desktop .nav.nav-pills {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+/* line 24, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__desktop .nav-item {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+/* line 29, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__desktop .nav-link__a {
+  color: #3D3D3D !important;
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 0.3125rem;
+}
+/* line 36, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__desktop .nav-link__a.active {
+  border-color: #ebebeb;
+}
+
+/* line 44, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__search label {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+/* line 50, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__search .group__search__icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 56, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__search .group__search__icon svg {
+  width: 16px;
+}
+/* line 58, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__search .group__search__icon svg * {
+  stroke: #D3D8E0;
+  fill: #D3D8E0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+/* line 65, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-menu__search .group__search__icon svg:hover * {
+  stroke: #EFB200;
+  fill: #EFB200;
+}
+
+/* line 77, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-actions .btn {
+  background-color: #f8f8f8;
+  border: 1px solid rgba(112, 112, 112, 0.2) !important;
+}
+/* line 82, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-actions .btn .icon svg {
+  width: 16px;
+  height: 16px;
+}
+/* line 85, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-actions .btn .icon svg * {
+  stroke: #D3D8E0;
+  fill: #D3D8E0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+/* line 92, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-actions .btn .icon svg:hover * {
+  stroke: #EFB200;
+  fill: #EFB200;
+}
+/* line 100, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-actions .dropdown-toggle {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 109, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-members {
+  position: relative;
+}
+/* line 112, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-members__profile__item {
+  width: 45px;
+  display: block;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+/* line 119, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-members__profile__item:hover {
+  border-color: #EFB200;
+}
+/* line 123, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+.group-members__profile__item img {
+  max-width: 100%;
+}
+
+/*---- responsive styles -----*/
+@media screen and (max-width: 1199px) {
+  /* line 132, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-content-left,
+  .group-content-right {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  /* line 138, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .card__recent-photos {
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 144, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-menu * {
+    text-align: center !important;
+  }
+
+  /* line 148, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group__meta {
+    text-align: center !important;
+  }
+  /* line 150, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group__meta .group-profile__pp {
+    margin: 0 auto;
+    width: 100px;
+  }
+
+  /* line 156, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group__header {
+    margin-top: 20px;
+  }
+
+  /* line 160, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-actions {
+    text-align: center;
+  }
+
+  /* line 165, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-menu {
+    position: relative;
+  }
+
+  /* line 168, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-menu__mobile-trigger {
+    border: 1px solid #ebebeb;
+    padding: 7px 25px;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+  }
+  /* line 176, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-menu__mobile-trigger:hover {
+    border-color: #EFB200;
+    background-color: #EFB200;
+    color: white;
+  }
+  /* line 182, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-menu__mobile-trigger.dropdown-toggle::after {
+    margin-left: 10px;
+  }
+
+  /* line 187, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-menu__desktop {
+    border: 1px solid #EFB200;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 45px;
+    left: 15px;
+    right: 15px;
+    z-index: 9;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+  }
+  /* line 202, ../../../../../Users/walid/code/Order by Manzel/HTML/Project-teb/_sass/pages/group.scss */
+  .group-menu__desktop.show {
+    top: 45px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
 
 

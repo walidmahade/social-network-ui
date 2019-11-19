@@ -1,2 +1,2 @@
 # social-network
-Live preview: http://five-door.surge.sh/
+Live preview: https://mw-social-network.netlify.com/
